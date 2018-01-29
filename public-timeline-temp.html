@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html style="width: 100%;height: 100%;">
+
+<head>
+    <title>Renyoo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="" />
+    <!-- <meta name="apple-itunes-app" content="app-id=502838820"> -->
+    <meta name="google-play-app" content="app-id=com.app.renyoo.android">
+    <!--css-->
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicons/favicon.ico" />
+    <link rel="apple-touch-icon" type="image/png" href="images/favicons/apple-icon-57x57.png" sizes="57x57" />
+    <link rel="apple-touch-icon" type="image/png" href="images/favicons/apple-icon-60x60.png" sizes="60x60" />
+    <link rel="apple-touch-icon" type="image/png" href="images/favicons/apple-icon-72x72.png" sizes="72x72" />
+    <link rel="apple-touch-icon" type="image/png" href="images/favicons/apple-icon-76x76.png" sizes="76x76" />
+    <link rel="apple-touch-icon" type="image/png" href="images/favicons/apple-icon-114x114.png" sizes="114x114" />
+    <link rel="apple-touch-icon" type="image/png" href="images/favicons/apple-icon-120x120.png" sizes="120x120" />
+    <link rel="apple-touch-icon" type="image/png" href="images/favicons/apple-icon-144x144.png" sizes="144x144" />
+    <link rel="apple-touch-icon" type="image/png" href="images/favicons/apple-icon-152x152.png" sizes="152x152" />
+    <link rel="apple-touch-icon" type="image/png" href="images/favicons/apple-icon-180x180.png" sizes="180x180" />
+    <link rel="icon" type="image/png" href="images/favicons/android-icon-192x192.png" sizes="192x192" />
+    <link rel="icon" type="image/png" href="images/favicons/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="images/favicons/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="images/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="manifest" href="images/favicons/manifest.json" />
+    <meta property="og:site_name" content="R'nyoo">
+    <!-- <meta property="og:type" content="Website"> -->
+    <meta property="og:url" content="http://192.168.70.181:8887/HomePage_main_duplicate.html">
+    <meta property="og:title" content="R'nyoo - Share. Discover. Renew · Create compelling Hotspots on Images.">
+    <meta property="og:image" content="images/og-images/og_image_home.jpg">
+    <meta property="og:description" content="Share the stories within your pictures by adding hotspots to them and adding and enriching contextual content.">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/nice-select.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/smart-app-banner.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/jquery-ui.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/video-js.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/lightbox.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="dns-prefetch" href="https://vjs.zencdn.net">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://beta.rnyoo.co/">
+    <!--js-->
+    <script src="libs/jquery.min.js"></script>
+    <script src="libs/bootstrap.min.js"></script>
+    <script src="libs/smart-app-banner.js"></script>
+    <script src="libs/moment.min.js"></script>
+    <script src="libs/jquery.nice-select.js"></script>
+    <script src="libs/jquery-ui.js"></script>
+    <script src="libs/hammer.min.js"></script>
+    <script src="libs/jquery.hammer.js"></script>
+    <script src="libs/jquery.mousewheel.min.js"></script>
+    <script src="libs/imgViewer.js"></script>
+    <script src="libs/imgNotes.js"></script>
+    <script src="libs/Autolinker.js"></script>
+    <script src="libs/lightbox.js"></script>
+    <script src="libs/rnyoo.js"></script>
+    <script src="libs/rnyoo_pod.js"></script>
+    <script src="https://vjs.zencdn.net/5.12.6/video.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/5.7.0/videojs-contrib-hls.js"></script>
+    <script src="libs/videojs-errors.js"></script>
+    <!--fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300,600,700' rel='stylesheet' type='text/css'>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107077267-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() { dataLayer.push(arguments) };
+    gtag('js', new Date());
+
+    gtag('config', 'UA-107077267-1');
+    </script>
+</head>
+<style type="text/css">
+.video-js {
+    font-size: 10px;
+    color: #fff;
+}
+
+.vjs-default-skin .vjs-big-play-button {
+    font-size: 3em;
+    line-height: 80px;
+    height: 80px;
+    width: 80px;
+    border: 4px solid #00AEEF;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    margin-left: -40px;
+    margin-top: -40px;
+}
+
+.video-js .vjs-control-bar,
+.video-js .vjs-big-play-button,
+.video-js .vjs-menu-button .vjs-menu-content {
+    background-color: #00AEEF;
+    background-color: #00aeef;
+}
+
+.video-js .vjs-slider {
+    background-color: #00AEEF;
+    background-color: rgba(0, 174, 239, 0.5);
+}
+
+.video-js .vjs-volume-level,
+.video-js .vjs-play-progress,
+.video-js .vjs-slider-bar {
+    background: #fff;
+}
+
+.video-js .vjs-load-progress {
+    background: ligthen(#00AEEF, 25%);
+    background: rgba(0, 174, 239, 0.5);
+}
+
+.video-js .vjs-load-progress div {
+    background: ligthen(#00AEEF, 50%);
+    background: rgba(0, 174, 239, 0.75);
+}
+
+.vjs-big-play-button {
+    border-radius: 50% !important;
+    height: 50px !important;
+    width: 50px !important;
+    margin-right: -25px !important;
+    margin-left: -25px !important;
+}
+
+#modalAudio .vjs-big-play-button {
+    left: 50% !important;
+    top: -40px !important;
+}
+
+#modalVideo .vjs-big-play-button {
+    top: 70px !important;
+    left: 132px !important;
+}
+
+.video-js .vjs-control.vjs-close-button {
+    display: none;
+}
+
+.video-js button {
+    display: none;
+}
+
+.vjs-error .vjs-error-display:before {
+    display: none;
+}
+
+.vjs-errors-headline {
+    font-size: 20px !important;
+}
+
+.video-js .vjs-menu-button-inline:hover {
+    width: 4em;
+}
+
+.video-js .vjs-menu-button-inline:focus {
+    width: 4em;
+}
+</style>
+
+<body style="width: 100%;height: 100%;">
+    <!-- header section -->
+    <div class="rny-chanl-post-list-header-bar">
+        <div class="container">
+            <a><img src="images/menu.png" alt="rny-image" class="menu-icon-mb" id="menu"></a>
+            <a class="rny-logo"><img class="rny-logo-mb" src="images/rny-logo.png" alt="rny-image"></a>
+            <div class="input-block">
+                <form action="search.html" method="POST">
+                    <input class="search-bar" type="text" id="search" name="search-content" placeholder="i'm looking for...">
+                    <span class="submit-searchicon"><input type="image" name="submit" src="images/search_icon.png" alt="rny-image"></span>
+                    <select id="search_keywords">
+                        <ul>
+                            <li>
+                                <option value="Keywords">Keywords</option>
+                            </li>
+                            <li>
+                                <option value="Channels">Channels</option>
+                            </li>
+                            <li>
+                                <option value="Locations">Locations</option>
+                            </li>
+                        </ul>
+                    </select>
+                </form>
+            </div>
+            <span class="mb-searchicon"><img class="search-icon" src="images/search_icon.png" alt="rny-image"></span>
+            <a href="#" class="google-play-logo"><img class="playstore-logo-mb" src="images/play_icon.png" alt="rny-image"></a>
+        </div>
+    </div>
+    <!-- header section end -->
+    <!-- menu overlay section -->
+    <div class="menu-overlay">
+        <div class="container">
+            <div class="menu-close">
+                <img src="images/menu_close.png" alt="rny-image">
+            </div>
+            <div class="menu-overlay-content">
+                <div class="overlay-menu-list">
+                    <ul>
+                        <li><a href="https://play.google.com/store/apps/details?id=com.app.renyoo.android">DOWNLOAD</a></li>
+                        <li><a href="getting-started.html">GETTING STARTED</a></li>
+                        <li><a href="business.html">BUSINESS</a></li>
+                        <li><a href="privacy-policy.html">PRIVACY</a></li>
+                        <li><a href="terms-conditions.html">TERMS &amp; CONDITIONS</a></li>
+                        <li><a href="mailto:support@renyoo.com">SUPPORT</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                    </ul>
+                </div>
+                <div class="verification-block">
+                    <div class="rny-verifydropline">
+                        <p class="rny-verify-text">Want to have a verified account on Renyoo or know how to reach your audience effectively?</p>
+                        <a href="mailto:support@renyoo.com" class="rny-dropline" target="_blank">Drop in a line.</a>
+                    </div>
+                    <div class="overlay-connect-block">
+                        <h1 class="overlay-h1-cls">CONNECT</h1>
+                        <ul>
+                            <li><a href="https://www.facebook.com/Renyoo-220849128296067/" target="_blank"><i class="fa fa-facebook fa-icon-align" aria-hidden="true"></i></a></li>
+                            <li><a href="https://plus.google.com/u/0/communities/116794355079467123192" target="_blank"><i class="fa fa-google-plus fa-icon-align" aria-hidden="true"></i></a></li>
+                            <li><a href="https://twitter.com/renyooapp" target="_blank"><i class="fa fa-twitter fa-icon-align" aria-hidden="true"></i></a></li>
+                            <li><a href="mailto:support@renyoo.com"><i class="fa fa-envelope-o fa-icon-align" aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.youtube.com/channel/UCxHyHpsRxmfdcZKje0jx4Yg"><i class="fa fa-youtube fa-icon-align" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- menu overlay section end -->
+    <!-- mobile search view section(click on search icon mobile and tablet)) -->
+    <div class="mobile-search-view">
+        <div class="mb-search-block">
+            <div class="close-btn">
+                <span class="search-close"><img src="images/cancel_small.png"></span>
+            </div>
+            <form action="search.html" method="POST">
+                <div class="searchbar">
+                    <input class="mb-search-bar" type="text" id="search" name="search-content" placeholder="i'm looking for...">
+                </div>
+                <!-- <div class="keywords-block">
+                    <span class="keywords">look within</span>
+                    <select id="search_keywords">
+                        <ul>
+                            <li>
+                                <option value="Keywords">Keywords</option>
+                            </li>
+                            <li>
+                                <option value="Channels">Channels</option>
+                            </li>
+                            <li>
+                                <option value="Locations">Locations</option>
+                            </li>
+                        </ul>
+                    </select>
+                </div> -->
+                <div class="searc-btn-cls">
+                    <input type="submit" name="submit" value="SEARCH">
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- mobile search view section(click on search icon) end -->
+    <div class="container rny-post-container">
+        <div class="home-channel-container">
+            <img src="images/home_channel.png" alt="rny-image">
+            <br>
+            <span class="myid">POSTED IN PUBLIC</span>
+            <div class="ios-detector">
+                <div class="ios-detect-msg">Pinch-Zoom and other features on the image might not work as expected on iOS Safari.
+                    <br> For Best Experience View this on Chrome or other modern mobile browsers</div> <span id="closeios_detector">close</span></div>
+        </div>
+        <div class="row">
+        </div>
+        <div class="more-btn-block">
+            <a class="more-btn">Click to view posts</a>
+            <div id="loader">
+                <img src="images/loader.gif" alt="rny-image">
+            </div>
+        </div>
+        <div class="end-message-block">
+            <div class="end-message" style="display:none;" id="end-message">You have reached the end !!</div>
+        </div>
+    </div>
+    <div class="footer-block" style="position: relative;">
+        <div class="footer-connect-block">
+            <h1 class="footer-h1-cls">CONNECT</h1>
+            <ul>
+                <li><a href="https://www.facebook.com/Renyoo-220849128296067/" target="_blank"><i class="fa fa-facebook fa-icon-align" aria-hidden="true"></i></a></li>
+                <li><a href="https://plus.google.com/u/0/communities/116794355079467123192" target="_blank"><i class="fa fa-google-plus fa-icon-align" aria-hidden="true"></i></a></li>
+                <li><a href="https://twitter.com/renyooapp" target="_blank"><i class="fa fa-twitter fa-icon-align" aria-hidden="true"></i></a></li>
+                <li><a href="mailto:support@renyoo.com"><i class="fa fa-envelope-o fa-icon-align" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UCxHyHpsRxmfdcZKje0jx4Yg"><i class="fa fa-youtube fa-icon-align" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+        <div class="rny-about-block">
+            <ul>
+                <li><a href="https://play.google.com/store/apps/details?id=com.app.renyoo.android">DOWNLOAD</a></li>
+                <li><a href="getting-started.html">GETTING STARTED</a></li>
+                <li><a href="business.html">BUSINESS</a></li>
+                <li><a href="privacy-policy.html">PRIVACY</a></li>
+                <li><a href="terms-conditions.html">TERMS &amp; CONDITIONS</a></li>
+                <li><a href="mailto:support@renyoo.com">SUPPORT</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+            </ul>
+        </div>
+        <div class="rny-copyright-block">
+            <ul>
+                <li><a href="#">&#169; 2017 RenyooIt LLC.</a></li>
+                <li><a href="#">San Ramon,CA</a></li>
+            </ul>
+        </div>
+        <div class="scroll-top">
+            <img src="images/scroll-arrow.png" alt="rny-image">
+        </div>
+    </div>
+    <!-- fullview modal -->
+    <div id="fullview_modal_container">
+        <div id="modal_loader">
+            <span class="modal-text">Please wait. Your post is loading &#183; &#183; &#183;<br><img src="images/loader.gif" alt="rny-image"></span>
+        </div>
+        <div class="container">
+            <div class="row rny-row-container rny-flex2">
+            </div>
+        </div>
+    </div>
+    <!-- download app popup -->
+    <div id="rny_app_download">
+        <div class="app-download-wrapper">
+            <span class="rny-app-close"><img src="images/cancel.png"></span>
+            <div class="download-appImg">
+                <img src="images/mobile_icon.png">
+            </div>
+            <div class="download-appTxt">
+                <span class="app-download-text">Want to do more with R'nyoo?</span>
+                <a href="https://play.google.com/store/apps/details?id=com.rnyoo.app.android"><img src="images/play_icon.png" width="150px;" alt="rny-image"></a>
+            </div>
+        </div>
+    </div>
+    <!-- download app  popup end  -->
+    <!-- fullview modal -->
+    <div id="modalVideo" class="modal1">
+        <div class="modal-content1">
+            <span class="closeVideo"><img src="images/cancel.png"></span>
+        </div>
+    </div>
+    <div id="modalAudio" class="modal1">
+        <div class="modal-content1-audio">
+            <span class="closeAudio"><img src="images/cancel.png"></span>
+        </div>
+    </div>
+    <input type="hidden" name="nextStart" id="nextStart">
+</body>
+
+</html>
+<script type="text/javascript">
+$(document).ready(function() {
+// console.log(window.history.pushState)
+
+    $('select').niceSelect();
+
+    banner = undefined;
+    new SmartBanner({
+        daysHidden: -1, // days to hide banner after close button is clicked (defaults to 15)
+        daysReminder: -1, // days to hide banner after "VIEW" button is clicked (defaults to 90)
+        appStoreLanguage: 'us', // language code for the App Store (defaults to user's browser language)
+        title: 'Renyoo',
+        author: 'RenyooIt LLC',
+        button: 'Download',
+        store: {
+            ios: 'On the App Store',
+            android: 'In Google Play',
+            windows: 'In Windows store'
+        },
+        price: {
+            ios: 'Free',
+            android: 'Free',
+            windows: 'Free'
+        },
+        icon: 'images/store-icon.png'
+        // , theme: '' // put platform type ('ios', 'android', etc.) here to force single theme on all device
+        // , icon: '' // full path to icon image if not using website icon image
+        // , force: 'ios' // Uncomment for platform emulation
+    });
+});
+</script>

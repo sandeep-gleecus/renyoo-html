@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<html>
+
+<head>
+    <title>Rnyoo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="" />
+    <!--css-->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- <link href="css/jquery-ui.css" rel="stylesheet" type="text/css" media="all" /> -->
+    <link href="css/video-js.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/lightbox.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- <link href="css/videojs-errors.css" rel="stylesheet" type="text/css" media="all" /> -->
+    <!--jQuery-->
+    <script src="libs/jquery.min.js"></script>
+    <script src="libs/jquery-ui.js"></script>
+    <script src="libs/hammer.min.js"></script>
+    <script src="libs/jquery.hammer.js"></script>
+    <script src="libs/jquery.mousewheel.min.js"></script>
+    <script src="libs/imgViewer.js"></script>
+    <script src="libs/imgNotes.js"></script>
+    <!-- <script src="libs/embed_imgNotes.js"></script> -->
+    <script src="libs/bootstrap.min.js"></script>
+    <script src="libs/lightbox.js"></script>
+    <script src="libs/rnyoo.js"></script>
+    <script src="libs/rnyoo_pod.js"></script>
+    <script src="libs/moment.min.js"></script>
+    <script src="libs/Autolinker.js"></script>
+    <script src="libs/video.js"></script>
+    <script src="libs/videojs-contrib-hls.js"></script>
+    <script src="libs/videojs-errors.js"></script>
+    <!--fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300,600,700' rel='stylesheet' type='text/css'>
+</head>
+<style type="text/css">
+.video-js {
+    font-size: 10px;
+    color: #fff;
+}
+
+.vjs-default-skin .vjs-big-play-button {
+    font-size: 3em;
+    line-height: 80px;
+    height: 80px;
+    width: 80px;
+    border: 4px solid #00AEEF;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    margin-left: -40px;
+    margin-top: -40px;
+}
+
+.video-js .vjs-control-bar,
+.video-js .vjs-big-play-button,
+.video-js .vjs-menu-button .vjs-menu-content {
+    background-color: #00AEEF;
+    background-color: #00aeef;
+}
+
+.video-js .vjs-slider {
+    background-color: #00AEEF;
+    background-color: rgba(0, 174, 239, 0.5);
+}
+
+.video-js .vjs-volume-level,
+.video-js .vjs-play-progress,
+.video-js .vjs-slider-bar {
+    background: #fff;
+}
+
+.video-js .vjs-load-progress {
+    background: ligthen(#00AEEF, 25%);
+    background: rgba(0, 174, 239, 0.5);
+}
+
+.video-js .vjs-load-progress div {
+    background: ligthen(#00AEEF, 50%);
+    background: rgba(0, 174, 239, 0.75);
+}
+
+.vjs-big-play-button {
+    border-radius: 50% !important;
+    height: 50px !important;
+    width: 50px !important;
+    margin-right: -25px !important;
+    margin-left: -25px !important;
+}
+
+#modalAudio .vjs-big-play-button {
+    left: 50%;
+    top: -40px;
+}
+
+.video-js .vjs-control.vjs-close-button {
+    display: none;
+}
+
+.video-js button {
+    display: none;
+}
+
+.vjs-error .vjs-error-display:before {
+    display: none;
+}
+</style>
+
+<body style="background: #000;">
+    <div class="container rny-container" id="non-visible" style="margin-top: 0px !important;">
+        <div class="row">
+            <div class="rny-flex2">
+                <div class="rny-mobileview-zoomblock" id="zoomb">
+                    <ul>
+                        <li><img src="images/back.png" alt="rny-image" id="fullview_back" class="rny-embed-icon"></li>
+                        <li><a href="#" class="psotinfo_showhide">Post Info</a></li>
+                        <li>
+                            <button class="rny-mobileviewzoommbutton" id="normal_image"><span>N</span></button>
+                        </li>
+                        <li>
+                            <button class="rny-mobileviewzoommbutton" id="zoom_out_button"><span> -</span></button>
+                        </li>
+                        <li>
+                            <button class="rny-mobileviewzoommbutton" id="zoom_in_button"><span> +</span></button>
+                        </li>
+                        <li class="fullviewZwidth"><span class="mobile-post-img" id="hide"><img src="images/hide.png" alt="rny-image"> hide</span><span class="mobile-post-img" id="show"><img src="images/show.png" alt="rny-image">show</span></li>
+                        <li><img src="images/embed.png" alt="rny-image" class="rny-embed-icon" id="rny_Embed"></li>
+                    </ul>
+                </div>
+                <div class="rny-fullviewimg-container">
+                    <img class="img-responsive imgCls" id="pod_image" src="" alt="rny-image">
+                    <span class="tap-to-view" id="showhotspots">
+        CLICK TO VIEW
+      </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ios-detector">
+        <div style="width:80%;display:inline-block;text-align: left;">Pinch-Zoom and other features on the image might not work as expected on iOS Safari.
+            <br> For Best Experience View this on Chrome or other modern mobile browsers</div> <span id="closeios_detector">close</span></div>
+    <!-- post info block(onclick post info this block will dsplay)  -->
+    <div class="fullview-postInfo" id="postInfo" style="display: none;">
+        <div class="rny-flex" style="min-height: 500px;">
+            <div class="rny-header"><img src="images/icon_clock.png" alt="rny-image">
+                <span>< than 20 hours </span>
+            </div>
+            <div class="rny-publisher">
+                <span class="rny-avatar"> <img src="images/avatar_img.jpg" alt="rny-image"> </span>
+                <span class="rny-pub-name"><a href="">Kalanikethan</a></span>
+                <br>
+            </div>
+            <div class="rny-post-description">Ethnic saree festival
+                <br>
+                <a class="rny-green" href="">#Kalanikethan</a><a class="rny-green" href="">#weddingcollection</a> sommetext vcomes here<a class="rny-green" href="">#clothing#festive</a>
+            </div>
+            <div class="rny-post-timeDetails">
+                <span class="rny-lightgrey">posted</span>
+                <br>
+                <span class="rny-midgrey">12 hours ago</span>
+                <span class="rny-lightgrey rny-post-updatetime">(Updated 3 hours ago)</span>
+            </div>
+            <div class="rny-post-locationDetails">
+                <span class="rny-lightgrey">picture taken at</span>
+                <br>
+                <span class="rny-midgrey">Hyderabad central, Panjagutta, Hyderabad</span>
+            </div>
+            <div class="rny-btn-flex">
+                <a href="#" class="rny-btn">channel1</a>
+                <a href="#" class="rny-btn">fashion</a>
+                <a href="#" class="rny-btn">lifestyle</a>
+                <a href="#" class="rny-btn">Channel2</a>
+            </div>
+            <div class="rny-commentSection">
+                <ul class="rny-likes">
+                    <li class="popUp">
+                        <a class="rny-lightgrey" href="#"><img src="images/like.png" alt="rny-image"> 1.5 k</a>
+                    </li>
+                    <li class="popUp">
+                        <a class="rny-lightgrey" href="#"><img src="images/view.png" alt="rny-image"> 154 views</a>
+                    </li>
+                </ul>
+                <ul class="rny-comments">
+                    <li class="popUp"><a class="rny-lightgrey" href="#">14 post comments</a></li>
+                    <li class="rny-comment-lidot">&#183;</li>
+                    <li class="popUp"><a class="rny-lightgrey" href="#">21 hotspot comments</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- post info block end  -->
+    <div id="modalVideo" class="modal1">
+        <div class="modal-content1">
+            <span class="closeVideo"><img src="images/cancel.png"></span>
+        </div>
+    </div>
+    <div id="modalAudio" class="modal1">
+        <div class="modal-content1-audio">
+            <span class="closeAudio"><img src="images/cancel.png"></span>
+        </div>
+    </div>
+    <!--embed block-->
+    <div class="embed-modal" id="embedModal">
+        <div class="container embed-container">
+            <span id="close_id" class="close" tabindex='-1'><img src="images/cancel.png"></span>
+            <!-- <div class="embed-size">choose a size</div>
+            <div class="embed-pixel-choose">
+                <span class="embed-pixel-choose-640 textcolor">640px</span>
+                <span class="embed-pixel-choose-480">480px</span>
+            </div> -->
+            <div class="embed-block">
+                <div class="iframe-class1" id="iframe_640">
+                    <iframe width="100%" class="iframe-full-height" frameBorder="0" class="iframe-class1" src="640iframe.html"></iframe>
+                </div>
+                <div class="iframe-class2" id="iframe_480">
+                    <iframe width="100%" class="iframe-full-height" frameBorder="0" src="480iframe.html"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--embed block end-->
+    <!-- download app popup  -->
+    <div id="rny_app_download">
+        <div class="app-download-wrapper">
+            <span class="rny-app-close"><img src="images/cancel.png"></span>
+            <div class="download-appImg">
+                <img src="images/mobile_icon.png">
+            </div>
+            <div class="download-appTxt">
+                <span class="app-download-text">Want to do more with Rnyoo?</span>
+                <a href="#"><img src="images/play_icon.png" width="150px;" alt="rny-image"></a>
+            </div>
+        </div>
+    </div>
+    <!-- download app  popup end  -->
+
+    <div class="page-center" id="report-container" style="display: none;">
+        <div style="text-align: center;">
+            <img src="images/alert-icon.png" style="margin-bottom: 30px;">
+            <div class="report-message">This post was reported and is reviewed as inappropriate and/or against our community policies</div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+$(document).ready(function() {
+
+    var adapter = {"visible_b":true,"uid_s":"MGWwqsdyqlKpe3FyJEzaHDU7dKh","screenName_s":"sekhard","rpostid_s":"JohkKnaIlv8sVF4JaxhBZ6vqGgc","rpid_s":"63a8438a212f4ceebd5ec050dcf819bc","reportReview":{"count":1,"activeReview":true},"publicSharing_b":true,"postLocation":{"postLng":"78.4317033","postLat":"17.4275817"},"postDescription_s":"Android: #Good morning ","pod":{"zoomScale":1,"rpid_s":"63a8438a212f4ceebd5ec050dcf819bc","published_b":true,"podType_s":"private","podImage":{"webjpgUrl":"https://cdn.rnyoo.net/MGWwqsdyqlKpe3FyJEzaHDU7dKh/vaultfiles/rnya_55846a42f4fe41f095f81fa00480c542_400x400.jpg","thumbnailUrl":"https://cdn.rnyoo.net/MGWwqsdyqlKpe3FyJEzaHDU7dKh/vaultfiles/thumbs/thumb-rnya_55846a42f4fe41f095f81fa00480c542.webp","source":"gallery","resolution":"306x306","mimeType":"image/webp","jpgUrl":"https://cdn.rnyoo.net/MGWwqsdyqlKpe3FyJEzaHDU7dKh/vaultfiles/rnya_55846a42f4fe41f095f81fa00480c542.jpg","imgId":"rnya_55846a42f4fe41f095f81fa00480c542","baseUrl":"https://cdn.rnyoo.net/MGWwqsdyqlKpe3FyJEzaHDU7dKh/vaultfiles/rnya_55846a42f4fe41f095f81fa00480c542.webp"},"parentId":"63a8438a212f4ceebd5ec050dcf819bc","ownership_s":"locked","ownedBy_s":"MGWwqsdyqlKpe3FyJEzaHDU7dKh","orientation":"portrait","name_t":"63a8438a212f4ceebd5ec050dcf819bc","location_s":"Hyderabad, India","locationCoordinates":{"lon":"78.4317","lat":"17.4276"},"keywords_t":"","hotspots":{"e675566a85b04d94a16f4792b991ad2e":{"zoomFactor":0,"zeroHotspot_b":true,"sharable":true,"platformUpdatedOn":"android","platformCreatedOn":"android","media":{"video":[],"images":[],"docs":[],"audio":[]},"markerColor":"","locationMarker":"dot","location":{"y":0,"x":0},"lastUpdatedAt_l":1504071009920,"keywords_ts":"","hotspotLabel_ts":"pod","hotspotId":"e675566a85b04d94a16f4792b991ad2e","hotspotDescription_ts":"","editable":false,"createdAt_l":1504071009920},"99a946c17c9541b286d80fdb04acedbc":{"zoomFactor":1,"zeroHotspot_b":false,"sharable":true,"platformUpdatedOn":"android","platformCreatedOn":"android","media":{"video":[],"images":[],"docs":[],"audio":[]},"markerColor":"#6f46ad","locationMarker":"dot","location":{"y":234,"x":165},"lastUpdatedAt_l":1504072282277,"keywords_ts":"","hotspotLabel_ts":"author ","hotspotId":"99a946c17c9541b286d80fdb04acedbc","hotspotDescription_ts":"","editable":false,"createdAt_l":1504071020057,"clickUrl":""},"96b6b14515c34f5db11e9312e4f8b29c":{"zoomFactor":1,"zeroHotspot_b":false,"sharable":true,"platformUpdatedOn":"android","platformCreatedOn":"android","media":{"video":[{"videoUrl":"https://cdn.rnyoo.net/MGWwqsdyqlKpe3FyJEzaHDU7dKh/vaultfiles/aaaa4325-4dae-4889-9c84-8fd6e6e043fc/aaaa4325-4dae-4889-9c84-8fd6e6e043fc.mp4","videoThumbUrl":"https://cdn.rnyoo.net/MGWwqsdyqlKpe3FyJEzaHDU7dKh/vaultfiles/6a47caa3-362b-4ad2-abb7-879748ab60e6.jpg","videoId":"aaaa4325-4dae-4889-9c84-8fd6e6e043fc","streamfile":"https://cdn.rnyoo.net/MGWwqsdyqlKpe3FyJEzaHDU7dKh/vaultfiles/aaaa4325-4dae-4889-9c84-8fd6e6e043fc/aaaa4325-4dae-4889-9c84-8fd6e6e043fc.m3u8","stream_status":"completed"}],"images":[{"imageUrl":"https://cdn.rnyoo.net/MGWwqsdyqlKpe3FyJEzaHDU7dKh/vaultfiles/dafdbde9-624c-417f-b05f-14af501ce3d8.jpg","imageId":"56de1986d73f4f4d9a20e5743cc77f31"},{"imageUrl":"https://cdn.rnyoo.net/MGWwqsdyqlKpe3FyJEzaHDU7dKh/vaultfiles/59a10f8d-564a-4353-b0c7-93323a7cadd2.jpg","imageId":"7376d38e77d8433f9d5f560176ebf1df"},{"imageUrl":"https://cdn.rnyoo.net/MGWwqsdyqlKpe3FyJEzaHDU7dKh/vaultfiles/013e698f-ec48-4599-9e44-d5bf7a7e2aae.jpg","imageId":"7f98b94adbc84ea0bf3d0f289065a682"},{"imageUrl":"https://cdn.rnyoo.net/MGWwqsdyqlKpe3FyJEzaHDU7dKh/vaultfiles/fb92b991-6843-463c-9507-8817ee437e3c.jpg","imageId":"32361ff8a11d42b3855ddb0d2c541c0d"}],"docs":[],"audio":[{"streamfile":"https://cdn.rnyoo.net/MGWwqsdyqlKpe3FyJEzaHDU7dKh/vaultfiles/8b9da560-f2f4-486d-b6c2-82a122540695/8b9da560-f2f4-486d-b6c2-82a122540695.mp3","stream_status":"completed","audioUrl":"https://cdn.rnyoo.net/MGWwqsdyqlKpe3FyJEzaHDU7dKh/vaultfiles/8b9da560-f2f4-486d-b6c2-82a122540695/8b9da560-f2f4-486d-b6c2-82a122540695.aac","audioId":"8b9da560-f2f4-486d-b6c2-82a122540695"}]},"markerColor":"#6f46ad","locationMarker":"dot","location":{"y":18,"x":146},"lastUpdatedAt_l":1504072272420,"keywords_ts":"","hotspotLabel_ts":"quotes","hotspotId":"96b6b14515c34f5db11e9312e4f8b29c","hotspotDescription_ts":"Adding all media files","editable":false,"createdAt_l":1504071061677,"clickUrl":""}},"draft_b":false,"deviceId_s":"353217050833451","description_t":"","createdBy_s":"MGWwqsdyqlKpe3FyJEzaHDU7dKh","channel_t":""},"noOfViews":147,"media":{"video":[],"images":[],"docs":[],"audio":[]},"location_s":"","lastUpdatedAt_l":1504072292000,"keywords_s":"#Good","hotspotsShared":[],"createdAt_l":1504071673000,"channel_s":"Creative, Fashion","changeLog":{"deleted":[],"changed":[["hotspots","96b6b14515c34f5db11e9312e4f8b29c","media"],["hotspots","96b6b14515c34f5db11e9312e4f8b29c","lastUpdatedAt_l"],["hotspots","99a946c17c9541b286d80fdb04acedbc","hotspotLabel_ts"],["hotspots","99a946c17c9541b286d80fdb04acedbc","lastUpdatedAt_l"]],"added":[]},"avatar":"https://cdn.rnyoo.net/MGWwqsdyqlKpe3FyJEzaHDU7dKh/avatars/ProfilePic-1504449693808.png","apiVersion":"v1"};
+    rnyooDataBind(adapter);
+    isIos();
+
+    $('.psotinfo_showhide').click(function(event) {
+        event.stopPropagation();
+        $(".fullview-postInfo").slideToggle();
+    });
+    $(".fullview-postInfo").on("click", function(event) {
+        event.stopPropagation();
+    });
+    // post info block will close click out side of block
+    $(document).on("click", function() {
+        $(".fullview-postInfo").hide();
+    });
+
+    // download app popup
+    $(".popUp").click(function() {
+        $("#rny_app_download").show();
+    });
+    $(".rny-app-close").click(function() {
+        $("#rny_app_download").hide();
+    });
+
+    //pod image resize for adjusting the screen
+    var img_h, screen_h, container_h, zoombar_h;
+    img_h = parseInt($("img#pod_image").css("height"));
+    screen_h = parseInt($(window).height()) - 2; //2px difference (borderwith 2px missing from screen height)
+    container_h = parseInt($(".rny-fullviewimg-container").css("height"));
+    zoombar_h = parseInt($('#zoomb').css("height"));
+    if (img_h > screen_h) {
+        $("img#pod_image").css("max-height", screen_h - zoombar_h);
+        $("img#pod_image").css("max-width", "100%");
+        $(".rny-fullviewimg-container").css("height", screen_h - zoombar_h);
+    } else {
+        $("img#pod_image").css("max-height", "100%");
+        $("img#pod_image").css("max-width", "100%");
+        $(".rny-fullviewimg-container").css("height", screen_h - zoombar_h);
+    }
+});
+$(document).ready(function() {
+    //embed modal
+    $("#rny_Embed").click(function() {
+        $("#embedModal").show();
+    });
+    $("#close_id").click(function() {
+        $("#embedModal").hide();
+    });
+
+    // embed iframes color toggle  
+    $('.embed-pixel-choose span').click(function(e) {
+        e.preventDefault();
+        $(this).addClass('textcolor').siblings().removeClass('textcolor');
+    });
+
+    //embed iframes toggle
+    $(".embed-pixel-choose-640").click(function() {
+        $("#iframe_640").show();
+        $("#iframe_480").hide();
+    });
+    $(".embed-pixel-choose-480").click(function() {
+        $("#iframe_640").hide();
+        $("#iframe_480").show();
+    });
+    $('.iframe-full-height').on('load', function() {
+        this.style.height = this.contentDocument.body.scrollHeight + 'px';
+    });
+});
+</script>
+
+</html>

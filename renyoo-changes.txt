@@ -1,0 +1,24 @@
+Changes:santhu branch from webrnyoo(master)
+1.hotspot attached images message(rnyoo.js)
+2.overlay click on hotspot, image position changing(css)
+3.pod and post embed pages class names changed for audio and video tags(html)
+4.report post overlay added(rnyoo.js)
+5.meta content added(search.html meta tags added but title,images etc not added dynamically)
+6.report post div added in fullview, pod, post, embed pages(html)
+7.in images folder(web/static/assets/images), favicons folder and og-images folder added
+8.text truncating added for post description to avoid posts allignment (rnyoo.js)
+9.renyoo word changed(html and rnyoo.js)
+10.removed beta.rnyoo.co and added https://renyoo.co
+11.support@renyoo.co replaced
+12.smartapp banner added(home.html and timeline) only for adroid
+13.playstore app url added
+14.responsive embed, problem with script(not allwoing crossdomain access)
+15.business page banner image added, new logos added
+16.avatar,name and screen name adjusted with new allignment(user.htmml only)
+17.google analytics(gtag.js) added(home,public timeline, user, about, start)
+
+Changes:santhu branch from rnyoo_server(1.0.0)
+1.renyoo name, new url, playstore url, new social links added
+2.report abuse emailer template changed
+3.friend request accepted emailer changed
+4.images folder added, images and logo added

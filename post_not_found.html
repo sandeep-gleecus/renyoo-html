@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Renyoo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="" />
+    <!--css-->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/nice-select.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" />
+    <!--js-->
+    <script src="libs/jquery.min.js"></script>
+    <script src="libs/bootstrap.min.js"></script>
+    <script src="libs/jquery.nice-select.js"></script>
+    <!--fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300,600,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <!-- header section -->
+    <div class="rny-chanl-post-list-header-bar">
+        <div class="container">
+            <a><img src="images/menu.png" alt="rny-image" class="menu-icon-mb" id="menu"></a>
+            <a href="https://rnyoo.com" target="_blank" class="rny-logo"><img class="rny-logo-mb" alt="rny-image" src="images/rny-logo.png"></a>
+            <div class="input-block">
+                <input class="search-bar" type="text" id="search" name="search-content" placeholder="i'm looking for...">
+                <span class="submit-searchicon"><input type="image" name="submit" src="images/search_icon.png" alt="rny-image"></span>
+                <select id="search_keywords">
+                    <ul>
+                        <li>
+                            <option value="Keywords">Keywords</option>
+                        </li>
+                        <li>
+                            <option value="Channels">Channels</option>
+                        </li>
+                        <li>
+                            <option value="Locations">Locations</option>
+                        </li>
+                    </ul>
+                </select>
+            </div>
+            <span class="mb-searchicon"><img class="search-icon" src="images/search_icon.png" alt="rny-image"></span>
+            <a href="#" class="google-play-logo"><img class="playstore-logo-mb" src="images/play_icon.png" alt="rny-image"></a>
+        </div>
+    </div>
+    <!-- header section end -->
+    <!-- menu overlay section -->
+    <div class="menu-overlay">
+        <div class="container">
+            <div class="menu-close">
+                <img src="images/menu_close.png" alt="rny-image">
+            </div>
+            <div class="menu-overlay-content">
+                <div class="overlay-menu-list">
+                    <ul>
+                        <li><a href="https://play.google.com/store/apps/details?id=com.app.renyoo.android">DOWNLOAD</a></li>
+                        <li><a href="getting-started.html">GETTING STARTED</a></li>
+                        <li><a href="business.html">BUSINESS</a></li>
+                        <li><a href="privacy-policy.html">PRIVACY</a></li>
+                        <li><a href="terms-conditions.html">TERMS &amp; CONDITIONS</a></li>
+                        <li><a href="mailto:support@renyoo.com">SUPPORT</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                    </ul>
+                </div>
+                <div class="verification-block">
+                    <div class="rny-verifydropline">
+                        <p class="rny-verify-text">Want to have a verified account on Renyoo or know how to reach your audience effectively?</p>
+                        <a href="mailto:support@renyoo.com" class="rny-dropline">Drop in a line.</a>
+                    </div>
+                    <div class="overlay-connect-block">
+                        <h1 class="overlay-h1-cls">CONNECT</h1>
+                        <ul>
+                            <li><a href="https://www.facebook.com/Renyoo-220849128296067/" target="_blank"><i class="fa fa-facebook fa-icon-align" aria-hidden="true"></i></a></li>
+                            <li><a href="https://plus.google.com/u/0/communities/116794355079467123192" target="_blank"><i class="fa fa-google-plus fa-icon-align" aria-hidden="true"></i></a></li>
+                            <li><a href="https://twitter.com/renyooapp" target="_blank"><i class="fa fa-twitter fa-icon-align" aria-hidden="true"></i></a></li>
+                            <li><a href="mailto:support@renyoo.com"><i class="fa fa-envelope-o fa-icon-align" aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.youtube.com/channel/UCxHyHpsRxmfdcZKje0jx4Yg"><i class="fa fa-youtube fa-icon-align" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- menu overlay section end -->
+    <!-- mobile view search section(click on search icon mobile and tablet)) -->
+    <div class="mobile-search-view">
+        <div class="mb-search-block">
+            <div class="close-btn">
+                <span class="search-close"><img src="images/cancel_small.png"></span>
+            </div>
+            <div class="searchbar">
+                <input class="mb-search-bar" type="text" id="search" name="search-content" placeholder="i'm looking for...">
+            </div>
+            <!-- <div class="keywords-block">
+				<span class="keywords">look within</span>
+				<ul>
+					<li>
+						<a href="#"><img src="images/hashtag.png" alt="rny-image">Keywords</a>
+					</li>
+					<li>
+						<a href="#"><img src="images/channels.png" alt="rny-image">Channels</a>
+					</li>
+					<li>
+						<a href="#"><img src="images/locations.png" alt="rny-image">Locations</a>
+					</li>
+				</ul>
+			</div> -->
+            <div class="keywords-block">
+                <span class="keywords">look within</span>
+                <select id="search_keywords">
+                    <ul>
+                        <li>
+                            <option value="Keywords">Keywords</option>
+                        </li>
+                        <li>
+                            <option value="Channels">Channels</option>
+                        </li>
+                        <li>
+                            <option value="Locations">Locations</option>
+                        </li>
+                    </ul>
+                </select>
+            </div>
+            <div class="searc-btn-cls">
+                <input class="mb-search-btn" type="button" name="submit" value="SEARCH">
+            </div>
+        </div>
+    </div>
+    <!-- mobile view search  section(click on search icon) end -->
+    <div class="rny-404-notfound-block">
+        <div class="rny-404-oops">OOPS!</div>
+        <img src="images/pod_notfound_icon.png">
+        <div class="rny-post-expired">POST not found</div>
+        <div class="rny-404-notfound">Looks like the POST you're looking for cannot be found</div>
+        <div class="rny-sharing-404">
+            <a href="">
+				<img src="images/channels_symbol.png" alt="rny-image">
+				<br>
+				<span class="rny-green rny-sharing-text">See what the world is<br> sharing on Renyoo</span>
+			</a>
+        </div>
+    </div>
+    <div class="footer-block">
+        <div class="footer-connect-block">
+            <h1 class="footer-h1-cls">CONNECT</h1>
+            <ul>
+                <li><a href="https://www.facebook.com/Renyoo-220849128296067/" target="_blank"><i class="fa fa-facebook fa-icon-align" aria-hidden="true"></i></a></li>
+                <li><a href="https://plus.google.com/u/0/communities/116794355079467123192" target="_blank"><i class="fa fa-google-plus fa-icon-align" aria-hidden="true"></i></a></li>
+                <li><a href="https://twitter.com/renyooapp" target="_blank"><i class="fa fa-twitter fa-icon-align" aria-hidden="true"></i></a></li>
+                <li><a href="mailto:support@renyoo.com"><i class="fa fa-envelope-o fa-icon-align" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UCxHyHpsRxmfdcZKje0jx4Yg"><i class="fa fa-youtube fa-icon-align" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+        <div class="rny-about-block">
+            <ul>
+                <li><a href="https://play.google.com/store/apps/details?id=com.app.renyoo.android">DOWNLOAD</a></li>
+                <li><a href="getting-started.html">GETTING STARTED</a></li>
+                <li><a href="business.html">BUSINESS</a></li>
+                <li><a href="privacy-policy.html">PRIVACY</a></li>
+                <li><a href="terms-conditions.html">TERMS &amp; CONDITIONS</a></li>
+                <li><a href="mailto:support@renyoo.com">SUPPORT</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+            </ul>
+        </div>
+        <div class="rny-copyright-block">
+            <ul>
+                <li><a href="#">&#169; 2017 RenyooIt LLC.</a></li>
+                <li><a href="#">San Ramon,CA</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+$(document).ready(function() {
+    // search key words in input box(dropdown plugin)
+    $('select').niceSelect();
+
+    $(document).on("click", "#menu", function() {
+        $(".menu-overlay").stop().fadeIn(1000);
+    });
+    $(document).on("click", ".menu-close", function() {
+        $(".menu-overlay").stop().fadeOut(1000);
+    });
+    // mobile and tablet serach 
+    $(document).on("click", ".search-icon", function() {
+        $(".mobile-search-view").fadeIn(1000);
+    });
+
+    $(document).on("click", ".search-close", function() {
+        $(".mobile-search-view").fadeOut(1000);
+    });
+    $(document).on("click", ".mb-search-btn", function() {
+        $("form").submit();
+    });
+});
+</script>
+
+</html>

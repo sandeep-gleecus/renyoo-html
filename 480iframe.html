@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html id="htmlHeight">
+
+<head>
+    <title>Renyoo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="" />
+    <!--css-->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/jquery-ui.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/nice-select.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/lightbox.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/video-js.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- <link href="css/video-js.css" rel="stylesheet" type="text/css" media="all" /> -->
+    <!--jQuery-->
+    <script src="libs/jquery.min.js"></script>
+    <script src="libs/jquery-ui.js"></script>
+    <script src="libs/hammer.min.js"></script>
+    <script src="libs/jquery.hammer.js"></script>
+    <script src="libs/jquery.mousewheel.min.js"></script>
+    <script src="libs/imgViewer.js"></script>
+    <script src="libs/imgNotes.js"></script>
+    <script src="libs/rnyoo_pod.js"></script>
+    <script src="libs/rnyoo.js"></script>
+    <script src="libs/moment.min.js"></script>
+    <script src="libs/Autolinker.js"></script>
+    <script src="libs/bootstrap.min.js"></script>
+    <script src="libs/lightbox.js"></script>
+    <script src="https://vjs.zencdn.net/5.12.6/video.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/5.7.0/videojs-contrib-hls.js"></script>
+    <script src="libs/videojs-errors.js"></script>
+    <!--fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300,600,700' rel='stylesheet' type='text/css'>
+</head>
+<!--image plugin script-->
+<style type="text/css">
+.video-js {
+    font-size: 10px;
+    color: #fff;
+}
+
+.vjs-default-skin .vjs-big-play-button {
+    font-size: 3em;
+    line-height: 80px;
+    height: 80px;
+    width: 80px;
+    border: 4px solid #00AEEF;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    margin-left: -40px;
+    margin-top: -40px;
+}
+
+.video-js .vjs-control-bar,
+.video-js .vjs-big-play-button,
+.video-js .vjs-menu-button .vjs-menu-content {
+    background-color: #00AEEF;
+    background-color: #00aeef;
+}
+
+.video-js .vjs-slider {
+    background-color: #00AEEF;
+    background-color: rgba(0, 174, 239, 0.5);
+}
+
+.video-js .vjs-volume-level,
+.video-js .vjs-play-progress,
+.video-js .vjs-slider-bar {
+    background: #fff;
+}
+
+.video-js .vjs-load-progress {
+    background: ligthen(#00AEEF, 25%);
+    background: rgba(0, 174, 239, 0.5);
+}
+
+.video-js .vjs-load-progress div {
+    background: ligthen(#00AEEF, 50%);
+    background: rgba(0, 174, 239, 0.75);
+}
+
+.vjs-big-play-button {
+    border-radius: 50% !important;
+    height: 50px !important;
+    width: 50px !important;
+    margin-right: -25px !important;
+    margin-left: -25px !important;
+}
+
+#modalAudio .vjs-big-play-button {
+    left: 50%;
+    top: -40px;
+}
+
+.video-js .vjs-control.vjs-close-button {
+    display: none;
+}
+
+.video-js button {
+    display: none;
+}
+
+.vjs-error .vjs-error-display:before {
+    display: none;
+}
+
+#error_code {
+    display: none;
+}
+</style>
+
+<body style="background-color: #fff !important" onload="adjust_iframe_height()">
+    <div class="container" id="non-visible">
+        <div class="rny-embed-zoomblock">
+            <ul>
+                <li>
+                    <button class="rny-zoommbutton" id="normal_image"><span class="rny-white">N</span></button>
+                </li>
+                <li>zoom
+                    <button class="rny-zoommbutton" id="zoom_out_button"><span class="rny-white"> -</span></button>
+                </li>
+                <li>zoom
+                    <button class="rny-zoommbutton" id="zoom_in_button"><span class="rny-white"> +</span></button>
+                </li>
+                <li><span class="post-img" id="hide" style="color: #34495e;"> <img src="images/hide_embd.png" alt="rny-image">hide</span><span class="post-img" id="show" style="color: #34495e;"><img src="images/show_embd.png" alt="rny-image">show</span></li>
+            </ul>
+        </div>
+        <div class="rny-embed-img-outercontainer rny-fullviewimg-container">
+            <img class="img-responsive embed-imgCls" id="pod_image" src="" alt="rny-image">
+        </div>
+        <div style="text-align: center;">
+            <span class="embed-tap-view" id="showhotspots">
+                CLICK TO VIEW
+            </span>
+        </div>
+        <div class="embed-inner-container">
+            <div class="rny-post-description">Ethnic saree festival
+                <a class="rny-green" href="">#some</a><a class="rny-green" href="">#hashtags</a>
+            </div>
+            <div class="embed-post-info">
+                <span class="embed-post-info-child1">by</span>
+                <a href="#"><span class="embed-pub-name">kalanikethan</span></a>
+                <div class="rny-embed-post-timeDetails">
+                    <span class="rny-lightgrey">posted</span>
+                    <br>
+                    <span class="rny-midgrey">12 hours ago</span>
+                    <span class="rny-lightgrey rny-post-updatetime">(Updated 3 hours ago)</span>
+                </div>
+            </div>
+            <!-- <div class="embed-subscribe">
+                <a href="#" class="subscribe-btn popUp">SUBSCRIBE TO THIS POST</a>
+            </div> -->
+            <div class="embed-poweredby">
+                <a href="#">
+                    <span class="embed-poweredby-child1">powered by</span>
+                    <span class="embed-poweredby-child2">Renyoo</span>
+                </a>
+            </div>
+        </div>
+        <!-- <div class="embed-code">
+            <button class="embedCodeCopy">copy this code</button>
+        </div>
+        <div class="embed-code-div">
+            <textarea class="embedCopytextarea">
+            </textarea>
+        </div> -->
+    </div>
+    <div id="embedModalVideo" class="modal1">
+        <div class="embed-modal-content1">
+            <span class="embedCloseVideo"><img src="images/cancel.png"></span>
+        </div>
+    </div>
+    <div id="embedModalAudio" class="modal1">
+        <!-- Modal content -->
+        <div class="embed-modal-content1-audio">
+            <span class="embedCloseAudio"><img src="images/cancel.png"></span>
+        </div>
+    </div>
+    <!-- download app popup  -->
+    <div id="rny_app_download">
+        <div class="app-download-wrapper">
+            <span class="rny-app-close">close</span>
+            <div class="download-appImg">
+                <img src="images/mobile_icon.png">
+            </div>
+            <div class="download-appTxt">
+                <span class="app-download-text">Want to do more with Renyoo?</span>
+                <a href="#"><img src="images/play_icon.png" width="150px;" alt="rny-image"></a>
+            </div>
+        </div>
+    </div>
+    <!-- download app  popup end  -->
+    <div class="page-center" id="report-container" style="display: none;">
+        <div style="text-align: center;">
+            <img src="images/alert-icon.png" style="margin-bottom: 30px;">
+            <div class="report-message">This post was reported and is reviewed as inappropriate and/or against our community policies.
+                <br> Incase you are the publisher check your R'nyoo app and resubmit for re-review</div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+$(document).ready(function() {
+
+    var protoDomain = location.protocol + '//' + location.hostname + (location.port ? ':' + location.port : '');
+    var postUrl = protoDomain + '/home.html';
+    var embedCode = '<iframe src="' + postUrl + '" width="100%" frameborder="0" class="iframe-full-height"></iframe><script type="text/javascript">var frame = document.getElementById("rny_embed");frame.addEventListener("load", function load(event) {this.style.height = this.contentDocument.body.scrollHeight + "px";});<\/script>'
+    $(".embedCopytextarea").val(embedCode);
+
+    var adapter = {"visible_b":true,"uid_s":"IJbjPykd3h97YvellIZk8y1V1ds","screenName_s":"thebatman","rpostid_s":"BS91jSKzGJzUvyjp8sv7wsSImlF","rpid_s":"751cfeccf6e64599b44623c1b9f5ffa2","publicSharing_b":true,"postLocation_location":"17.3672666,78.4915709","postLocation_geohash":"tepff1egdj","postLikeCount":5,"postDescription_ts":"Join The League⚡ #Batman #Superman #Wonderwoman #JusticeLeague #DC ","podCommentCount":1,"pod":{"zoomScale":1,"rpid_s":"751cfeccf6e64599b44623c1b9f5ffa2","published_b":true,"pod_geohash":"tepg0u879q","podType_s":"private","podLocation_location":"17.4277,78.4318","podImage":{"webjpgUrl":"https://cdn.rnyoo.net/IJbjPykd3h97YvellIZk8y1V1ds/vaultfiles/rnya_ec91e68ae37c4eacabbb42b10811c507_400x400.jpg","thumbnailUrl":"https://cdn.rnyoo.net/IJbjPykd3h97YvellIZk8y1V1ds/vaultfiles/thumbs/thumb-rnya_ec91e68ae37c4eacabbb42b10811c507.webp","takenAt":1510344123000,"source":"gallery","resolution":"529x363","mimeType":"image/webp","jpgUrl":"https://cdn.rnyoo.net/IJbjPykd3h97YvellIZk8y1V1ds/vaultfiles/rnya_ec91e68ae37c4eacabbb42b10811c507.jpg","imgId":"rnya_ec91e68ae37c4eacabbb42b10811c507","baseUrl":"https://cdn.rnyoo.net/IJbjPykd3h97YvellIZk8y1V1ds/vaultfiles/rnya_ec91e68ae37c4eacabbb42b10811c507.webp"},"parentId":"751cfeccf6e64599b44623c1b9f5ffa2","ownership_s":"locked","ownedBy_s":"IJbjPykd3h97YvellIZk8y1V1ds","orientation":"portrait","name_t":"751cfeccf6e64599b44623c1b9f5ffa2","location_ts":"Hyderabad, India","keywords_t":"","hotspots":{"fd1eb8c3fda54eeb8f2f983ee843c03b":{"zoomFactor":1,"zeroHotspot_b":false,"sharable":true,"platformUpdatedOn":"android","platformCreatedOn":"android","media":{"video":[{"videoUrl":"https://cdn.rnyoo.net/IJbjPykd3h97YvellIZk8y1V1ds/vaultfiles/d54e4062-a21d-47af-be9d-0a00a2029920/d54e4062-a21d-47af-be9d-0a00a2029920.mp4","videoThumbUrl":"https://cdn.rnyoo.net/IJbjPykd3h97YvellIZk8y1V1ds/vaultfiles/2b04d17f-f756-4411-9b1f-23c25d823db9.jpg","videoId":"d54e4062-a21d-47af-be9d-0a00a2029920","streamfile":"https://cdn.rnyoo.net/IJbjPykd3h97YvellIZk8y1V1ds/vaultfiles/d54e4062-a21d-47af-be9d-0a00a2029920/d54e4062-a21d-47af-be9d-0a00a2029920.m3u8","stream_status":"completed"}],"images":[{"imageUrl":"https://cdn.rnyoo.net/IJbjPykd3h97YvellIZk8y1V1ds/vaultfiles/f2830b43-05b1-4b6d-9212-dd01b6357e07.jpg","imageId":"0bdf1c6ea3654083b15f05fafc839658"}],"docs":[],"audio":[]},"markerColor":"#94623A","locationMarker":"dot","location":{"y":102,"x":420},"lastUpdatedAt_l":1510348235573,"keywords_ts":"","hotspotLabel_ts":"Aquaman","hotspotId":"fd1eb8c3fda54eeb8f2f983ee843c03b","hotspotDescription_ts":"","editable":false,"createdAt_l":1510346127914,"clickUrl":""},"a9cdada09ab141cc9e987d9492fc22ea":{"zoomFactor":1,"zeroHotspot_b":false,"sharable":true,"platformUpdatedOn":"android","platformCreatedOn":"android","media":{"video":[{"videoUrl":"https://cdn.rnyoo.net/IJbjPykd3h97YvellIZk8y1V1ds/vaultfiles/fcd1969b-fc25-4065-9120-c0f4fa2b7116/fcd1969b-fc25-4065-9120-c0f4fa2b7116.mp4","videoThumbUrl":"https://cdn.rnyoo.net/IJbjPykd3h97YvellIZk8y1V1ds/vaultfiles/f90fcc95-4e7b-4aab-a0ae-09bff3b7aeb5.jpg","videoId":"fcd1969b-fc25-4065-9120-c0f4fa2b7116","streamfile":"https://cdn.rnyoo.net/IJbjPykd3h97YvellIZk8y1V1ds/vaultfiles/fcd1969b-fc25-4065-9120-c0f4fa2b7116/fcd1969b-fc25-4065-9120-c0f4fa2b7116.m3u8","stream_status":"completed"}],"images":[{"imageUrl":"https://cdn.rnyoo.net/IJbjPykd3h97YvellIZk8y1V1ds/vaultfiles/456e11c5-ac09-42c0-8585-2dbd75a5228e.jpg","imageId":"8389e394914949c18b8416d3c227d5bf"}],"docs":[],"audio":[]},"markerColor":"#2D6BC8","locationMarker":"dot","location":{"y":154,"x":116},"lastUpdatedAt_l":1510348115968,"keywords_ts":"","hotspotLabel_ts":"Superman","hotspotId":"a9cdada09ab141cc9e987d9492fc22ea","hotspotDescription_ts":"","editable":false,"createdAt_l":1510348071392,"clickUrl":""},"8c643e94678c489ab81a1f6f44f481e0":{"zoomFactor":0,"zeroHotspot_b":true,"sharable":true,"platformUpdatedOn":"android","platformCreatedOn":"android","media":{"video":[],"images":[],"docs":[],"audio":[]},"markerColor":"","locationMarker":"dot","location":{"y":0,"x":0},"lastUpdatedAt_l":1510345791301,"keywords_ts":"","hotspotLabel_ts":"pod","hotspotId":"8c643e94678c489ab81a1f6f44f481e0","hotspotDescription_ts":"","editable":false,"createdAt_l":1510345791301},"89cd9fa88bcb426c9f20b0e97c3be623":{"zoomFactor":1,"zeroHotspot_b":false,"sharable":true,"platformUpdatedOn":"android","platformCreatedOn":"android","media":{"video":[{"videoUrl":"https://cdn.rnyoo.net/IJbjPykd3h97YvellIZk8y1V1ds/vaultfiles/cc1fd51b-2717-4a21-aa4e-f90058a1f3d3/cc1fd51b-2717-4a21-aa4e-f90058a1f3d3.mp4","videoThumbUrl":"https://cdn.rnyoo.net/IJbjPykd3h97YvellIZk8y1V1ds/vaultfiles/19fddf72-177b-4407-8151-de83270d95a6.jpg","videoId":"cc1fd51b-2717-4a21-aa4e-f90058a1f3d3","streamfile":"https://cdn.rnyoo.net/IJbjPykd3h97YvellIZk8y1V1ds/vaultfiles/cc1fd51b-2717-4a21-aa4e-f90058a1f3d3/cc1fd51b-2717-4a21-aa4e-f90058a1f3d3.m3u8","stream_status":"completed"}],"images":[{"imageUrl":"https://cdn.rnyoo.net/IJbjPykd3h97YvellIZk8y1V1ds/vaultfiles/7e15e78f-dd22-4bdd-b747-cb1f306b8b13.jpg","imageId":"08a2da524dde4d5ba3a88abbb02d13c4"}],"docs":[],"audio":[]},"markerColor":"#A16932","locationMarker":"dot","location":{"y":120,"x":54},"lastUpdatedAt_l":1510348311170,"keywords_ts":"","hotspotLabel_ts":"The Flash","hotspotId":"89cd9fa88bcb426c9f20b0e97c3be623","hotspotDescription_ts":"","editable":false,"createdAt_l":1510346024002,"clickUrl":""},"82a22e90269f4c90a65599471145c8fe":{"zoomFactor":1,"zeroHotspot_b":false,"sharable":true,"platformUpdatedOn":"android","platformCreatedOn":"android","media":{"video":[{"videoUrl":"https://cdn.rnyoo.net/IJbjPykd3h97YvellIZk8y1V1ds/vaultfiles/019ab30a-901e-43c5-a840-19b5c704b032/019ab30a-901e-43c5-a840-19b5c704b032.mp4","videoThumbUrl":"https://cdn.rnyoo.net/IJbjPykd3h97YvellIZk8y1V1ds/vaultfiles/16a7abcf-b5fb-4367-8b91-d016944de63e.jpg","videoId":"019ab30a-901e-43c5-a840-19b5c704b032","streamfile":"https://cdn.rnyoo.net/IJbjPykd3h97YvellIZk8y1V1ds/vaultfiles/019ab30a-901e-43c5-a840-19b5c704b032/019ab30a-901e-43c5-a840-19b5c704b032.m3u8","stream_status":"completed"}],"images":[{"imageUrl":"https://cdn.rnyoo.net/IJbjPykd3h97YvellIZk8y1V1ds/vaultfiles/db0092fd-8f4b-4f33-b592-453b7a77890a.jpg","imageId":"924c45b577a74df5a9c28dc75edae2b8"}],"docs":[],"audio":[]},"markerColor":"#019A9E","locationMarker":"dot","location":{"y":161,"x":187},"lastUpdatedAt_l":1510348126122,"keywords_ts":"","hotspotLabel_ts":"Cyborg","hotspotId":"82a22e90269f4c90a65599471145c8fe","hotspotDescription_ts":"","editable":false,"createdAt_l":1510345980239,"clickUrl":""},"3e067be5224f4c2a85431bac7ba30975":{"zoomFactor":1,"zeroHotspot_b":false,"sharable":true,"platformUpdatedOn":"android","platformCreatedOn":"android","media":{"video":[{"videoUrl":"https://cdn.rnyoo.net/IJbjPykd3h97YvellIZk8y1V1ds/vaultfiles/98f4abdf-8bca-4bc6-bcb7-e98079bbc9e5/98f4abdf-8bca-4bc6-bcb7-e98079bbc9e5.mp4","videoThumbUrl":"https://cdn.rnyoo.net/IJbjPykd3h97YvellIZk8y1V1ds/vaultfiles/e1c9f7e7-9851-4d71-a240-95c9bb30ec8e.jpg","videoId":"98f4abdf-8bca-4bc6-bcb7-e98079bbc9e5","streamfile":"https://cdn.rnyoo.net/IJbjPykd3h97YvellIZk8y1V1ds/vaultfiles/98f4abdf-8bca-4bc6-bcb7-e98079bbc9e5/98f4abdf-8bca-4bc6-bcb7-e98079bbc9e5.m3u8","stream_status":"completed"}],"images":[{"imageUrl":"https://cdn.rnyoo.net/IJbjPykd3h97YvellIZk8y1V1ds/vaultfiles/926724f7-270c-43ae-b734-d350d98b78ac.jpg","imageId":"f56cb64f784e43b4ad1ffeca3e02fb2f"}],"docs":[],"audio":[]},"markerColor":"#CF4354","locationMarker":"dot","location":{"y":160,"x":279},"lastUpdatedAt_l":1510348364703,"keywords_ts":"","hotspotLabel_ts":"Wonder Woman","hotspotId":"3e067be5224f4c2a85431bac7ba30975","hotspotDescription_ts":"","editable":false,"createdAt_l":1510345801652,"clickUrl":""},"329ecc4be5cd41f1979072e6094d2c25":{"zoomFactor":1,"zeroHotspot_b":false,"sharable":true,"platformUpdatedOn":"android","platformCreatedOn":"android","media":{"video":[{"videoUrl":"https://cdn.rnyoo.net/IJbjPykd3h97YvellIZk8y1V1ds/vaultfiles/bef434b1-08ea-410c-b2ed-86e726c793b5/bef434b1-08ea-410c-b2ed-86e726c793b5.mp4","videoThumbUrl":"https://cdn.rnyoo.net/IJbjPykd3h97YvellIZk8y1V1ds/vaultfiles/c8f98cb1-e035-42f6-a6cb-0ae6c10747a8.jpg","videoId":"bef434b1-08ea-410c-b2ed-86e726c793b5","streamfile":"https://cdn.rnyoo.net/IJbjPykd3h97YvellIZk8y1V1ds/vaultfiles/bef434b1-08ea-410c-b2ed-86e726c793b5/bef434b1-08ea-410c-b2ed-86e726c793b5.m3u8","stream_status":"completed"}],"images":[{"imageUrl":"https://cdn.rnyoo.net/IJbjPykd3h97YvellIZk8y1V1ds/vaultfiles/e286ec3a-22f3-4bfc-838a-f924abce980c.jpg","imageId":"cd87ef7ba00143aeb367641f5638379d"}],"docs":[],"audio":[]},"markerColor":"#607D8B","locationMarker":"dot","location":{"y":138,"x":357},"lastUpdatedAt_l":1510348186418,"keywords_ts":"","hotspotLabel_ts":"Batman","hotspotId":"329ecc4be5cd41f1979072e6094d2c25","hotspotDescription_ts":"","editable":false,"createdAt_l":1510345920063,"clickUrl":""}},"draft_b":false,"deviceId_s":"357851081116803","description_ts":"","createdBy_s":"IJbjPykd3h97YvellIZk8y1V1ds","channel_t":""},"noOfViews":398,"media":{"video":[{"videoUrl":"https://cdn.rnyoo.net/IJbjPykd3h97YvellIZk8y1V1ds/vaultfiles/6240499f-ebfe-4426-a38b-317203874b06/6240499f-ebfe-4426-a38b-317203874b06.mp4","videoThumbUrl":"https://cdn.rnyoo.net/IJbjPykd3h97YvellIZk8y1V1ds/vaultfiles/1ef3c1f0-1dde-49ab-9720-432e6f5329b8.jpg","videoId":"6240499f-ebfe-4426-a38b-317203874b06","streamfile":"https://cdn.rnyoo.net/IJbjPykd3h97YvellIZk8y1V1ds/vaultfiles/6240499f-ebfe-4426-a38b-317203874b06/6240499f-ebfe-4426-a38b-317203874b06.m3u8","stream_status":"completed"}],"images":[{"imageUrl":"https://cdn.rnyoo.net/IJbjPykd3h97YvellIZk8y1V1ds/vaultfiles/b595c41e-198c-472a-9c2e-a64ccf8b8404.jpg","imageId":"03471ca8a58c4c16b2300d5b86eb7ecb"},{"imageUrl":"https://cdn.rnyoo.net/IJbjPykd3h97YvellIZk8y1V1ds/vaultfiles/33e99651-89cc-435d-9429-bd6c68a485b9.jpg","imageId":"93f1824d146b44cea85f7bdd920d6c02"}],"docs":[],"audio":[]},"location_ts":"Warner Bros Dr, Franklin, NC 28734, USA","lastUpdatedAt_l":1510899975000,"keywords_ts":"#Batman,#Superman,#Wonderwoman,#JusticeLeague,#DC","hotspotsShared":[],"hotspotStats":{"329ecc4be5cd41f1979072e6094d2c25":{"commentCount":1}},"createdAt_l":1510349638000,"channel_ts":"Movies, Music","changeLog":{"deleted":[],"changed":["published_b","draft_b"],"added":[]},"avatar":"https://cdn.rnyoo.net/IJbjPykd3h97YvellIZk8y1V1ds/avatars/ProfilePic-1510351347410.png","apiVersion":"v1"};
+    rnyooPodDataBind(adapter);
+});
+
+function adjust_iframe_height(){
+    var actual_height = document.getElementById('htmlHeight').scrollHeight;
+    parent.postMessage(actual_height,"*");
+} 
+</script>
+
+</html>

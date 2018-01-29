@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.js"></script>
+</head>
+
+<body>
+    <div style="    position: absolute;
+    width: 500px;
+    height: 500px;
+    top: 0px;
+    overflow: hidden;">
+        <img id="hammerelement" class="myContainer" src="https://thumb1.shutterstock.com/display_pic_with_logo/498262/201006434/stock-photo-cute-panda-in-tree-201006434.jpg" style="    transform: translate(0px, 0px) scale(1, 1);">
+    </div>
+    <script>
+    // <img id="myimage" src="http://placecage/1280/720">
+    var image = document.getElementById('hammerelement');
+    var webpage = document.querySelector('.myContainer');
+    var mc = new Hammer.Manager(image);
+
+    var pinch = new Hammer.Pinch();
+    var pan = new Hammer.Pan();
+
+    pinch.recognizeWith(pan);
+
+    mc.add([pinch, pan]);
+
+    var adjustScale = 1;
+    var adjustDeltaX = 0;
+    var adjustDeltaY = 0;
+
+    var currentScale = null;
+    var currentDeltaX = null;
+    var currentDeltaY = null;
+
+    function zooming(ev) {
+        var transforms = [];
+
+        // Adjusting the current pinch/pan event properties using the previous ones set when they finished touching
+        currentScale = adjustScale * ev.scale;
+        currentDeltaX = adjustDeltaX + (ev.deltaX / currentScale);
+        currentDeltaY = adjustDeltaY + (ev.deltaY / currentScale);
+        
+            transforms.push('scale(' + currentScale + ')');
+        transforms.push('translate(' + currentDeltaX + 'px,' + currentDeltaY + 'px)');
+        image.style.transform = transforms.join(' ');
+
+        // Concatinating and applying parameters.
+    }
+    image.addEventListener("mousewheel", MouseWheelHandler, false);
+    function MouseWheelHandler(e) {
+        var scrollStep = 0.05;
+    // cross-browser wheel delta
+    var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
+    image.scale.x += delta *scrollStep;
+    image.scale.y += delta *scrollStep;
+
+    return false;
+}
+    mc.on("pinch pan", function(ev) {
+        zooming(ev);
+    });
+
+    mc.on("panend pinchend", function(ev) {
+
+        // Saving the final transforms for adjustment next time the user interacts.
+        adjustScale = currentScale;
+        adjustDeltaX = currentDeltaX;
+        adjustDeltaY = currentDeltaY;
+
+    });
+    </script>
+</body>
+
+</html>

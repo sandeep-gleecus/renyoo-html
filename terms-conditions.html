@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Renyoo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="" />
+    <!--css-->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/nice-select.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" />
+    <!--js-->
+    <script src="libs/jquery.min.js"></script>
+    <script src="libs/bootstrap.min.js"></script>
+    <script src="libs/jquery.nice-select.js"></script>
+    <!--fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300,600,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <!-- header section -->
+    <div class="rny-chanl-post-list-header-bar">
+        <div class="container">
+            <a><img src="images/menu.png" alt="rny-image" class="menu-icon-mb" id="menu"></a>
+            <a class="rny-logo"><img class="rny-logo-mb" src="images/rny-logo.png" alt="rny-image"></a>
+            <div class="input-block">
+                <input class="search-bar" type="text" id="search" name="search-content" placeholder="i'm looking for...">
+                <span class="submit-searchicon"><input type="image" name="submit" src="images/search_icon.png" alt="rny-image"></span>
+                <select id="search_keywords">
+                    <ul>
+                        <li>
+                            <option value="Keywords">Keywords</option>
+                        </li>
+                        <li>
+                            <option value="Channels">Channels</option>
+                        </li>
+                        <li>
+                            <option value="Locations">Locations</option>
+                        </li>
+                    </ul>
+                </select>
+            </div>
+            <span class="mb-searchicon"><img class="search-icon" src="images/search_icon.png" alt="rny-image"></span>
+            <a href="#" class="google-play-logo"><img class="playstore-logo-mb" src="images/play_icon.png" alt="rny-image"></a>
+        </div>
+    </div>
+    <!-- header section end -->
+    <!-- menu overlay section -->
+    <div class="menu-overlay">
+        <div class="container">
+            <div class="menu-close">
+                <img src="images/menu_close.png" alt="rny-image">
+            </div>
+            <div class="menu-overlay-content">
+                <div class="overlay-menu-list">
+                    <ul>
+                        <li><a href="https://play.google.com/store/apps/details?id=com.app.renyoo.android">DOWNLOAD</a></li>
+                        <li><a href="getting-started.html">GETTING STARTED</a></li>
+                        <li><a href="business.html">BUSINESS</a></li>
+                        <li><a href="privacy-policy.html">PRIVACY</a></li>
+                        <li><a href="terms-conditions.html">TERMS &amp; CONDITIONS</a></li>
+                        <li><a href="mailto:support@renyoo.com">SUPPORT</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                    </ul>
+                </div>
+                <div class="verification-block">
+                    <div class="rny-verifydropline">
+                        <p class="rny-verify-text">Want to have a verified account on Renyoo or know how to reach your audience effectively?</p>
+                        <a href="mailto:support@renyoo.com" class="rny-dropline">Drop in a line.</a>
+                    </div>
+                    <div class="overlay-connect-block">
+                        <h1 class="overlay-h1-cls">CONNECT</h1>
+                        <ul>
+                            <li><a href="https://www.facebook.com/Renyoo-220849128296067/" target="_blank"><i class="fa fa-facebook fa-icon-align" aria-hidden="true"></i></a></li>
+                            <li><a href="https://plus.google.com/u/0/communities/116794355079467123192" target="_blank"><i class="fa fa-google-plus fa-icon-align" aria-hidden="true"></i></a></li>
+                            <li><a href="https://twitter.com/renyooapp" target="_blank"><i class="fa fa-twitter fa-icon-align" aria-hidden="true"></i></a></li>
+                            <li><a href="mailto:support@renyoo.com"><i class="fa fa-envelope-o fa-icon-align" aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.youtube.com/channel/UCxHyHpsRxmfdcZKje0jx4Yg"><i class="fa fa-youtube fa-icon-align" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- menu overlay section end -->
+    <!-- mobile search view section(click on search icon) -->
+    <div class="mobile-search-view">
+        <div class="mb-search-block">
+            <div class="close-btn">
+                <span class="search-close">close</span>
+            </div>
+            <div class="searchbar">
+                <input class="mb-search-bar" type="text" id="search" name="search-content" placeholder="i'm looking for...">
+            </div>
+            <div class="keywords-block">
+                <span class="keywords">look within</span>
+                <ul>
+                    <li><a href="#"><img src="images/hashtag.png" alt="rny-image">Keywords</a></li>
+                    <li><a href="#"><img src="images/channels.png" alt="rny-image">Channels</a></li>
+                    <li><a href="#"><img src="images/locations.png" alt="rny-image">Locations</a></li>
+                </ul>
+            </div>
+            <div class="searc-btn-cls">
+                <input class="mb-search-btn" type="button" name="submit" value="SEARCH">
+            </div>
+        </div>
+    </div>
+    <!-- mobile search view section(click on search icon) end -->
+    <!-- terms and conditions content section -->
+    <div class="container" id="terms">
+        <h1 class="terms-header">TERMS OF USE</h1>
+        <p class="prvcy-polcy-text">This Terms of Use Agreement ("Agreement") constitutes a legally binding contract between RENYOOIT LLC ("RENYOO," "we," "us," "our") and you with respect to your use of the RENYOO Service, RENYOO applications for mobile devices, and the Information and Services (each as defined below) (collectively, the "Service"). It is important that you carefully read and understand the terms and conditions of this Agreement. By using the Service, you agree to be bound by this Agreement. If you do not agree to these terms and conditions, please do not use the Service or any of the Information or Services. Be advised that this Agreement contains disclaimers of warranties and limitations on liability that may be applicable to you.</p>
+        <p class="prvcy-polcy-text">We reserve the right at any time, with or without cause, to:</p>
+        <ul class="terms-use">
+            <li><span>&middot;</span> Change the terms and conditions of this Agreement;</li>
+            <li><span>&middot;</span> Change the Service, including eliminating or discontinuing any Information or Services or other feature of the Service; or</li>
+        </ul>
+        <h1 class="side-header">Basic Terms of Use</h1>
+        <p class="prvcy-polcy-text">
+            <ul class="terms-use">
+                <li><span>&middot;</span> You must be at least 13 years old to use the Service.</li>
+                <li><span>&middot;</span> You may not post violent, nude, discriminatory, blasphemous, unlawful, infringing, hateful, pornographic or sexually suggestive content via the Service. If such content is found on Renyoo by its administrators or reported by other users, it would be either asked to be deleted or deleted without warning at the discretion of Renyoo based on its Terms of Use.</li>
+                <li><span>&middot;</span> You agree to not report posts without viable justification.</li>
+                <li><span>&middot;</span> You are responsible for any activity that takes place from your registered account and you agree to not sell, license or transfer your account or its subsequent details.</li>
+                <li><span>&middot;</span> You are not to create accounts or pose as account holders for specific brands, retailers, organizations, governments or such entities without the consent and specialized licensing under Renyoo. In-case such a need arises you must contact Renyoo business team at <a href="mailto:support@renyoo.co">support@renyoo.co</a> to obtain the specific rights and licenses.</li>
+                <li><span>&middot;</span> You agree to provide and own true and accurate registration details to Renyoo when signing up for the Service.</li>
+                <li><span>&middot;</span> You will not collect and solicit account information or any other information like and not limited to social security numbers, credit card numbers, identification of other users of the Service.</li>
+                <li><span>&middot;</span> You are responsible for keeping your password secure and secret.</li>
+                <li><span>&middot;</span> You agree to be civil with other fellow users in public or private communication while using the Service and not resort to stalking, bullying, defaming, harassing, threatening and impersonating other users.</li>
+                <li><span>&middot;</span> You may not use the Service for any illegal and unauthorized purposes and agree to abide to all laws, rules and regulations. In-case such activity is found you agree to indemnify Renyoo from all actions from the law and regulations and in such a scenario allow Renyoo to submit your account and content details to the authorized law authorities after scrutiny of all such requests.</li>
+                <li><span>&middot;</span> You are responsible for your conduct and content on the Service and agree to abide by copyright laws.</li>
+                <li><span>&middot;</span> You must not change, modify, reverse engineer, scrape or alter the Service, its servers, its features and falsely replicate and market a clone of the Service..</li>
+                <li><span>&middot;</span> You must not access, crawl and collect Renyoo’s Private APIs and data by any other means other than permitted by Renyoo.</li>
+                <li><span>&middot;</span> You must not SPAM</li>
+                <li><span>&middot;</span> You agree to not to disrupt the Service, its servers, features and the safety and security of its users and their content by means of transmitting and injecting worms, viruses, spyware, malware or any other code of a disruptive and or destructive nature.</li>
+                <li><span>&middot;</span> You must not create accounts, content, chats, comments, likes and other such feature of the Service by means of automated services and scripts.</li>
+                <li><span>&middot;</span> You must not attempt to disrupt the Service for any other user or incite such actions of other users.</li>
+                <li><span>&middot;</span> You agree that violation of these Terms of Use and its future revisions under the scrutiny and discretion of Renyoo might result in the termination of your Renyoo account and all the provisions under its Service.</li>
+            </ul>
+        </p>
+        <h1 class="side-header">Deny or terminate your use of and/or access to the Service</h1>
+        <p class="prvcy-polcy-text">Any changes we make will be effective immediately upon our making such changes available on the Service or otherwise providing notice thereof. You agree that your continued use of the Service after such changes constitutes your acceptance of such changes. You hereby acknowledge that you have carefully read all of the terms and conditions of our Privacy Policy (which can be accessed at httpss://www.renyoo.co/privacypolicy) and agree to all such terms and conditions. Be sure to return to this page periodically to ensure familiarity with the most current version of this Agreement.</p>
+        <h1 class="side-header">Permitted Use of Services and Information</h1>
+        <p class="prvcy-polcy-text">The services made available on, by or through the Service, which include or may include, without limitation, RENYOO registration, marketplace for third-party products and services, postings, message boards and involvement in RENYOO events (collectively, the "Services"), as well as any information provided on, by or through the Service or as part of or in connection with the Services or otherwise, including but not limited to data, text, graphics, designs, logos, images, audio/visual materials, links and references (collectively, the "Information"), are provided for personal use only and not for any for-profit or commercial activities or purpose or for resale, except as expressly permitted herein. Without the written consent of RENYOO, no Information or any other RENYOO materials or property may be copied, reproduced, displayed, republished, downloaded, posted, digitized, translated, modified, transmitted, distributed or commercially exploited in any way, except as expressly permitted herein.
+            <br> RENYOO permits you to view and print a reasonable number of copies of web pages located on the Service for your own personal use, but not for any for-profit or commercial purpose or for resale; provided that (a) you retain all trademark, copyright, and other proprietary notices contained in the original materials, (b) you provide attribution to RENYOO, (c) the material is printed in its entirety without modification, reformatting or adaptation of any kind, and (d) any such copies are subject to the terms and conditions of this Agreement and remain the property of RENYOO. You understand and agree that you may not authorize any Information to be reproduced, modified, displayed, performed, transferred, distributed or otherwise used by any third party, and you agree that you will take all reasonable steps to prevent any unauthorized reproduction and/or other use of the Information. You agree to advise RENYOO promptly of any such unauthorized use of which you are aware. Failure to abide by these conditions will immediately terminate this permission and may result in the infringement of the copyrights and/or trademarks and other proprietary rights of RENYOO or others.</p>
+        <h1 class="side-header">Registration</h1>
+        <p class="prvcy-polcy-text">Access to certain functionalities of the Service will require you to register with and/or provide certain information to RENYOO. We reserve the right to decline to provide Services to any person for any or no reason. If and when you register with or provide information to RENYOO, you agree to (a) provide accurate, current and complete information about yourself as prompted (including your email address) and (b) maintain and update your information (including your email address) to keep it accurate, current and complete. You acknowledge that, if any information provided by you is untrue, inaccurate, not current or incomplete, we reserve the right to terminate this Agreement and your use of the Service, Services, and/or Information. You understand that any information you provide will be treated by RENYOO in the manner described in our Privacy Policy, which can be found at https://www.renyoo.co/privacypolicy.</p>
+        <h1 class="side-header">Postings and Other Submissions</h1>
+        <p class="prvcy-polcy-text">
+            As part of your use of the Service, you may participate in certain postings, message boards, member communications and/or other public forums. Your participation is voluntary; however, by choosing to post content, annotations, tags, comments, send any messages, submit any ideas or feedback, or otherwise participate in any RENYOO forum, you acknowledge and agree that any postings, messages, text, photos, audio/visual works, information, suggestions, feedback, reviews or content provided by you (collectively, "Content") may be viewed by the general public and will not be treated as private, proprietary or confidential, and you authorize RENYOO and our affiliates, licensees and sublicensees, without compensation to you or others, to copy, adapt, create derivative works of, reproduce, incorporate, distribute, publicly display or otherwise use or exploit such Content throughout the world in any format or media (whether now known or hereafter created) for the duration of any copyright or other rights in such Content, and such permission shall be perpetual and may not be revoked for any reason. Further, to the extent permitted under applicable law, you waive and release and covenant not to assert any moral rights that you may have in any Content posted or provided by you. RENYOO acknowledges and agrees that you, or your licensors as applicable, retain ownership of any and all copyrights in the Content, subject to the non-exclusive rights granted to RENYOO in the paragraph above, and that no ownership of such copyrights is transferred to RENYOO under these terms. Further, with respect to Content in the form of photos, and subject to RENYOO product and user experience considerations (a) RENYOO will use commercially reasonable efforts to maintain the attribution of such photos as submitted by you, and (b) RENYOO will not license or sublicense to third parties individual photo Content or collections of photo Content submitted by you, except in each case for RENYOO Business Purposes. “RENYOO Business Purposes” means any use in connection with a RENYOO-branded or co-branded Service, application, publication or service, or any use which advertises, markets or promotes RENYOO, or its affiliates.
+            <br> By posting or providing any Content on the Service, you represent and warrant to RENYOO that you own or have the right to use and permit us to use and license such Content in the manner stated in this Agreement. By way of example and not limitation, if you post or otherwise provide a photograph which includes an image of any person, you need to first obtain permission or a release from such person appearing in the photograph to use their image and permit us to use and license it as stated in this Agreement and you must be the owner or licensee of the copyright in the photograph, with the right to permit us to use it as stated in this Agreement. By way of further example and not limitation, if you post or otherwise provide a photograph of a pictorial, graphic, sculptural or architectural work that is protected by copyright, you need to first obtain permission or a release from the owner of the copyright in such work to reproduce and adapt their work and permit us to use it as stated in this Agreement and you must be the owner or licensee of the copyright in the photograph, with the right to permit us to use it as stated in this Agreement. You agree not to post or provide any Content that belongs to any person other than yourself or that contains the name, voice or likeness of any person other than yourself unless you first obtain permission to do so, and to grant to us the rights granted in this agreement, from that person. If you identify yourself by name or provide a picture or audio or video recording of yourself, you further authorize us and our affiliates, licensees and sublicensees, without compensation to you or others, to reproduce, print, publish and disseminate in any format or media (whether now know or hereafter created) your name, voice and likeness throughout the world, and such permission shall be perpetual and cannot be revoked for any reason.
+            <br> You further agree that we may use the posted or provided Content in any manner that we deem appropriate or necessary. We reserve the right to edit or abridge any Content for any reason, and to edit, refuse to post or remove any Content submitted by you or others. We cannot and do not guarantee that we will post all Content submitted or that such content will not be offensive, defamatory or objectionable. Although we reserve the right to remove without notice any Content for any reason, we have no obligation to delete Content that you personally may find objectionable or offensive. We do not control in real time the Content posted via the Services and as such do not guarantee the accuracy, integrity or quality of such Content. In addition to other disclaimers found in this Agreement, we do not endorse or make any warranties or representations with respect to the accuracy, completeness or timeliness of any Content posted on the Service.</p>
+        <h1 class="side-header">Third-Party Links</h1>
+        <p class="prvcy-polcy-text">The Service may contain links to other Services for your convenience. We do not control the linked Services or the content provided through such Services, and we have not reviewed, in their entirety, such Services. Your use of linked Services is subject to the privacy practices and terms of use established by the specific linked Service, and we disclaim all liability for such use. The fact that we offer such links does not indicate any approval or endorsement by us of any linked Service or any material contained on any linked Service, and we disclaim any such approval or endorsement.</p>
+        <h1 class="side-header">Acceptable Use Policy</h1>
+        <div class="terms-use-information-points">
+            <p class="prvcy-polcy-text">You agree not to use the Information, Services or the Service to take any action or actions that:
+                <br> a) are contrary to RENYOO's public image, goodwill or reputation;
+                <br> b) infringe on our or any third party's copyright, patent, trademark, trade secret or other proprietary rights or rights of publicity or privacy;
+                <br> c) express or imply that any of your statements, activities or causes are endorsed by us, without our prior written consent in each instance;
+                <br> d) violate any applicable law, statute, ordinance or regulation, or encourage any conduct that could constitute a criminal offense or give rise to civil liability;
+                <br> e) are libellous, defamatory, threatening, harassing, invasive of privacy, abusive, tortious, hateful, discriminatory, pornographic or obscene;
+                <br> f) transmit any trade secret or other material, non-public information about any person, company or entity without the authorization to do so;
+                <br> g) restrict or inhibit any other visitor from using the Service, including, without limitation, by means of "hacking" or defacing any portion of the Service;
+                <br> h) modify, adapt, sub-license, translate, sell, reverse engineer, decompile, or disassemble any portion of the Service or Information;
+                <br> i) remove any copyright, trademark, or other proprietary rights notices contained in or on the Information, Service, or Services;
+                <br> j) sublicense, sell, rent, lease, transfer, assign, or convey any rights under this Agreement to any third party, or otherwise commercially exploit or profit from the Information or content of the Service, or any portion thereof, in any manner whatsoever, except as expressly permitted herein;
+                <br> k) "frame" or "mirror" any part of the Service without our prior written authorization;
+                <br> l) distribute any virus, worm or other similar or deleterious files, scripts or programming routines;
+                <br> m) interfere with or disrupt any services or equipment with the intent of causing an excessive or disproportionate load on the infrastructure of RENYOO or its licensors or suppliers;
+                <br> n) involve the preparation or distribution of junk mail, spam, chain letters, pyramid schemes, or other deceptive or unsolicited bulk or commercial email, or violate in any way the Controlling the Assault of Non-Solicited Pornography and Marketing Act (CAN-SPAM Act of 2003);
+                <br> o) use any robot, spider, site search/retrieval application, or other manual or automatic device or process to retrieve, index, "data mine" the Service or in any way reproduce or circumvent the navigational structure or presentation of the Service or its contents, authentication and security measures;
+                <br> p) forge headers or otherwise manipulate identifiers in order to disguise the origin of any submission;
+                <br> q) execute any form of network monitoring or run a network analyzer or packet sniffer or other technology to intercept, decode, mine or display any packets used to communicate between the Service's servers or any data not intended for you; and/or
+                <br> r) harvest or collect information about any Service visitors or members without their express consent.
+                <br> Improper use of the Information, Services and Service may result in termination of your access to and use of the Service, and/or civil or criminal liabilities.</p>
+        </div>
+        <h1 class="side-header">Ownership</h1>
+        <p class="prvcy-polcy-text">The Service is owned and operated by RENYOO and its licensors, and the Information and Services (and any intellectual property and other rights relating thereto) are and will remain the property of RENYOO and its licensors and suppliers. The Information and Services are protected by U.S. and international copyright, trademark, and other laws, and you acknowledge that these rights are valid and enforceable. Except as set forth in this Agreement, you may not copy, reproduce, modify, adapt, translate, republish, upload, post, transmit, distribute, sub-license, sell, reverse engineer, decompile, or disassemble any part of the Service or any Service or Information without our prior written permission. The Information, Service, and Services may be used solely (a) to the extent permitted in this Agreement or (b) as expressly authorized in writing by RENYOO or, if so indicated in writing by RENYOO, its licensors or suppliers. Use of the Service or any Services or Information for any other purpose is strictly prohibited. You acknowledge that you do not acquire any ownership rights by using the Service or any Services or Information.
+            <br> The trademarks, logos, and service marks displayed on the Service (collectively, the "Trademarks") are the [registered and unregistered] trademarks of RENYOO, RENYOO licensors and suppliers, and/or others. RENYOO® is a registered trademark of RENYOO, Inc. Nothing contained in this Agreement or the Service should be construed as granting, by implication, estoppel, or otherwise, any license or right to use any Trademark(s) without the express written permission of RENYOO, RENYOO licensors or suppliers, or the third party owner of any such Trademark, except as set forth in the following paragraph.</p>
+        <h1 class="side-header">No Use by Children Under 13</h1>
+        <p class="prvcy-polcy-text">You hereby affirm that you are over the age of 12, as this Service is not intended for children under 13. If you are under 13 years of age, then you may not use the Service. You further affirm that you are fully able and competent to enter into the terms, conditions, obligations, affirmations, representations, and warranties set forth in this Agreement, and to abide by and comply with this Agreement.</p>
+        <h1 class="side-header">Claims of Copyright or Trademark Infringement</h1>
+        <p class="prvcy-polcy-text">The Digital Millennium Copyright Act (the "DMCA") provides recourse for copyright owners who believe that material appearing on the Internet infringes their rights under U.S. copyright law. RENYOO also reviews claims of trademark infringement. If you believe in good faith that materials hosted by RENYOO infringe your copyright or trademark rights, you (or your agent) may send us a notice requesting that the material be removed, or access to it blocked. The notice must include the following information: (a) a physical or electronic signature of a person authorized to act on behalf of the owner of an exclusive right that is allegedly infringed; (b) identification of the copyrighted work or trademark claimed to have been infringed (or if multiple copyrighted works or trademarks located on the Service are covered by a single notification, a representative list of such works); (c) identification of the material that is claimed to be infringing or the subject of infringing activity, and information reasonably sufficient to allow RENYOO to locate the material on the Service; (d) the name, address, telephone number, and email address (if available) of the complaining party; (e) a statement that the complaining party has a good faith belief that use of the material in the manner complained of is not authorized by the copyright or trademark owner, its agent, or the law; and (f) a statement that the information in the notification is accurate and, under penalty of perjury, that the complaining party is authorized to act on behalf of the owner of an exclusive right that is allegedly infringed. Please be advised that RENYOO will not respond to complaints that do not meet these requirements. If RENYOO determines that the materials alleged to infringe your copyright or trademark rights do not require removal, RENYOO will remove those materials only pursuant to a court order declaring the content or use of the materials unlawful.
+            <br> If you believe in good faith that a notice of copyright infringement has been wrongly filed against you, the DMCA permits you to send us a counter-notice. Counter-notices must include the following information: (a) your name, address, and telephone number; (b) the source of the content that was removed; (c) a statement under penalty of perjury that you have a good faith belief that the content was removed in error; (d) a statement that you consent to the jurisdiction of Federal District Court for the judicial district in which your address is located, or if your address is outside of the United States, for any judicial district in which RENYOO may be found, and that you will accept service of process from the person who provided the original complaint; and (e) a physical or electronic signature (for example, typing your full name).
+            <br> Notices and counter-notices with respect to the Service must meet the then-current statutory requirements imposed by the DMCA (see https://www.loc.gov/copyright for details) and should be sent to the agent identified below. We suggest that you consult your legal advisor before filing a notice or counter-notice. Also, be aware that there can be penalties for false claims under the DMCA.</p>
+        <p class="prvcy-polcy-text">Agent to Receive Notices of Claimed Infringement:
+            <br> <a href="mailto:support@renyoo.co">support@renyoo.co</a>
+            <br> DMCA Complaints
+            <br> RENYOOIT LLC.
+            <br>San Jose, CA</p>
+        <h1 class="side-header">Term &#38; Termination</h1>
+        <p class="prvcy-polcy-text">This Agreement is effective from the date that you first access the Service or submit any information to RENYOO, whichever is earlier, and shall remain effective until terminated in accordance with its terms. RENYOO may immediately terminate this Agreement, and/or your access to and use of the Service, or any portion thereof, at any time and for any reason, with or without cause, without prior notice. This Agreement will also terminate automatically if you fail to comply with any term or provision of this Agreement. Upon termination of this Agreement by either party, your right to use the Service shall immediately cease, and you shall destroy all copies of information that you have obtained from the Service, whether made under the terms of this Agreement or otherwise. All disclaimers and all limitations of liability and all RENYOO rights of ownership shall survive any termination.
+            <br> We reserve the right at any time and from time to time to modify, discontinue, temporarily or permanently, the Service, or any part or portion thereof, with or without notice to you. You agree that we shall not be liable to you or to any third party for any modification, suspension or discontinuance of the Service, or any part of portion thereof. Nothing in this Agreement shall be construed to obligate RENYOO to maintain and support the Service, or any part or portion thereof, during the term of this Agreement.</p>
+        <h1 class="side-header">Disclaimers</h1>
+        <p class="prvcy-polcy-text">THE SERVICE, INCLUDING BUT NOT LIMITED TO THE INFORMATION AND SERVICES, ARE PROVIDED "AS IS" AND "WITH ALL FAULTS" AND WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, AND ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING, WITHOUT LIMITATION, IMPLIED WARRANTIES OF TITLE, NON-INFRINGEMENT, ACCURACY, COMPLETENESS, MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, ANY WARRANTIES THAT MAY ARISE FROM COURSE OF DEALING, COURSE OF PERFORMANCE OR USAGE OF TRADE, AND ANY WARRANTIES THAT THE INFORMATION AND SERVICE IS CURRENT AND/OR UP-TO-DATE ARE HEREBY EXPRESSLY DISCLAIMED TO THE FULLEST EXTENT PERMISSIBLE UNDER APPLICABLE LAW.
+            <br> THERE IS NO WARRANTY, REPRESENTATION OR GUARANTEE THAT THE SERVICE, OR YOUR USE OF THE SERVICE, WILL BE UNINTERRUPTED, COMPLETE, ACCURATE, CURRENT, RELIABLE, ERROR-FREE, SECURE, OR THAT ANY PROBLEMS WILL BE CORRECTED, OR THAT THE SERVICE, OR ANY INFORMATION, SOFTWARE OR OTHER MATERIAL ACCESSIBLE FROM THE SERVICE, IS FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS. WE DO NOT WARRANT, GUARANTEE, OR MAKE ANY REPRESENTATION REGARDING THE USE OF, OR THE RESULTS OF THE USE OF THE SERVICE EITHER IN TERMS OF ITS COMPATIBILITY WITH HARDWARE OR OTHER SOFTWARE OR EQUIPMENT, AND YOU ASSUME ALL RESPONSIBILITY AND RISK FOR YOUR USE OF THE SERVICE AND/OR SERVICES AND INFORMATION AND YOUR RELIANCE THEREON.
+            <br> RENYOO MAKES NO WARRANTY, REPRESENTATION OR GUARANTEE WITH RESPECT TO PRODUCTS AND SERVICES OFFERED BY THIRD-PARTY SELLERS ON THE SERVICE, AND RENYOO SPECIFICALLY DISCLAIMS ANY WARRANTY, REPRESENTATION OR GUARANTEE WITH RESPECT TO THE QUALITY, SAFETY, LEGALITY OR OTHER CHARACTERISTICS OF SUCH PRODUCTS AND SERVICES, OR WITH RESPECT TO THE CONDUCT OF ANY THIRD-PARTY SELLER IN CONNECTION WITH SUCH OFFERS OR SALES.</p>
+        <h1 class="side-header">Limitation of Liability<br>
+        <p class="prvcy-polcy-text">NOTWITHSTANDING THE FAILURE OF ESSENTIAL PURPOSE OF ANY LIMITED REMEDY OF ANY KIND, NEITHER RENYOO NOR ANY OF ITS LICENSORS, SPONSORS, AGENTS, SUCCESSORS, OR ASSIGNS, NOR OUR OR THEIR DIRECTORS, OFFICERS, EMPLOYEES, CONSULTANTS, OR OTHER REPRESENTATIVES, ARE RESPONSIBLE OR LIABLE FOR ANY INDIRECT, INCIDENTAL, CONSEQUENTIAL, SPECIAL, EXEMPLARY, PUNITIVE, OR OTHER DAMAGES (INCLUDING WITHOUT LIMITATION ANY LOSS OF PROFITS, LOST SAVINGS, OR LOSS OF DATA) OR LIABILITIES UNDER ANY CONTRACT, NEGLIGENCE, STRICT LIABILITY, OR OTHER THEORY ARISING OUT OF OR RELATING IN ANY MANNER TO THE SERVICE, INFORMATION, SERVICES AND/OR ANY LINKED SERVICE, WHETHER OR NOT WE HAVE BEEN INFORMED OF THE POSSIBILITY OF SUCH DAMAGES OR LIABILITIES. YOUR SOLE REMEDY WITH RESPECT TO THIS SERVICE, THE INFORMATION, SERVICES, OR ANY LINKED SERVICE IS TO STOP USING THE SERVICE, SERVICE, OR LINKED SERVICE, AS APPLICABLE. NEITHER RENYOO NOR ANY OF ITS LICENSORS, SPONSORS, AGENTS, SUCCESSORS, OR ASSIGNS, NOR OUR OR THEIR DIRECTORS, OFFICERS, EMPLOYEES, CONSULTANTS, OR OTHER REPRESENTATIVES WILL HAVE ANY LIABILITY TO YOU FOR ANY DAMAGES, EXPENSES OR OTHER LIABILITY INCURRED BY YOU AS A RESULT OF (1) ANY INACCURACY, INCOMPLETENESS OR MISREPRESENTATION OF ANY INFORMATION, CONTENT, POSTINGS OR SUBMISSIONS PROVIDED OR POSTED ON THE SERVICE BY THIRD PARTIES OR (2) YOUR HIRING OR ENGAGEMENT OF, OR ASSOCIATION WITH, ANY THIRD PARTY ADVERTISING OR OFFERING PRODUCTS OR SERVICES THROUGH THE SERVICE.</p>
+
+        <h1 class="side-header">Indemnification</h1>
+        <p class="prvcy-polcy-text">You agree to fully indemnify, defend, and hold RENYOO, our licensors, suppliers, agents, successors, and assigns and our and their directors, officers, employees, consultants, and other representatives, harmless from and against any and all claims, damages, losses, costs (including reasonable attorneys' fees), and other expenses that arise directly or indirectly out of or from: (a) your breach of this Agreement, including but not limited to the Acceptable Use Policy; (b) any allegation that any materials you submit to us or transmit to the Service infringe or otherwise violate the copyright, patent, trademark, trade secret, or other intellectual property or other rights of any third party; (c) your activities in connection with the Service or other Services to which the Service is linked; and/or (d) your negligence or willful misconduct.</p>
+        <h1 class="side-header">Jurisdictional Issues</h1>
+        <p class="prvcy-polcy-text">RENYOO makes no representation that the Service operates (or is legally permitted to operate) in all geographic areas, or that the Information, Service, or Services are appropriate or available for use in other locations. Accessing the Service from territories where the Service or any content or functionality of the Service or portion thereof is illegal is expressly prohibited. If you choose to access the Service, you agree and acknowledge that you do so on your own initiative and at your own risk, and that you are solely responsible for compliance with all applicable laws.</p>
+        <h1 class="side-header">Dispute Resolution/Governing Law</h1>
+        <p class="prvcy-polcy-text">This Agreement shall be governed by and construed in accordance with the laws of the State of California, excluding that body of law relating to conflict of laws. The parties agree that any controversy or claim arising out of or relating to this Agreement, or the breach thereof, will be settled by binding arbitration in accordance with California Code of Civil Procedure Section 1280 et seq., and the then current rules and procedures of JAMS. The arbitration shall be a confidential proceeding, closed to the general public. The arbitration will take place in San Francisco, California and be conducted in the English language. The decision rendered by the arbitrator will be binding upon the parties hereto, and any judgment upon the award rendered by the arbitrator may be entered in any court having jurisdiction thereof. The parties consent to the jurisdiction of all federal and state courts in California. Venue will lie exclusively in San Francisco, California. For the sake of clarity, nothing in this paragraph shall affect RENYOO's ability to seek from a court injunctive or equitable relief at any time.
+            <br> If any arbitration or other proceeding is brought to enforce or interpret this Agreement or matters relating to it, the substantially prevailing party, as determined by the arbitrator's award, will be entitled to recover reasonable attorneys' fees and other costs and expenses incurred in such arbitration or proceeding from the other party, in addition to any other relief to which such prevailing party is entitled; provided that in no event will the arbitrator have the authority to award punitive damages.</p>
+        <h1 class="side-header">Miscellaneous</h1>
+        <p class="prvcy-polcy-text">If any provision of this Agreement is found to be unlawful, void, or for any reason unenforceable, then that provision shall be deemed severable from this Agreement and shall not affect the validity and enforceability of any remaining provisions. This is the entire Agreement between you and us relating to the subject matter herein and supersedes any and all prior or contemporaneous written or oral agreements between you and us with respect to such subject matter. This Agreement may not be changed, waived or modified except by RENYOO as provided herein or otherwise by written instrument signed by RENYOO. Neither this Agreement nor any right, obligation, or remedy hereunder is assignable, transferable, delegatable, or sublicensable by you except with RENYOO's prior written consent, and any attempted assignment, transfer, delegation, or sublicense shall be null and void. RENYOO may assign, transfer, or delegate this Agreement or any right or obligation or remedy hereunder in its sole discretion. No waiver by either party of any breach or default hereunder shall be deemed to be a waiver of any preceding or subsequent breach or default. Any heading, caption, or section title contained in this Agreement is inserted only as a matter of convenience and in no way defines or explains any section or provision hereof.</p>
+        <h1 class="side-header">Last Updated:</h1>
+        <p class="prvcy-polcy-text">17 October 2017</p>
+    </div>
+    <!-- end terms and conditions content section -->
+    <div class="footer-block">
+        <div class="footer-connect-block">
+            <h1 class="footer-h1-cls">CONNECT</h1>
+            <ul>
+                <li><a href="https://www.facebook.com/Renyoo-220849128296067/" target="_blank"><i class="fa fa-facebook fa-icon-align" aria-hidden="true"></i></a></li>
+                <li><a href="https://plus.google.com/u/0/communities/116794355079467123192" target="_blank"><i class="fa fa-google-plus fa-icon-align" aria-hidden="true"></i></a></li>
+                <li><a href="https://twitter.com/renyooapp" target="_blank"><i class="fa fa-twitter fa-icon-align" aria-hidden="true"></i></a></li>
+                <li><a href="mailto:support@renyoo.com"><i class="fa fa-envelope-o fa-icon-align" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UCxHyHpsRxmfdcZKje0jx4Yg"><i class="fa fa-youtube fa-icon-align" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+        <div class="rny-about-block">
+            <ul>
+                <li><a href="https://play.google.com/store/apps/details?id=com.app.renyoo.android">DOWNLOAD</a></li>
+                <li><a href="getting-started.html">GETTING STARTED</a></li>
+                <li><a href="business.html">BUSINESS</a></li>
+                <li><a href="privacy-policy.html">PRIVACY</a></li>
+                <li><a href="terms-conditions.html">TERMS &amp; CONDITIONS</a></li>
+                <li><a href="mailto:support@renyoo.com">SUPPORT</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+            </ul>
+        </div>
+        <div class="rny-copyright-block">
+            <ul>
+                <li><a href="">&#169; 2016 RenyooIt LLC.</a></li>
+                <li><a href="">SAN JOSE CA</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+$(document).ready(function() {
+    // search key words in input box (dropdown plugin)
+    $('select').niceSelect();
+    // menu overlay
+    $("#menu").click(function() {
+        $(".menu-overlay").fadeIn(1000);
+    });
+
+    $(".menu-close").click(function() {
+        $(".menu-overlay").fadeOut(1000);
+    });
+
+    // mobile and tablet search
+    $(".search-icon").click(function() {
+        $(".mobile-search-view").fadeIn(1000);
+    });
+
+    $(".search-close").click(function() {
+        $(".mobile-search-view").fadeOut(1000);
+    });
+});
+</script>
+
+</html>

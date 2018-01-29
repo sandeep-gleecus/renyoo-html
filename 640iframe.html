@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Rnyoo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="" />
+    <!--css-->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/jquery-ui.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/nice-select.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/lightbox.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/video-js.css" rel="stylesheet" type="text/css" media="all" />
+    <!--jQuery-->
+    <script src="libs/jquery.min.js"></script>
+    <script src="libs/jquery-ui.js"></script>
+    <script src="libs/hammer.min.js"></script>
+    <script src="libs/jquery.hammer.js"></script>
+    <script src="libs/jquery.mousewheel.min.js"></script>
+    <script src="libs/imgViewer.js"></script>
+    <script src="libs/imgNotes.js"></script>
+    <script src="libs/rnyoo_pod.js"></script>
+    <script src="libs/rnyoo.js"></script>
+    <script src="libs/moment.min.js"></script>
+    <script src="libs/Autolinker.js"></script>
+    <script src="libs/bootstrap.min.js"></script>
+    <script src="libs/lightbox.js"></script>
+    <script src="https://vjs.zencdn.net/5.12.6/video.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/5.7.0/videojs-contrib-hls.js"></script>
+    <script src="libs/videojs-errors.js"></script>
+    <!-- <script src="http://vjs.zencdn.net/5.8.8/video.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/3.6.12/videojs-contrib-hls.js"></script>      -->
+    <!--fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300,600,700' rel='stylesheet' type='text/css'>
+</head>
+<!--image plugin script-->
+<style type="text/css">
+.video-js {
+    font-size: 10px;
+    color: #fff;
+}
+
+.vjs-default-skin .vjs-big-play-button {
+    font-size: 3em;
+    line-height: 80px;
+    height: 80px;
+    width: 80px;
+    border: 4px solid #00AEEF;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    margin-left: -40px;
+    margin-top: -40px;
+}
+
+.video-js .vjs-control-bar,
+.video-js .vjs-big-play-button,
+.video-js .vjs-menu-button .vjs-menu-content {
+    background-color: #00AEEF;
+    background-color: #00aeef;
+}
+
+.video-js .vjs-slider {
+    background-color: #00AEEF;
+    background-color: rgba(0, 174, 239, 0.5);
+}
+
+.video-js .vjs-volume-level,
+.video-js .vjs-play-progress,
+.video-js .vjs-slider-bar {
+    background: #fff;
+}
+
+.video-js .vjs-load-progress {
+    background: ligthen(#00AEEF, 25%);
+    background: rgba(0, 174, 239, 0.5);
+}
+
+.video-js .vjs-load-progress div {
+    background: ligthen(#00AEEF, 50%);
+    background: rgba(0, 174, 239, 0.75);
+}
+
+.vjs-big-play-button {
+    border-radius: 50% !important;
+    height: 50px !important;
+    width: 50px !important;
+    margin-right: -25px !important;
+    margin-left: -25px !important;
+}
+
+#modalAudio .vjs-big-play-button {
+    left: 50%;
+    top: -40px;
+}
+.video-js .vjs-control.vjs-close-button{
+    display: none;
+}
+.video-js button{
+    display: none;
+}
+.vjs-error .vjs-error-display:before{
+    display: none;
+}
+#error_code
+{
+    display: none;
+}
+</style>
+<body style="background-color: #fff !important">
+    <div class="container embed-iframe640-container">
+        <div class="rny-embed-zoomblock">
+            <ul>
+                <li>
+                    <button class="rny-zoommbutton" id="normal_image"><span class="rny-white">N</span></button>
+                </li>
+                <li>zoom
+                    <button class="rny-zoommbutton" id="zoom_out_button"><span class="rny-white"> -</span></button>
+                </li>
+                <li>zoom
+                    <button class="rny-zoommbutton" id="zoom_in_button"><span class="rny-white"> +</span></button>
+                </li>
+                <li><span class="post-img" id="hide" style="color: #34495e;"> <img src="images/hide_embd.png" alt="rny-image">hide</span><span class="post-img" id="show" style="color: #34495e;"><img src="images/show_embd.png" alt="rny-image">show</span></li>
+            </ul>
+        </div>
+        <div class="rny-embed-img-outercontainer rny-fullviewimg-container">
+            <img class="img-responsive embed-imgCls" id="pod_image" src="" alt="rny-image">
+        </div>
+        <div style="text-align: center;">
+            <span class="embed-tap-view" id="showhotspots">
+                CLICK TO VIEW
+            </span>
+        </div>
+        <div class="embed-inner-container">
+            <div class="rny-post-description">Ethnic saree festival
+                <a class="rny-green" href="">#Kalanikethan</a><a class="rny-green" href="">#weddingcollection</a> sommetext comes here<a class="rny-green" href="">#clothing#festive</a>
+            </div>
+            <div class="embed-post-info">
+                <span class="embed-post-info-child1">by</span>
+                <a href=""><span class="embed-pub-name">kalanikethan</span></a>
+                <div class="rny-embed-post-timeDetails">
+                    <span class="rny-lightgrey">posted</span>
+                    <br>
+                    <span class="rny-midgrey">12 hours ago</span>
+                    <span class="rny-lightgrey rny-post-updatetime">(Updated 3 hours ago)</span>
+                </div>
+            </div>
+            <div class="embed-subscribe">
+                <a href="" class="subscribe-btn">SUBSCRIBE TO THIS POST</a>
+            </div>
+            <div class="embed-poweredby">
+                <a href="">
+				<span class="embed-poweredby-child1">powered by</span>
+				<span class="embed-poweredby-child2">Rnyoo</span>
+				</a>
+            </div>
+        </div>
+        <div class="embed-code">
+            <button class="embedCodeCopy">copy this code</button>
+        </div>
+        <div class="embed-code-div">
+            <p>
+                <textarea class="embedCopytextarea">
+                    &lt;iframe src="https://rnyoo.co/post/embed" width="640" height="600" frameborder="0"&gt; &lt;/iframe&gt;
+                </textarea>
+            </p>
+        </div>
+    </div>
+    <div id="embedModalVideo" class="modal1">
+        <div class="embed-modal-content1">
+            <span class="embedCloseVideo"><img src="images/cancel.png"></span>
+        </div>
+    </div>
+    <div id="embedModalAudio" class="modal1">
+        <!-- Modal content -->
+        <div class="embed-modal-content1-audio">
+            <span class="embedCloseAudio"><img src="images/cancel.png"></span>
+        </div>
+    </div>
+</body>
+
+</html>
+<script type="text/javascript">
+var embedCodeCopy = document.querySelector('.embedCodeCopy');
+
+embedCodeCopy.addEventListener('click', function(event) {
+    var copyTextarea = document.querySelector('.embedCopytextarea');
+    copyTextarea.select();
+
+    try {
+        var successful = document.execCommand('copy');
+        var msg = successful ? 'successful' : 'unsuccessful';
+        // console.log('Copying text command was ' + msg);
+    } catch (err) {
+        // console.log('Oops, unable to copy');
+    }
+});
+</script>
+<script type="text/javascript">
+$(document).ready(function() {
+    var adapter = {
+    "uid_s": "OHaWRgj9I92FmAXoE1lUzyapx6V",
+    "pod": {
+        "ownedBy_s": "OHaWRgj9I92FmAXoE1lUzyapx6V",
+        "zoomScale": "1",
+        "orientation": "portrait",
+        "hotspots": {
+            "7539a746dc5040a3822b21a39c841c2d": {
+                "sharable": true,
+                "platformCreatedOn": "ios",
+                "zoomFactor": 1,
+                "lastUpdatedAt_l": 1512563472000,
+                "platformUpdatedOn": "ios",
+                "hotspotId": "7539a746dc5040a3822b21a39c841c2d",
+                "editable": false,
+                "hotspotLabel_ts": "# 5",
+                "locationMarker": "dot",
+                "clickUrl": "",
+                "createdAt_l": 1512563472000,
+                "location": {
+                    "x": 202.2544381699124,
+                    "y": 588.4106199262018
+                },
+                "zeroHotspot_b": false,
+                "markerColor": "#FFCD02",
+                "keywords_ts": "",
+                "media": {
+                    "audio": [],
+                    "video": [],
+                    "docs": [],
+                    "images": []
+                },
+                "hotspotDescription_ts": ""
+            },
+            "e067a8dc8b384c61957d8ebb2427ec00": {
+                "sharable": true,
+                "platformCreatedOn": "android",
+                "zoomFactor": 1,
+                "lastUpdatedAt_l": 1512562788152,
+                "platformUpdatedOn": "android",
+                "hotspotId": "e067a8dc8b384c61957d8ebb2427ec00",
+                "editable": false,
+                "hotspotLabel_ts": "t1",
+                "locationMarker": "dot",
+                "clickUrl": "",
+                "createdAt_l": 1512562784453,
+                "location": {
+                    "x": 651,
+                    "y": 73
+                },
+                "zeroHotspot_b": false,
+                "markerColor": "#34495E",
+                "keywords_ts": "",
+                "media": {
+                    "audio": [],
+                    "video": [],
+                    "docs": [],
+                    "images": []
+                },
+                "hotspotDescription_ts": ""
+            },
+            "712675c176fe450fb525f17a8fbc0836": {
+                "sharable": true,
+                "platformCreatedOn": "ios",
+                "zoomFactor": 1,
+                "lastUpdatedAt_l": 1512560825000,
+                "platformUpdatedOn": "ios",
+                "hotspotId": "712675c176fe450fb525f17a8fbc0836",
+                "editable": false,
+                "hotspotLabel_ts": "# 4",
+                "locationMarker": "dot",
+                "clickUrl": "",
+                "createdAt_l": 1512560825000,
+                "location": {
+                    "x": 124,
+                    "y": 104
+                },
+                "zeroHotspot_b": false,
+                "markerColor": "#FFCD02",
+                "keywords_ts": "",
+                "media": {
+                    "audio": [],
+                    "video": [],
+                    "docs": [],
+                    "images": []
+                },
+                "hotspotDescription_ts": ""
+            },
+            "e5abe7ff57214c31afb8f6cbe61a917d": {
+                "sharable": true,
+                "platformCreatedOn": "android",
+                "zoomFactor": 0,
+                "lastUpdatedAt_l": 1512387790338,
+                "platformUpdatedOn": "android",
+                "hotspotId": "e5abe7ff57214c31afb8f6cbe61a917d",
+                "editable": false,
+                "hotspotLabel_ts": "pod",
+                "locationMarker": "dot",
+                "clickUrl": "",
+                "createdAt_l": 1512387790338,
+                "location": {
+                    "x": 0,
+                    "y": 0
+                },
+                "zeroHotspot_b": true,
+                "markerColor": "#000000",
+                "keywords_ts": "",
+                "media": {
+                    "audio": [],
+                    "video": [],
+                    "docs": [],
+                    "images": []
+                },
+                "hotspotDescription_ts": ""
+            },
+            "2d0b5e335ae641d4a5ea2ab189f1cd50": {
+                "sharable": true,
+                "platformCreatedOn": "ios",
+                "zoomFactor": 1,
+                "lastUpdatedAt_l": 1512460486000,
+                "platformUpdatedOn": "ios",
+                "hotspotId": "2d0b5e335ae641d4a5ea2ab189f1cd50",
+                "editable": false,
+                "hotspotLabel_ts": "H1",
+                "locationMarker": "dot",
+                "clickUrl": "",
+                "createdAt_l": 1512460486000,
+                "location": {
+                    "x": 418,
+                    "y": 363
+                },
+                "zeroHotspot_b": false,
+                "markerColor": "#FFCD02",
+                "keywords_ts": "",
+                "media": {
+                    "audio": [],
+                    "video": [],
+                    "docs": [],
+                    "images": []
+                },
+                "hotspotDescription_ts": ""
+            }
+        },
+        "published_b": false,
+        "description_t": "",
+        "podLocation_geohash": "tepg0u879q",
+        "podType_s": "private",
+        "createdBy_s": "OHaWRgj9I92FmAXoE1lUzyapx6V",
+        "name_t": "1520ada61c6142fd9735fc41f328dafb",
+        "draft_b": true,
+        "ownership_s": "locked",
+        "location_ts": "Rajendra Nagar,India",
+        "keywords_t": "",
+        "channel_t": "",
+        "podLocation_location": "17.42758534730321,78.43167784996621",
+        "rpid_s": "1520ada61c6142fd9735fc41f328dafb",
+        "podImage": {
+            "source": "gallery",
+            "mimeType": "image/webp",
+            "jpgUrl": "https://s3.amazonaws.com/rnyoodevusers/OHaWRgj9I92FmAXoE1lUzyapx6V/vaultfiles/rnya_dcde24480f084c3a9aec20d8f613a0b7.jpg",
+            "thumbnailUrl": "https://s3.amazonaws.com/rnyoodevusers/OHaWRgj9I92FmAXoE1lUzyapx6V/vaultfiles/thumbs/thumb-rnya_dcde24480f084c3a9aec20d8f613a0b7.webp",
+            "webjpgUrl": "https://s3.amazonaws.com/rnyoodevusers/OHaWRgj9I92FmAXoE1lUzyapx6V/vaultfiles/rnya_dcde24480f084c3a9aec20d8f613a0b7_400x400.jpg",
+            "takenAt": "",
+            "imgId": "rnya_dcde24480f084c3a9aec20d8f613a0b7",
+            "baseUrl": "https://s3.amazonaws.com/rnyoodevusers/OHaWRgj9I92FmAXoE1lUzyapx6V/vaultfiles/rnya_dcde24480f084c3a9aec20d8f613a0b7.webp",
+            "resolution": "800x686"
+        },
+        "parentId": "1520ada61c6142fd9735fc41f328dafb"
+    }
+};
+    rnyooPodDataBind(adapter);
+});
+</script>

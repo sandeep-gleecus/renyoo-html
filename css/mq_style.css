@@ -1,0 +1,1462 @@
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 767px) {
+.fullview-postInfo{
+	width: 100%;
+	top: 75px;
+	left: 0px;
+}
+.embed-modal{
+	min-width: 100%;
+}
+.embed-container{
+	min-width: 100%;
+}
+.embed-iframe640-container {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+}
+.embed-iframe480-container {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+}
+.rny-pub-avatar img {
+    width: 37px;
+    height: 37px;
+    clip-path: circle(23px at center);
+    -webkit-clip-path: circle(23px at center);
+}
+.publisher-container {
+    padding: 4px;
+}
+.publisher-details {
+    margin-left: 7px;
+    line-height: 19px;
+}
+.pub-name {
+    font-weight: 700;
+    font-size: 14px;
+}
+.pub-place {
+    font-weight: 600;
+    font-size: 13px;
+}
+.pub-name-time {
+    font-weight: 600;
+    font-size: 13px;
+}
+.pub-friends-posts {
+    font-size: 11px;
+    margin-right: 5px;
+}
+.pub-friends-postsdot {
+    color: #b1b1b1;
+    font-weight: 700;
+    font-size: 11px;
+    margin-right: 5px;
+}
+.add-btn {
+    padding: 9px;
+    font-weight: 500;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.rny-postinfo-block {
+	margin-bottom: 15px;
+}
+.pub-img-block
+{
+	width: 100%;
+	height: 100%;
+	margin-right: 7px;
+}
+.rny-postinfo-content {
+	padding: 0px;
+	}
+.hotspot-num-block {
+    margin-bottom: 10px;
+}
+.collection-text {
+    font-weight: 700;
+    font-size: 16px;
+    margin-right: 2px;
+}
+.rny-trend-collection-block {
+    margin-bottom: 15px;
+}
+.postupdate-time-block {
+    margin-bottom: 15px;
+    line-height: 22px;
+}
+.postinfo-time {
+    font-weight: 500;
+    font-size: 16px;
+}
+.postinfo-publisher-name {
+    font-weight: 700;
+    font-size: 16px;
+    margin-right: 0px;
+}
+.postinfo-updatetimeDot {
+    font-size: 17px;
+    margin-right: 0px;
+}
+.postinfo-updatetime {
+    font-weight: 700;
+    font-size: 16px;
+}
+.postupdated-time {
+    font-weight: 500;
+    font-size: 15px;
+}
+.post-seasons-collections {
+    font-weight: 300;
+    font-size: 14px;
+    color: #34495e;
+}
+.post-seasons-collections {
+    font-weight: 300;
+    font-size: 14px;
+    color: #34495e;
+}
+.rny-likes-views-block {
+    position: relative;
+    bottom: 0px;
+}
+.rny-likes-views-block a {
+    font-size: 15px;
+}
+.rny-darkgrey img
+{
+	width: 20px;
+    height: 15px;
+}
+.post-seasons-collections
+{
+	font-weight: 300;
+	font-size: 18px;
+	color: #34495e;
+	line-height: 22px;
+}
+.rny-postinfo-content {
+    padding: 10px;
+}
+.more-btn {
+    font-size: 15px;
+    font-weight: 500;
+    padding-left: 27px;
+    padding-right: 27px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+.rny-chanl-post-list-header-bar {
+    margin-bottom: 22px;
+    padding: 20px 0 20px 0;
+}
+.rny-logo-mb
+{
+    width: 80px;
+}
+.playstore-logo-mb
+{
+    width: 80px;
+}
+.menu-icon-mb
+{
+    width:25px;
+    margin-right: 0px;
+}
+.search-icon
+{
+    width: 25px;
+    position: absolute;
+    right: 112px;
+}
+.rny-chanl-post-list-header-bar a {
+    margin-right: 5px;
+}
+.menu-close img
+{
+    width: 21px;
+}
+.input-block
+{
+    display: none;
+}
+.close-btn {
+    margin-bottom: 10px;
+    float: right;
+}
+.search-close {
+    color: #f76151;
+    font-size: 16px;
+    font-weight: 700;
+}
+.searchbar {
+    padding: 8px;
+}
+.mb-search-bar {
+    border-radius: 25px;
+    background-color: #34495e;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    outline: none;
+    font-size: 14px;
+    font-weight: 500;
+    padding-left: 15px;
+}
+.keywords-block {
+    padding: 10px;
+    margin-bottom: 18px;
+    text-align: center;
+    display: block;
+    margin-top: -11px;
+}
+.keywords {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    margin-right: 205px;
+}
+.keywords-block li {
+    display: inline-block;
+}
+.keywords-block a {
+    color: #fff;
+    font-size: 14px;
+    background: #1abc9c;
+    padding: 5px;
+}
+.keywords-block a:hover, a:focus
+{
+    background: #252525;
+}
+.keywords-block img {
+    width: 15px;
+}
+.searc-btn-cls {
+    text-align: center;
+    padding-bottom: 25px;
+}
+.mb-search-btn {
+    border-radius: 22px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #00aeef;
+    padding-left: 34px;
+    padding-right: 34px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+#search_keywords
+{
+    display: none;
+}
+.rny-logo img
+{
+    width: 80px;
+    margin-top: 0px;
+}
+.more-btn-block
+{
+    margin-top: 9px;
+    margin-bottom: 24px;
+}
+.footer-block {
+     margin-top: 0px; 
+     padding: 0px; 
+}
+.rny-about-block li {
+     margin-right: 0px; 
+      display: block;
+}
+.rny-about-block li:last-child {
+     margin-left: 0px; 
+}
+.footer-connect-block {
+    padding: 10px;
+}
+.footer-h1-cls {
+    font-size: 14px;
+    margin: 2px;
+}
+.footer-connect-block li {
+    padding-top: 8px;
+}
+
+.rny-about-block {
+    padding: 8px;
+}
+.rny-copyright-block a {
+    font-size: 13px;
+}
+.rny-copyright-block {
+    padding-top:5px;
+}
+.overlay-menu-list {
+    font-size: 14px;
+    font-weight: 600;
+}
+.overlay-menu-list li
+{
+    padding-bottom: 17px;
+}
+
+.rny-verify-text {
+    font-size: 17px;
+    line-height: 27px;
+}
+.verification-block
+{
+    float: none;
+    text-align: center;
+}
+.overlay-h1-cls 
+{
+    font-size: 15px;
+}
+.overlay-connect-block a {
+    font-size: 12px;
+    width: 28px;
+    height: 28px;
+}
+.rny-verifydropline {
+     width: 100%; 
+}
+.overlay-connect-block
+{
+    padding-top: 11px;
+}
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width:340){
+#post_img{
+margin: 0px;
+padding: 0px;
+}
+.embed-modal{
+	min-width: 100%;
+}
+.embed-container{
+	min-width: 100%;
+}
+.embed-iframe640-container {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+}
+.embed-iframe480-container {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+}
+.pub-img-block
+{
+	width: 150px;
+	height: 150px;
+}
+.publisher-container {
+    padding: 3px;
+}
+}
+
+@media only screen and (min-device-width: 412px) and (max-device-width:732){
+    .rny-logo-mb
+    {
+        margin-right: 95px;
+    }
+    }
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+.fullview-postInfo{
+	width: 100%;
+	top: 75px;
+	left: 0px;
+}
+.single-postinfo-block2
+{
+	max-width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+.post-block
+{
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+.rny-chanl-post-list-header-bar {
+    padding: 20px;
+    background-color: #1abc9c;
+    margin-bottom: 10px;
+    float: left;
+}
+.art-culture-block {
+    text-align: center;
+    padding: 31px;
+    overflow: hidden;
+}
+.art-culture-btn {
+    border-radius: 43px;
+    background-color: #ffb029;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 19px;
+}
+
+}
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  {
+ .pub-img-block {
+    width: 200px;
+    height: 200px;
+    margin-right: 8px;
+}
+.rny-pub-container {
+     width: 100%; 
+}
+}
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+.fullview-postInfo{
+	width: 100%;
+	top: 75px;
+	left: 0px;
+}
+}
+@media (min-width : 768px) and (max-width : 1200px){
+	.rny-chanl-post-list-header-bar a {
+		margin-right: 0px;
+	}
+	/*#search-keywords
+{
+     background-color: rgba(10, 10, 10, 0.56);
+    z-index: 10;
+    position: absolute;
+    right: 273px;
+    padding: 8px;
+}*/
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+.publisher-details {
+    margin-left: 8px;
+    float: left;
+}
+.pub-name {
+    font-weight: 500;
+    font-size: 18px;
+    color: #34495e;
+}
+.pub-place {
+    font-weight: 500;
+    font-size: 16px;
+    color: #34495e;
+}
+.pub-name-time {
+    font-size: 16px;
+    font-weight: 7oo;
+}
+.pub-friends-posts {
+    font-weight: 700;
+    font-size: 12px;
+    margin-right: 3px;
+}
+.postinfo-updatetimeDot {
+    font-weight: 700;
+    font-size: 19px;
+    margin-right: 5px;
+    margin-bottom: 0px;
+}
+.pub-friends-posts {
+    font-weight: 700;
+    font-size: 13px;
+    margin-right: 3px;
+}
+.pub-img-block {
+    width: 250px;
+    height: 250px;
+    margin-right: 8px;
+}
+.rny-postinfo-block {
+    margin-bottom: 18px;
+    width: 100%;
+}
+.post-seasons-collections {
+    font-weight: 300;
+    font-size: 20px;
+}
+.postupdate-time-block {
+    margin-bottom: 10px;
+    line-height: 22px;
+}
+.postupdate-time-block {
+    margin-bottom: 10px;
+    line-height: 22px;
+}
+.postinfo-time {
+    font-weight: 500;
+    font-size: 18px;
+}
+.postinfo-publisher-name {
+    font-weight: 700;
+    font-size: 18px;
+    margin-right: 5px;
+}
+.postinfo-updatetime {
+    font-weight: 700;
+    font-size: 18px;
+}
+.postupdated-time {
+    font-weight: 500;
+    font-size: 16px;
+}
+.rny-likes-views-block a
+{
+	font-size: 16px;
+}
+.add-btn {
+    margin-top: 20px;
+}
+.rny-chanl-post-list-header-bar a {
+		margin-right: 40px;
+	}
+.input-block
+{
+    display: none;
+}
+.mb-searchicon
+{
+   position: absolute;
+   right: 190px;
+   top: 25px;
+}
+.close-btn
+{
+    float: right;
+    margin-bottom: 20px;
+}
+.search-close
+{
+   color: #f76151;
+    font-size: 20px;
+    font-weight: 700; 
+}
+.searchbar {
+    padding: 18px;
+}
+.mb-search-bar {
+    border-radius: 25px;
+    background-color: #34495e;
+    border: none;
+    color: #fff;
+    padding: 16px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    padding-left: 15px;
+}
+.keywords-block {
+    padding: 15px;
+    margin-bottom: 18px;
+    text-align: center;
+    display: block;
+}
+.keywords {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 212px;
+}
+.keywords-block li {
+    display: inline-block;
+}
+.keywords-block a {
+    color: #fff;
+    font-size: 16px;
+    background: #1abc9c;
+    padding: 4px;
+}
+.keywords-block a:hover, a:focus
+{
+    background: #252525;
+}
+.keywords-block img {
+    width: 15px;
+}
+.searc-btn-cls {
+    text-align: center;
+    padding-bottom: 25px;
+}
+.mb-search-btn {
+    border-radius: 22px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #00aeef;
+    padding-left: 34px;
+    padding-right: 34px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.mb-search-block
+{
+    padding-top: 150px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.search-icon 
+{
+    display: block;
+}
+ .rny-about-block {
+     padding: 0px; 
+}   
+}
+
+/* iPhone 4 ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+.fullview-postInfo{
+	width: 100%;
+	top: 75px;
+	left: 0px;
+}
+.embed-modal{
+	min-width: 100%;
+}
+.embed-container{
+	min-width: 100%;
+}
+.embed-iframe640-container {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+}
+.embed-iframe480-container {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+}
+.pub-img-block
+{
+	width: 150px;
+	height: 150px;
+}
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+.fullview-postInfo{
+	width: 100%;
+	top: 75px;
+	left: 0px;
+}
+.embed-modal{
+	min-width: 100%;
+}
+.embed-container{
+	min-width: 100%;
+}
+.embed-iframe640-container {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+}
+.embed-iframe480-container {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+}
+}
+
+/* iPhone 5 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px){
+.fullview-postInfo{
+	width: 100%;
+	top: 75px;
+	left: 0px;
+}
+.embed-modal{
+	min-width: 100%;
+}
+.embed-container{
+	min-width: 100%;
+}
+.embed-iframe640-container {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+}
+.embed-iframe480-container {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+}
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px){
+    
+}
+/* iPhone 6 ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+.fullview-postInfo{
+	width: 100%;
+	top: 75px;
+	left: 0px;
+}
+.embed-modal{
+	min-width: 100%;
+}
+.embed-container{
+	min-width: 100%;
+}
+.embed-iframe640-container {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+}
+.embed-iframe480-container {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+}
+.single-postinfo-content {
+    padding: 2px;
+    overflow: hidden;
+}
+.pub-img-block {
+    width: 170px;
+    height: 170px;
+}
+.fullview-postInfo{
+	width: 100%;
+	top: 75px;
+	left: 0px;
+}
+.embed-modal{
+	min-width: 100%;
+}
+.embed-container{
+	min-width: 100%;
+}
+.embed-iframe640-container {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+}
+.embed-iframe480-container {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+}
+
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px){
+.fullview-postInfo{
+	width: 100%;
+	top: 75px;
+	left: 0px;
+}
+.embed-modal{
+	min-width: 100%;
+	height: 100%;
+}
+.embed-container{
+	min-width: 100%;
+	height: 100%;
+}
+.embed-iframe640-container {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+}
+.embed-iframe480-container {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+}
+.post-seasons-collections {
+    font-weight: 300;
+    font-size: 18px;
+    color: #34495e;
+    line-height: 22px;
+}
+
+}
+
+/* iPhone 6+ ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) {
+.fullview-postInfo{
+	width: 100%;
+	top: 75px;
+	left: 0px;
+}
+.embed-modal{
+	min-width: 100%;
+}
+.embed-container{
+	min-width: 100%;
+}
+.embed-iframe640-container {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+}
+.embed-iframe480-container {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+}
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+.fullview-postInfo{
+	width: 100%;
+	top: 75px;
+	left: 0px;
+}
+.embed-modal{
+	min-width: 100%;
+}
+.embed-container{
+	min-width: 100%;
+}
+.embed-iframe640-container {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+}
+.embed-iframe480-container {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+}
+.rny-chanl-post-list-header-bar {
+    padding: 13px;
+    background-color: #1abc9c;
+    float: left;
+}
+.rny-logo-mb {
+    width: 80px;
+    margin-right: 48px;
+}
+.rny-chanl-post-list-header-bar a {
+    margin-right: 54px;
+}
+}
+
+/* Samsung Galaxy S3 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+.fullview-postInfo{
+	width: 100%;
+	top: 75px;
+	left: 0px;
+}
+.embed-modal{
+	min-width: 100%;
+}
+.embed-container{
+	min-width: 100%;
+}
+.embed-iframe640-container {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+}
+.embed-iframe480-container {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+}
+.pub-img-block
+{
+	width: 150px;
+	height: 150px;
+}
+.publisher-container {
+    padding: 3px;
+}
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+/* Samsung Galaxy S4 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+.fullview-postInfo{
+	width: 100%;
+	top: 75px;
+	left: 0px;
+}
+.embed-modal{
+	min-width: 100%;
+}
+.embed-container{
+	min-width: 100%;
+}
+.embed-iframe640-container {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+}
+.embed-iframe480-container {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+}
+.pub-img-block
+{
+	width: 150px;
+	height: 150px;
+}
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+.fullview-postInfo{
+	width: 100%;
+	top: 75px;
+	left: 0px;
+}
+.embed-modal{
+	min-width: 100%;
+}
+.embed-container{
+	min-width: 100%;
+}
+.embed-iframe640-container {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+}
+.embed-iframe480-container {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+}
+.mb-search-bar 
+{
+    padding: 18px;
+}
+}
+@media only screen and (min-device-width: 360px) and (max-device-width: 767px){
+.mb-search-bar 
+{
+    padding: 18px;
+}
+.search-close
+{
+    font-size: 18px;
+}
+.keywords {
+    font-size: 14px;
+}
+.keywords-block a {
+    font-size: 14px;
+}
+}
+@media screen and (max-width: 767px) {
+    .search-bar {
+        display: none !important;
+    }
+    .input-searchicon
+    {
+        display: none;
+    }
+}
+@media screen and (min-width: 1201px){
+    .mb-searchicon
+    {
+        display: none;
+    }
+}
+@media (min-width : 320px) and (max-width : 767px) {
+.fullview-postInfo{
+    width: 100%;
+    top: 75px;
+    left: 0px;
+}
+.embed-modal{
+    min-width: 100%;
+}
+.embed-container{
+    min-width: 100%;
+}
+/*.embed-iframe640-container {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+}
+.embed-iframe480-container {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+}*/
+.rny-pub-avatar img {
+    width: 37px;
+    height: 37px;
+    clip-path: circle(23px at center);
+    -webkit-clip-path: circle(23px at center);
+}
+.publisher-container {
+    padding: 4px;
+}
+.publisher-details {
+    margin-left: 7px;
+    line-height: 19px;
+}
+.pub-name {
+    font-weight: 700;
+    font-size: 14px;
+}
+.pub-place {
+    font-weight: 600;
+    font-size: 13px;
+}
+.pub-name-time {
+    font-weight: 600;
+    font-size: 13px;
+}
+.pub-friends-posts {
+    font-size: 11px;
+    margin-right: 5px;
+}
+.pub-friends-postsdot {
+    color: #b1b1b1;
+    font-weight: 700;
+    font-size: 11px;
+    margin-right: 5px;
+}
+.add-btn {
+    padding: 9px;
+    font-weight: 500;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.rny-postinfo-block {
+    margin-bottom: 15px;
+}
+.pub-img-block
+{
+    width: 100%;
+    height: 100%;
+    margin-right: 7px;
+}
+.rny-postinfo-content {
+    padding: 0px;
+    }
+.hotspot-num-block {
+    margin-bottom: 10px;
+}
+.collection-text {
+    font-weight: 700;
+    font-size: 16px;
+    margin-right: 2px;
+}
+.rny-trend-collection-block {
+    margin-bottom: 15px;
+}
+.postupdate-time-block {
+    margin-bottom: 15px;
+    line-height: 22px;
+}
+.postinfo-time {
+    font-weight: 500;
+    font-size: 16px;
+}
+.postinfo-publisher-name {
+    font-weight: 700;
+    font-size: 16px;
+    margin-right: 0px;
+}
+.postinfo-updatetimeDot {
+    font-size: 17px;
+    margin-right: 0px;
+}
+.postinfo-updatetime {
+    font-weight: 700;
+    font-size: 16px;
+}
+.postupdated-time {
+    font-weight: 500;
+    font-size: 15px;
+}
+.post-seasons-collections {
+    font-weight: 300;
+    font-size: 14px;
+    color: #34495e;
+}
+.post-seasons-collections {
+    font-weight: 300;
+    font-size: 14px;
+    color: #34495e;
+}
+.rny-likes-views-block {
+    position: relative;
+    bottom: 0px;
+}
+.rny-likes-views-block a {
+    font-size: 15px;
+}
+.rny-darkgrey img
+{
+    width: 20px;
+    height: 15px;
+}
+.post-seasons-collections
+{
+    font-weight: 300;
+    font-size: 18px;
+    color: #34495e;
+    line-height: 22px;
+}
+.rny-postinfo-content {
+    padding: 10px;
+}
+.more-btn {
+    font-size: 15px;
+    font-weight: 500;
+    padding-left: 27px;
+    padding-right: 27px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+.rny-chanl-post-list-header-bar {
+    margin-bottom: 22px;
+    padding: 20px 0 20px 0;
+}
+.rny-logo-mb
+{
+    width: 80px;
+}
+.rny-chanl-post-list-header-bar {
+    margin-bottom: 22px;
+    padding: 20px 0 20px 0;
+}
+.rny-logo-mb
+{
+    width: 80px;
+}
+.rny-logo img {
+    width: 80px;
+}
+.playstore-logo-mb
+{
+    width: 80px;
+}
+.menu-icon-mb
+{
+    width:25px;
+    margin-right: 0px;
+}
+.search-icon
+{
+    width: 24px;
+    position: absolute;
+    right: 112px;
+    top: 22px
+}
+.rny-chanl-post-list-header-bar a {
+    margin-right: 5px;
+    float: none;
+}
+.menu-close {
+    padding-top: 22px;
+    padding-left: 3px;
+}
+.input-block
+{
+    display: none;
+}
+.close-btn {
+    margin-bottom: 10px;
+    float: right;
+}
+.search-close {
+    color: #f76151;
+    font-size: 16px;
+    font-weight: 700;
+}
+.searchbar {
+    padding: 8px;
+}
+.mb-search-bar {
+    border-radius: 25px;
+    background-color: #34495e;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    outline: none;
+    font-size: 15px;
+    font-weight: 600;
+    padding-left: 15px;
+}
+.keywords-block {
+    padding: 9px;
+    margin-bottom: 18px;
+    text-align: center;
+    display: block;
+    margin-top: -11px;
+}
+.keywords {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    margin-right: 205px;
+}
+.keywords-block li {
+    display: inline-block;
+}
+.keywords-block a {
+    color: #fff;
+    font-size: 14px;
+    background: #1abc9c;
+    padding: 5px;
+}
+.keywords-block a:hover, a:focus
+{
+    background: #252525;
+}
+.keywords-block img {
+    width: 15px;
+}
+.searc-btn-cls {
+    text-align: center;
+    padding-bottom: 25px;
+}
+.mb-search-btn {
+    border-radius: 22px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #00aeef;
+    padding-left: 34px;
+    padding-right: 34px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+#search_keywords
+{
+    display: none;
+}
+}
+@media (min-width: 769px) and (max-width: 1199px){
+    .input-block
+    {
+        display: none;
+    }
+}
+@media (min-width : 768px) and (max-width : 1200px) {
+
+.publisher-details {
+    margin-left: 8px;
+    float: left;
+}
+.pub-name {
+    font-weight: 500;
+    font-size: 18px;
+    color: #34495e;
+}
+.pub-place {
+    font-weight: 500;
+    font-size: 16px;
+    color: #34495e;
+}
+.pub-name-time {
+    font-size: 16px;
+    font-weight: 7oo;
+}
+.pub-friends-posts {
+    font-weight: 700;
+    font-size: 12px;
+    margin-right: 3px;
+}
+.postinfo-updatetimeDot {
+    font-weight: 700;
+    font-size: 19px;
+    margin-right: 5px;
+    margin-bottom: 0px;
+}
+.pub-friends-posts {
+    font-weight: 700;
+    font-size: 13px;
+    margin-right: 3px;
+}
+.pub-img-block {
+    width: 250px;
+    height: 250px;
+    margin-right: 8px;
+}
+.rny-postinfo-block {
+    margin-bottom: 18px;
+    width: 100%;
+}
+.post-seasons-collections {
+    font-weight: 300;
+    font-size: 20px;
+}
+.postupdate-time-block {
+    margin-bottom: 10px;
+    line-height: 22px;
+}
+.postupdate-time-block {
+    margin-bottom: 10px;
+    line-height: 22px;
+}
+.postinfo-time {
+    font-weight: 500;
+    font-size: 18px;
+}
+.postinfo-publisher-name {
+    font-weight: 700;
+    font-size: 18px;
+    margin-right: 5px;
+}
+.postinfo-updatetime {
+    font-weight: 700;
+    font-size: 18px;
+}
+.postupdated-time {
+    font-weight: 500;
+    font-size: 16px;
+}
+.rny-likes-views-block a
+{
+    font-size: 16px;
+}
+.add-btn {
+    margin-top: 20px;
+}
+.rny-chanl-post-list-header-bar a {
+        margin-right: 40px;
+    }
+.input-block
+{
+    display: none;
+}
+.mb-searchicon
+{
+   position: absolute;
+
+}
+.close-btn
+{
+    float: right;
+    margin-bottom: 20px;
+}
+.search-close
+{
+   color: #f76151;
+    font-size: 20px;
+    font-weight: 700; 
+}
+.searchbar {
+    padding: 18px;
+}
+.mb-search-bar {
+    border-radius: 25px;
+    background-color: #34495e;
+    border: none;
+    color: #fff;
+    padding: 16px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    padding-left: 15px;
+}
+.keywords-block {
+    padding: 15px;
+    margin-bottom: 18px;
+    text-align: center;
+    display: block;
+}
+.keywords {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 209px;
+}
+.keywords-block li {
+    display: inline-block;
+}
+.keywords-block a {
+    color: #fff;
+    font-size: 16px;
+    background: #1abc9c;
+    padding: 3px;
+}
+.keywords-block a:hover, a:focus
+{
+    background: #252525;
+}
+.keywords-block img {
+    width: 15px;
+}
+.searc-btn-cls {
+    text-align: center;
+    padding-bottom: 25px;
+}
+.mb-search-btn {
+    border-radius: 22px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #00aeef;
+    padding-left: 34px;
+    padding-right: 34px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.mb-search-block
+{
+    padding-top: 150px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.search-icon 
+{
+    display: block;
+}
+ .rny-about-block {
+     padding: 0px; 
+}   
+}
+@media (max-width: 920px){
+    .rny-about-block li {
+     margin-right: 0px; 
+}
+.rny-about-block li {
+     display: block; 
+}
+}
+@media (min-width: 320px) and (max-width: 1199px){
+.menu-overlay-content {
+    padding: 20px;
+}
+.overlay-menu-list {
+    float: none;
+}
+.verification-block {
+     float: none; 
+}
+}

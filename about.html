@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Renyoo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="" />
+    <!--css-->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/nice-select.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" />
+    <!--js-->
+    <script src="libs/jquery.min.js"></script>
+    <script src="libs/bootstrap.min.js"></script>
+    <script src="libs/jquery.nice-select.js"></script>
+    <!--fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300,600,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <!-- header section -->
+    <div class="rny-chanl-post-list-header-bar">
+        <div class="container">
+            <a><img src="images/menu.png" alt="rny-image" class="menu-icon-mb" id="menu"></a>
+            <a class="rny-logo"><img class="rny-logo-mb" alt="rny-image" src="images/rny-logo.png"></a>
+            <div class="input-block">
+                <input class="search-bar" type="text" id="search" name="search-content" placeholder="i'm looking for...">
+                <span class="submit-searchicon"><input type="image" name="submit" src="images/search_icon.png" alt="rny-image"></span>
+                <select id="search_keywords">
+                    <ul>
+                        <li>
+                            <option value="Keywords">Keywords</option>
+                        </li>
+                        <li>
+                            <option value="Channels">Channels</option>
+                        </li>
+                        <li>
+                            <option value="Locations">Locations</option>
+                        </li>
+                    </ul>
+                </select>
+            </div>
+            <span class="mb-searchicon"><img class="search-icon" src="images/search_icon.png" alt="rny-image"></span>
+            <a href="#" class="google-play-logo"><img class="playstore-logo-mb" src="images/play_icon.png" alt="rny-image"></a>
+        </div>
+    </div>
+    <!-- header section end -->
+    <!-- menu overlay section -->
+    <div class="menu-overlay">
+        <div class="container">
+            <div class="menu-close">
+                <img src="images/menu_close.png" alt="rny-image">
+            </div>
+            <div class="menu-overlay-content">
+                <div class="overlay-menu-list">
+                    <ul>
+                        <li><a href="https://play.google.com/store/apps/details?id=com.app.renyoo.android">DOWNLOAD</a></li>
+                        <li><a href="getting-started.html">GETTING STARTED</a></li>
+                        <li><a href="business.html">BUSINESS</a></li>
+                        <li><a href="privacy-policy.html">PRIVACY</a></li>
+                        <li><a href="terms-conditions.html">TERMS &amp; CONDITIONS</a></li>
+                        <li><a href="mailto:support@renyoo.com">SUPPORT</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                    </ul>
+                </div>
+                <div class="verification-block">
+                    <div class="rny-verifydropline">
+                        <p class="rny-verify-text">Want to have a verified account on Renyoo or know how to reach your audience effectively?</p>
+                        <a href="mailto:support@renyoo.com" class="rny-dropline">Drop in a line.</a>
+                    </div>
+                    <div class="overlay-connect-block">
+                        <h1 class="overlay-h1-cls">CONNECT</h1>
+                        <ul>
+                            <li><a href="https://www.facebook.com/Rnyoo-220849128296067" target="_blank"><i class="fa fa-facebook fa-icon-align" aria-hidden="true"></i></a></li>
+                            <li><a href="https://twitter.com/rnyoosocial" target="_blank"><i class="fa fa-twitter fa-icon-align" aria-hidden="true"></i></a></li>
+                            <li><a href="https://plus.google.com/u/0/communities/116794355079467123192" target="_blank"><i class="fa fa-google-plus fa-icon-align" aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.youtube.com/channel/UCxHyHpsRxmfdcZKje0jx4Yg" target="_blank"><i class="fa fa-youtube fa-icon-align" aria-hidden="true"></i></a></li>
+                            <li><a href="mailto:support@renyoo.co" target="_blank"><i class="fa fa-envelope-o fa-icon-align" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- menu overlay section end -->
+    <!-- mobile search view section(click on search icon) -->
+    <div class="mobile-search-view">
+        <div class="mb-search-block">
+            <div class="close-btn">
+                <span class="search-close">close</span>
+            </div>
+            <div class="searchbar">
+                <input class="mb-search-bar" type="text" id="search" name="search-content" placeholder="i'm looking for...">
+            </div>
+            <div class="keywords-block">
+                <span class="keywords">look within</span>
+                <ul>
+                    <li><a href="#"><img src="images/hashtag.png" alt="rny-image">Keywords</a></li>
+                    <li><a href="#"><img src="images/channels.png" alt="rny-image">Channels</a></li>
+                    <li><a href="#"><img src="images/locations.png" alt="rny-image">Locations</a></li>
+                </ul>
+            </div>
+            <div class="searc-btn-cls">
+                <input class="mb-search-btn" type="button" name="submit" value="SEARCH">
+            </div>
+        </div>
+    </div>
+    <!-- mobile search view section(click on search icon) end -->
+    <div class="container" id="about">
+        <div class="col-lg-12 col-md-12">
+            <h1 class="prvcy-polcy-header">ABOUT RENYOO</h1>
+            <p class="about-content">
+                Renyoo Mobile Apps, Website and other Digital Properties are owned and operated by RENYOOIT LLC, San Jose, CA.
+                <br> Renyoo is a platform to create, share and view hotspots(annotations) and its metadata on images. To know more about Renyoo send in your enquiries at <a href="mailto:support@renyoo.co">support@renyoo.co</a>
+            </p>
+            <p class="side-header">Libraries we use</p>
+            <h1 class="side-header">MQTT</h1>
+            <p class="about-content">
+                © 1999-2010 Eurotech, International Business Machines Corporation (IBM)
+                <br> http://mqtt.org/
+                <br> https://github.com/mqtt/mqtt.github.io/blob/master/LICENSE
+            </p>
+            <h1 class="side-header">Matrix</h1>
+            <p class="about-content">Apache Ver2.0
+                <br>https://matrix.org/ https://github.com/matrix-org/matrix-android-sdk/blob/master/LICENSE
+            </p>
+            <h1 class="side-header">Android Link Preview</h1>
+            <p class="about-content">
+                Apache Ver2.0
+                <br> https://github.com/LeonardoCardoso/Android-Link-Preview
+                <br> https://github.com/LeonardoCardoso/Android-Link-Preview/blob/master/LICENSE
+            </p>
+            <h1 class="side-header">LibJingle</h1>
+            <p class="about-content">
+                Copyright 2004--2007, Google Inc. BSD License.
+                <br> https://developers.google.com/talk/libjingle/developer_guide
+                <br> https://developers.google.com/talk/libjingle/license
+            </p>
+            <h1 class="side-header">Bubbles for Android</h1>
+            <p class="about-content">
+                Apache Ver2.0
+                <br> https://github.com/txusballesteros/bubbles-for-android
+                <br> https://github.com/txusballesteros/bubbles-for-android/blob/master/LICENSE
+            </p>
+            <h1 class="side-header">Smart App Rate</h1>
+            <p class="about-content">
+                Apache Ver2.0
+                <br> https://github.com/codemybrainsout/smart-app-rate
+                <br> https://github.com/codemybrainsout/smart-app-rate/blob/master/LICENSE
+            </p>
+            <h1 class="side-header">Retrofit</h1>
+            <p class="about-content">
+                Copyright 2013 Square, Inc. Apache Ver2.0
+                <br> http://square.github.io/retrofit/
+            </p>
+            <h1 class="side-header">GSON</h1>
+            <p class="about-content">
+                Apache Ver2.0
+                <br> https://github.com/google/gson
+                <br> https://github.com/google/gson/blob/master/LICENSE
+            </p>
+            <h1 class="side-header">Jackson</h1>
+            <p class="about-content">
+                Apache Ver2.0
+                <br> https://github.com/FasterXML/jackson
+            </p>
+            <h1 class="side-header">OkHttp</h1>
+            <p class="about-content">
+                Copyright 2016 Square, Inc. Apache Ver2.0
+                <br> http://square.github.io/okhttp/
+            </p>
+            <h1 class="side-header">RxJava</h1>
+            <p class="about-content">
+                Apache Ver2.0
+                <br> https://github.com/ReactiveX/RxJava
+                <br> https://github.com/ReactiveX/RxJava/blob/2.x/LICENSE
+            </p>
+            <h1 class="side-header">Auto Value Parcel</h1>
+            <p class="about-content">
+                Apache Ver2.0
+                <br> https://github.com/rharter/auto-value-parcel
+                <br> https://github.com/rharter/auto-value-parcel/blob/master/LICENSE.txt
+            </p>
+            <h1 class="side-header">SmallBang</h1>
+            <p class="about-content">
+                Apache Ver2.0
+                <br> https://github.com/hanks-zyh/SmallBang
+                <br> https://github.com/hanks-zyh/SmallBang/blob/master/LICENSE
+            </p>
+            <h1 class="side-header">Firebase</h1>
+            <p class="about-content">
+                Apache Ver2.0
+                <br> https://firebase.google.com/
+                <br> https://www.firebase.com/terms/oss.html
+            </p>
+            <h1 class="side-header">ExoPlayer</h1>
+            <p class="about-content">
+                Apache Ver2.0
+                <br> https://github.com/google/ExoPlayer
+                <br> https://github.com/google/ExoPlayer/blob/release-v2/LICENSE
+            </p>
+            <h1 class="side-header">Jsoup</h1>
+            <p class="about-content">
+                MIT License. Copyright (c) 2009-2017 Jonathan Hedley
+                <br> https://github.com/jhy/jsoup/
+                <br> https://github.com/jhy/jsoup/blob/master/LICENSE
+            </p>
+            <h1 class="side-header">Picasso</h1>
+            <p class="about-content">
+                Copyright 2013 Square, Inc. Apache Ver2.0
+                <br> http://square.github.io/picasso/
+            </p>
+            <h1 class="side-header">Glide</h1>
+            <p class="about-content">
+                Copyright 2014 Google, Inc. Apache Ver2.0
+                <br> http://bumptech.github.io/glide/
+                <br> https://github.com/bumptech/glide/blob/master/LICENSE
+            </p>
+            <h1 class="side-header">MaterialDateTimePicker</h1>
+            <p class="about-content">
+                Apache Ver2.0
+                <br> https://github.com/wdullaer/MaterialDateTimePicker
+                <br> https://github.com/wdullaer/MaterialDateTimePicker/blob/master/LICENSE
+            </p>
+            <h1 class="side-header">Pulsator4Droid</h1>
+            <p class="about-content">
+                MIT License. Copyright (c) 2016 Lukasz Majda
+                <br> https://github.com/booncol/Pulsator4Droid
+                <br> https://github.com/booncol/Pulsator4Droid/blob/master/LICENSE
+            </p>
+            <h1 class="side-header">Side Menu from Yalantis</h1>
+            <p class="about-content">
+                Apache Ver2.0
+                <br> https://github.com/Yalantis/Side-Menu.Android
+                <br> https://github.com/Yalantis/Side-Menu.Android/blob/master/LICENSE
+            </p>
+            <h1 class="side-header">Google Places API</h1>
+            <p class="about-content">
+                https://developers.google.com/maps/terms
+                <br> https://developers.google.com/places/
+                <br> https://developers.google.com/places/web-service/policies
+            </p>
+            <h1 class="side-header">imgNotes and imgViewer</h1>
+            <p class="about-content">
+                Copyright (c) 2013 Wayne Mogg. MIT license
+                <br> https://github.com/waynegm
+            </p>
+            <h1 class="side-header">Smart App Banner</h1>
+            <p class="about-content">
+                Copyright (c) Arnold Daniels Vitaly Glibin. MIT license
+                <br> https://github.com/kudago/smart-app-banner
+                <br> https://github.com/kudago/smart-app-banner/blob/master/LICENSE
+            </p>
+            <h1 class="side-header">CustomCoachMarksLibrary</h1>
+            <p class="about-content">
+                Apache Ver2.0
+                <br> https://github.com/dccper-reuben/CustomCoachMarksLibrary
+                <br> https://github.com/dccper-reuben/CustomCoachMarksLibrary/blob/master/LICENSE
+            </p>
+            <h1 class="side-header">Lightbox2</h1>
+            <p class="about-content">
+                Copyright (c) 2015 Lokesh Dhakar. MIT license
+                <br> https://github.com/lokesh/lightbox2
+                <br> https://github.com/lokesh/lightbox2/blob/master/LICENSE
+            </p>
+            <h1 class="side-header">VideoJS</h1>
+            <p class="about-content">
+                Apache Ver2.0
+                <br> http://videojs.com/
+                <br> https://github.com/videojs/video.js/blob/master/LICENSE
+            </p>
+            <h1 class="side-header">Vtt.js</h1>
+            <p class="about-content">
+                Apache Ver2.0
+                <br> https://github.com/mozilla/vtt.js
+                <br> https://github.com/mozilla/vtt.js/blob/master/LICENSE
+            </p>
+            <h1 class="side-header">Last Updated:</h1>
+            <p class="about-content">
+                17th October 2017
+            </p>
+        </div>
+    </div>
+    <div class="footer-block">
+        <div class="footer-connect-block">
+            <h1 class="footer-h1-cls">CONNECT</h1>
+            <ul>
+                <li><a href="https://www.facebook.com/Renyoo-220849128296067/" target="_blank"><i class="fa fa-facebook fa-icon-align" aria-hidden="true"></i></a></li>
+                <li><a href="https://plus.google.com/u/0/communities/116794355079467123192" target="_blank"><i class="fa fa-google-plus fa-icon-align" aria-hidden="true"></i></a></li>
+                <li><a href="https://twitter.com/renyooapp" target="_blank"><i class="fa fa-twitter fa-icon-align" aria-hidden="true"></i></a></li>
+                <li><a href="mailto:support@renyoo.com"><i class="fa fa-envelope-o fa-icon-align" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UCxHyHpsRxmfdcZKje0jx4Yg"><i class="fa fa-youtube fa-icon-align" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+        <div class="rny-about-block">
+            <ul>
+                <li><a href="https://play.google.com/store/apps/details?id=com.app.renyoo.android">DOWNLOAD</a></li>
+                <li><a href="getting-started.html">GETTING STARTED</a></li>
+                <li><a href="business.html">BUSINESS</a></li>
+                <li><a href="privacy-policy.html">PRIVACY</a></li>
+                <li><a href="terms-conditions.html">TERMS &amp; CONDITIONS</a></li>
+                <li><a href="mailto:support@renyoo.com">SUPPORT</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+            </ul>
+        </div>
+        <div class="rny-copyright-block">
+            <ul>
+                <li><a href="#">&#169; 2017 RenyooIt LLC.</a></li>
+                <li><a href="#">San Jose,CA</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+$(document).ready(function() {
+    // search key words in input box(dropdown pluggin)
+    $('select').niceSelect();
+
+    // menu overlay
+    $("#menu").click(function() {
+        $(".menu-overlay").fadeIn(1000);
+    });
+
+    $(".menu-close").click(function() {
+        $(".menu-overlay").fadeOut(1000);
+    });
+
+    // mobile and tablet search
+    $(".search-icon").click(function() {
+        $(".mobile-search-view").fadeIn(1000);
+    });
+
+    $(".search-close").click(function() {
+        $(".mobile-search-view").fadeOut(1000);
+    });
+});
+</script>
+
+</html>

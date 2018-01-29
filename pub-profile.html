@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Renyoo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="" />
+    <!--css-->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/nice-select.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" />
+    <!--js-->
+    <script src="libs/jquery.min.js"></script>
+    <script src="libs/bootstrap.min.js"></script>
+    <script src="libs/jquery.nice-select.js"></script>
+    <!--fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300,600,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <!-- header section -->
+    <div class="rny-chanl-post-list-header-bar">
+        <div class="container">
+            <a><img src="images/menu.png" alt="rny-image" class="menu-icon-mb" id="menu"></a>
+            <a class="rny-logo"><img class="rny-logo-mb" src="images/rny-logo.png" alt="rny-image"></a>
+            <div class="input-block">
+                <input class="search-bar" type="text" id="search" name="search-content" placeholder="i'm looking for...">
+                <span class="submit-searchicon"><input type="image" name="submit" src="images/search_icon.png" alt="rny-image"></span>
+                <select id="search_keywords">
+                    <ul>
+                        <li>
+                            <option value="Keywords">Keywords</option>
+                        </li>
+                        <li>
+                            <option value="Channels">Channels</option>
+                        </li>
+                        <li>
+                            <option value="Locations">Locations</option>
+                        </li>
+                    </ul>
+                </select>
+            </div>
+            <span class="mb-searchicon"><img class="search-icon" src="images/search_icon.png" alt="rny-image"></span>
+            <a href="#" class="google-play-logo"><img class="playstore-logo-mb" src="images/play_icon.png" alt="rny-image"></a>
+        </div>
+    </div>
+    <!-- header section end -->
+    <!-- menu overlay section -->
+    <div class="menu-overlay">
+        <div class="container">
+            <div class="menu-close">
+                <img src="images/menu_close.png" alt="rny-image">
+            </div>
+            <div class="menu-overlay-content">
+                <div class="overlay-menu-list">
+                    <ul>
+                        <li><a href="https://play.google.com/store/apps/details?id=com.app.renyoo.android">DOWNLOAD</a></li>
+                        <li><a href="getting-started.html">GETTING STARTED</a></li>
+                        <li><a href="business.html">BUSINESS</a></li>
+                        <li><a href="privacy-policy.html">PRIVACY</a></li>
+                        <li><a href="terms-conditions.html">TERMS &amp; CONDITIONS</a></li>
+                        <li><a href="mailto:support@renyoo.com">SUPPORT</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                    </ul>
+                </div>
+                <div class="verification-block">
+                    <div class="rny-verifydropline">
+                        <p class="rny-verify-text">Want to have a verified account on Renyoo or know how to reach your audience effectively?</p>
+                        <a href="mailto:support@renyoo.com" target="_blank" class="rny-dropline">Drop in a line.</a>
+                    </div>
+                    <div class="overlay-connect-block">
+                        <h1 class="overlay-h1-cls">CONNECT</h1>
+                        <ul>
+                            <li><a href="https://www.facebook.com/Renyoo-220849128296067/" target="_blank"><i class="fa fa-facebook fa-icon-align" aria-hidden="true"></i></a></li>
+                            <li><a href="https://plus.google.com/u/0/communities/116794355079467123192" target="_blank"><i class="fa fa-google-plus fa-icon-align" aria-hidden="true"></i></a></li>
+                            <li><a href="https://twitter.com/renyooapp" target="_blank"><i class="fa fa-twitter fa-icon-align" aria-hidden="true"></i></a></li>
+                            <li><a href="mailto:support@renyoo.com"><i class="fa fa-envelope-o fa-icon-align" aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.youtube.com/channel/UCxHyHpsRxmfdcZKje0jx4Yg"><i class="fa fa-youtube fa-icon-align" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- menu overlay section end -->
+    <!-- mobile search view section(click on search icon mobile and tablet)) -->
+    <div class="mobile-search-view">
+        <div class="mb-search-block">
+            <div class="close-btn">
+                <span class="search-close">close</span>
+            </div>
+            <div class="searchbar">
+                <input class="mb-search-bar" type="text" id="search" name="search-content" placeholder="i'm looking for...">
+            </div>
+            <div class="keywords-block">
+                <span class="keywords">look within</span>
+                <ul>
+                    <li><a href="#"><img src="images/hashtag.png" alt="rny-image">Keywords</a></li>
+                    <li><a href="#"><img src="images/channels.png" alt="rny-image">Channels</a></li>
+                    <li><a href="#"><img src="images/locations.png" alt="rny-image">Locations</a></li>
+                </ul>
+            </div>
+            <div class="searc-btn-cls">
+                <input class="mb-search-btn" type="button" name="submit" value="SEARCH">
+            </div>
+        </div>
+    </div>
+    <!-- mobile search view section(click on search icon) end -->
+    <div class="container rny-post-container">
+        <div class="rny-pub-avatar publisher-container">
+            <img src="images/avatar_img.jpg" alt="rny-image" style="float: left;">
+            <div class="publisher-details">
+                <span class="pub-name">Kalanikethan Sarees</span>
+                <br>
+                <span class="postinfo-time"> as</span>
+                <a href="#" class="postinfo-publisher-name rny-asphalt">kalanikethan</a>
+                <br>
+                <ul style="">
+                    <li><span class="pub-friends-posts">21 Friends</span></li>
+                    <li><span class="pub-friends-postsdot"> &#183; </span></li>
+                    <li><span class="pub-friends-posts"> 14 Posts</span></li>
+                </ul>
+            </div>
+            <a href="#" class="add-btn"> + Add Friend</a>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-sm-12 col-xs-12 rny-pub-container">
+                <div class="rny-postinfo-block">
+                    <div class="pub-img-block" style="background-image: url(images/image-4.jpg);background-size: cover;background-repeat: no-repeat;background-position: center;">
+                        <span class="tag-btn"><img src="images/timer_icon.png" alt="rny-image"> < 20 Hrs</span>
+                        <a href="#" class="post-details-url"></a>
+                        <!-- post url anchor tag-->
+                    </div>
+                    <div class="rny-postinfo-content">
+                        <div class="hotspot-num-block">
+                            <span class="collection-text"><img src="images/img-q.png" alt="rny-image"> 2</span>
+                            <span class="collection-text"><img src="images/icon_hotspot.png" alt="rny-image"> 5</span>
+                        </div>
+                        <div class="rny-trend-collection-block">
+                            <span class="post-seasons-collections">Seasons New Collections<a href="" class="postinfo-hashtags">#clickable</a> at <a href="" class="postinfo-hashtags">#somehashtag</a></span>
+                        </div>
+                        <div class="postupdate-time-block">
+                            <span class="postinfo-time"> by</span>
+                            <a href=""><span class="rny-asphalt postinfo-publisher-name"> Kalanikethan</span></a>
+                            <span class="postinfo-updatetimeDot">&#183;</span>
+                            <span class="postinfo-updatetime">12 hrs ago</span>
+                            <br>
+                            <span class="postupdated-time">last updated 3hrs ago</span>
+                        </div>
+                        <div class="rny-likes-views-block">
+                            <ul class="rny-likes">
+                                <li><a class="rny-darkgrey popUp" href="#"><img src="images/like.png" alt="rny-image"> 250 likes</a></li>
+                                <li><a class="rny-darkgrey popUp" href="#"><img src="images/view.png" alt="rny-image"> 309 views</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-12 col-xs-12 rny-pub-container">
+                <div class="rny-postinfo-block">
+                    <div class="pub-img-block post-img" style="background-image: url(images/image-3.jpg);background-size: cover;background-repeat: no-repeat;background-position: center;">
+                        <a href="#" class="post-details-url"></a>
+                        <!-- post url anchor tag-->
+                    </div>
+                    <div class="rny-postinfo-content">
+                        <div class="hotspot-num-block">
+                            <span class="collection-text"><img src="images/img-q.png" alt="rny-image"> 2</span>
+                            <span class="collection-text"><img src="images/icon_hotspot.png" alt="rny-image"> 5</span>
+                        </div>
+                        <div class="rny-trend-collection-block">
+                            <span class="post-seasons-collections">Seasons New Collections<a href="" class="postinfo-hashtags">#clickable</a> at <a href="" class="postinfo-hashtags">#somehashtag</a></span>
+                        </div>
+                        <div class="postupdate-time-block">
+                            <span class="postinfo-time"> by</span>
+                            <a href=""><span class="rny-asphalt postinfo-publisher-name"> Kalanikethan</span></a>
+                            <span class="postinfo-updatetimeDot">&#183;</span>
+                            <span class="postinfo-updatetime">12 hrs ago</span>
+                            <br>
+                            <span class="postupdated-time">last updated 3hrs ago</span>
+                        </div>
+                        <div class="rny-likes-views-block">
+                            <ul class="rny-likes">
+                                <li><a class="rny-darkgrey popUp" href="#"><img src="images/like.png" alt="rny-image"> 250 likes</a></li>
+                                <li><a class="rny-darkgrey popUp" href="#"><img src="images/view.png" alt="rny-image"> 309 views</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-12 col-xs-12 rny-pub-container">
+                <div class="rny-postinfo-block">
+                    <div class="pub-img-block post-img" style="background-image: url(images/image-2.jpg);background-size: cover;background-repeat: no-repeat;background-position: center;">
+                        <a href="#" class="post-details-url"></a>
+                        <!-- post url anchor tag-->
+                    </div>
+                    <div class="rny-postinfo-content">
+                        <div class="hotspot-num-block">
+                            <span class="collection-text"><img src="images/img-q.png" alt="rny-image"> 2</span>
+                            <span class="collection-text"><img src="images/icon_hotspot.png" alt="rny-image"> 5</span>
+                        </div>
+                        <div class="rny-trend-collection-block">
+                            <span class="post-seasons-collections">Seasons New Collections<a href="" class="postinfo-hashtags">#clickable</a> at <a href="" class="postinfo-hashtags">#somehashtag</a></span>
+                        </div>
+                        <div class="postupdate-time-block">
+                            <span class="postinfo-time"> by</span>
+                            <a href=""><span class="rny-asphalt postinfo-publisher-name"> Kalanikethan</span></a>
+                            <span class="postinfo-updatetimeDot">&#183;</span>
+                            <span class="postinfo-updatetime">12 hrs ago</span>
+                            <br>
+                            <span class="postupdated-time">last updated 3hrs ago</span>
+                        </div>
+                        <div class="rny-likes-views-block">
+                            <ul class="rny-likes">
+                                <li><a class="rny-darkgrey popUp" href="#"><img src="images/like.png" alt="rny-image"> 250 likes</a></li>
+                                <li><a class="rny-darkgrey popUp" href="#"><img src="images/view.png" alt="rny-image"> 309 views</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-12 col-xs-12 rny-pub-container">
+                <div class="rny-postinfo-block">
+                    <div class="pub-img-block" style="background-image: url(images/image-1.jpg);background-size: cover;background-repeat: no-repeat;background-position: center;">
+                        <a href="#" class="post-details-url"></a>
+                        <!-- post url anchor tag-->
+                    </div>
+                    <div class="rny-postinfo-content">
+                        <div class="hotspot-num-block">
+                            <span class="collection-text"><img src="images/img-q.png" alt="rny-image"> 2</span>
+                            <span class="collection-text"><img src="images/icon_hotspot.png" alt="rny-image"> 5</span>
+                        </div>
+                        <div class="rny-trend-collection-block">
+                            <span class="post-seasons-collections">Seasons New Collections<a href="" class="postinfo-hashtags">#clickable</a> at <a href="" class="postinfo-hashtags">#somehashtag</a></span>
+                        </div>
+                        <div class="postupdate-time-block">
+                            <span class="postinfo-time"> by</span>
+                            <a href=""><span class="rny-asphalt postinfo-publisher-name"> Kalanikethan</span></a>
+                            <span class="postinfo-updatetimeDot">&#183;</span>
+                            <span class="postinfo-updatetime">12 hrs ago</span>
+                            <br>
+                            <span class="postupdated-time">last updated 3hrs ago</span>
+                        </div>
+                        <div class="rny-likes-views-block">
+                            <ul class="rny-likes">
+                                <li><a class="rny-darkgrey popUp" href="#"><img src="images/like.png" alt="rny-image"> 250 likes</a></li>
+                                <li><a class="rny-darkgrey popUp" href="#"><img src="images/view.png" alt="rny-image"> 309 views</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-12 col-xs-12 rny-pub-container">
+                <div class="rny-postinfo-block">
+                    <div class="pub-img-block" style="background-image: url(images/image-5.jpg);background-size: cover;background-repeat: no-repeat;background-position: center;">
+                        <a href="#" class="post-details-url"></a>
+                        <!-- post url anchor tag-->
+                    </div>
+                    <div class="rny-postinfo-content">
+                        <div class="hotspot-num-block">
+                            <span class="collection-text"><img src="images/img-q.png" alt="rny-image"> 2</span>
+                            <span class="collection-text"><img src="images/icon_hotspot.png" alt="rny-image"> 5</span>
+                        </div>
+                        <div class="rny-trend-collection-block">
+                            <span class="post-seasons-collections">Seasons New Collections<a href="" class="postinfo-hashtags">#clickable</a> at <a href="" class="postinfo-hashtags">#somehashtag</a></span>
+                        </div>
+                        <div class="postupdate-time-block">
+                            <span class="postinfo-time">by</span>
+                            <a href=""><span class="rny-asphalt postinfo-publisher-name"> Kalanikethan</span></a>
+                            <span class="postinfo-updatetimeDot">&#183;</span>
+                            <span class="postinfo-updatetime">12 hrs ago</span>
+                            <br>
+                            <span class="postupdated-time">last updated 3hrs ago</span>
+                        </div>
+                        <div class="rny-likes-views-block">
+                            <ul class="rny-likes">
+                                <li><a class="rny-darkgrey popUp" href="#"><img src="images/like.png" alt="rny-image"> 250 likes</a></li>
+                                <li><a class="rny-darkgrey popUp" href="#"><img src="images/view.png" alt="rny-image"> 309 views</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-12 col-xs-12 rny-pub-container">
+                <div class="rny-postinfo-block">
+                    <div class="pub-img-block" style="background-image: url(images/image-1.jpg);background-size: cover;background-repeat: no-repeat;background-position: center;">
+                        <a href="#" class="post-details-url"></a>
+                        <!-- post url anchor tag-->
+                    </div>
+                    <div class="rny-postinfo-content">
+                        <div class="hotspot-num-block">
+                            <span class="collection-text"><img src="images/img-q.png" alt="rny-image"> 2</span>
+                            <span class="collection-text"><img src="images/icon_hotspot.png" alt="rny-image"> 5</span>
+                        </div>
+                        <div class="rny-trend-collection-block">
+                            <span class="post-seasons-collections">Seasons New Collections<a href="" class="postinfo-hashtags">#clickable</a> at <a href="" class="postinfo-hashtags">#somehashtag</a></span>
+                        </div>
+                        <div class="postupdate-time-block">
+                            <span class="postinfo-time"> by</span>
+                            <a href=""><span class="rny-asphalt postinfo-publisher-name"> Kalanikethan</span></a>
+                            <span class="postinfo-updatetimeDot">&#183;</span>
+                            <span class="postinfo-updatetime">12 hrs ago</span>
+                            <br>
+                            <span class="postupdated-time">last updated 3hrs ago</span>
+                        </div>
+                        <div class="rny-likes-views-block">
+                            <ul class="rny-likes">
+                                <li><a class="rny-darkgrey popUp" href="#"><img src="images/like.png" alt="rny-image"> 250 likes</a></li>
+                                <li><a class="rny-darkgrey popUp" href="#"><img src="images/view.png" alt="rny-image"> 309 views</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="more-btn-block">
+            <a class="more-btn">&#183; &#183; &#183; more</a>
+            <div id="loader">
+                <img src="images/loader.gif">
+            </div>
+        </div>
+    </div>
+    <div class="footer-block" style="position: relative;">
+        <div class="footer-connect-block">
+            <h1 class="footer-h1-cls">CONNECT</h1>
+            <ul>
+                <li><a href="https://www.facebook.com/Renyoo-220849128296067/" target="_blank"><i class="fa fa-facebook fa-icon-align" aria-hidden="true"></i></a></li>
+                <li><a href="https://plus.google.com/u/0/communities/116794355079467123192" target="_blank"><i class="fa fa-google-plus fa-icon-align" aria-hidden="true"></i></a></li>
+                <li><a href="https://twitter.com/renyooapp" target="_blank"><i class="fa fa-twitter fa-icon-align" aria-hidden="true"></i></a></li>
+                <li><a href="mailto:support@renyoo.com"><i class="fa fa-envelope-o fa-icon-align" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UCxHyHpsRxmfdcZKje0jx4Yg"><i class="fa fa-youtube fa-icon-align" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+        <div class="rny-about-block">
+            <ul>
+                <li><a href="https://play.google.com/store/apps/details?id=com.app.renyoo.android">DOWNLOAD</a></li>
+                <li><a href="getting-started.html">GETTING STARTED</a></li>
+                <li><a href="business.html">BUSINESS</a></li>
+                <li><a href="privacy-policy.html">PRIVACY</a></li>
+                <li><a href="terms-conditions.html">TERMS &amp; CONDITIONS</a></li>
+                <li><a href="mailto:support@renyoo.com">SUPPORT</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+            </ul>
+        </div>
+        <div class="rny-copyright-block">
+            <ul>
+                <li><a href="#">&#169; 2017 RenyooIt LLC.</a></li>
+                <li><a href="#">San Ramon,CA</a></li>
+            </ul>
+        </div>
+        <div class="scroll-top">
+            <img src="images/scroll-arrow.png" alt="rny-image">
+        </div>
+    </div>
+    <!-- download app popup  -->
+    <div id="rny_app_download">
+        <div class="app-download-wrapper">
+            <span class="rny-app-close">close</span>
+            <div class="download-appImg">
+                <img src="images/mobile_icon.png">
+            </div>
+            <div class="download-appTxt">
+                <span class="app-download-text">Want to do more with Renyoo?</span>
+                <a href="#"><img src="images/play_icon.png" width="150px;" alt="rny-image"></a>
+            </div>
+        </div>
+    </div>
+    <!-- download app  popup end  -->
+</body>
+<script>
+// scroll icon
+$(".scroll-top").click(function() {
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+    return false;
+});
+
+// more button loader
+$(".more-btn").click(function() {
+    $("#loader").show();
+    $(".more-btn").hide();
+    setTimeout(function() { $("#loader").hide(); }, 2000);
+});
+
+// download app popup
+$(".popUp").click(function() {
+    $("#rny_app_download").stop().fadeIn(500);
+});
+
+$(".rny-app-close").click(function() {
+    $("#rny_app_download").stop().fadeOut(500);
+});
+
+// search key words in input box(dropeown plugin)
+$('select').niceSelect();
+
+// menu overlay
+$("#menu").click(function() {
+    $(".menu-overlay").fadeIn(1000);
+});
+
+$(".menu-close").click(function() {
+    $(".menu-overlay").fadeOut(1000);
+});
+
+// mobile and tablet search 
+$(".search-icon").click(function() {
+    $(".mobile-search-view").fadeIn(1000);
+});
+
+$(".search-close").click(function() {
+    $(".mobile-search-view").fadeOut(1000);
+});
+</script>
+
+</html>

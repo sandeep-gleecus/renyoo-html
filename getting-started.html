@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Renyoo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="" />
+    <!--css-->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/nice-select.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" />
+    <!--js-->
+    <script src="libs/jquery.min.js"></script>
+    <script src="libs/bootstrap.min.js"></script>
+    <script src="libs/jquery.nice-select.js"></script>
+    <!--fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300,600,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <!-- header section -->
+    <div class="rny-chanl-post-list-header-bar">
+        <div class="container">
+            <a><img src="images/menu.png" class="menu-icon-mb" id="menu"></a>
+            <a class="rny-logo"><img class="rny-logo-mb" alt="rny-image" src="images/rny-logo.png"></a>
+            <div class="input-block">
+                <input class="search-bar" type="text" id="search" name="search-content" placeholder="i'm looking for...">
+                <span class="submit-searchicon"><input type="image" name="submit" src="images/search_icon.png" alt="rny-image"></span>
+                <select id="search_keywords">
+                    <ul>
+                        <li>
+                            <option value="Keywords">Keywords</option>
+                        </li>
+                        <li>
+                            <option value="Channels">Channels</option>
+                        </li>
+                        <li>
+                            <option value="Locations">Locations</option>
+                        </li>
+                    </ul>
+                </select>
+            </div>
+            <span class="mb-searchicon"><img class="search-icon" src="images/search_icon.png" alt="rny-image"></span>
+            <a href="#" class="google-play-logo"><img class="playstore-logo-mb" src="images/play_icon.png" alt="rny-image"></a>
+        </div>
+    </div>
+    <!-- header section end -->
+    <!-- menu overlay section -->
+    <div class="menu-overlay">
+        <div class="container">
+            <div class="menu-close">
+                <img src="images/menu_close.png" alt="rny-image">
+            </div>
+            <div class="menu-overlay-content">
+                <div class="overlay-menu-list">
+                    <ul>
+                        <li><a href="https://play.google.com/store/apps/details?id=com.app.renyoo.android">DOWNLOAD</a></li>
+                        <li><a href="getting-started.html">GETTING STARTED</a></li>
+                        <li><a href="business.html">BUSINESS</a></li>
+                        <li><a href="privacy-policy.html">PRIVACY</a></li>
+                        <li><a href="terms-conditions.html">TERMS &amp; CONDITIONS</a></li>
+                        <li><a href="mailto:support@renyoo.com">SUPPORT</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                    </ul>
+                </div>
+                <div class="verification-block">
+                    <div class="rny-verifydropline">
+                        <p class="rny-verify-text">Want to have a verified account on Renyoo or know how to reach your audience effectively?</p>
+                        <a href="mailto:supports@renyoo.com" class="rny-dropline" target="_blank">Drop in a line.</a>
+                    </div>
+                    <div class="overlay-connect-block">
+                        <h1 class="overlay-h1-cls">CONNECT</h1>
+                        <ul>
+                            <li><a href="https://www.facebook.com/Renyoo-220849128296067/" target="_blank"><i class="fa fa-facebook fa-icon-align" aria-hidden="true"></i></a></li>
+                            <li><a href="https://plus.google.com/u/0/communities/116794355079467123192" target="_blank"><i class="fa fa-google-plus fa-icon-align" aria-hidden="true"></i></a></li>
+                            <li><a href="https://twitter.com/renyooapp" target="_blank"><i class="fa fa-twitter fa-icon-align" aria-hidden="true"></i></a></li>
+                            <li><a href="mailto:support@renyoo.com"><i class="fa fa-envelope-o fa-icon-align" aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.youtube.com/channel/UCxHyHpsRxmfdcZKje0jx4Yg"><i class="fa fa-youtube fa-icon-align" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- menu overlay section end -->
+    <!-- mobile search view section(click on search icon) -->
+    <div class="mobile-search-view">
+        <div class="mb-search-block">
+            <div class="close-btn">
+                <span class="search-close">close</span>
+            </div>
+            <div class="searchbar">
+                <input class="mb-search-bar" type="text" id="search" name="search-content" placeholder="i'm looking for...">
+            </div>
+            <div class="keywords-block">
+                <span class="keywords">look within</span>
+                <ul>
+                    <li><a href="#"><img src="images/hashtag.png" alt="rny-image">Keywords</a></li>
+                    <li><a href="#"><img src="images/channels.png" alt="rny-image">Channels</a></li>
+                    <li><a href="#"><img src="images/locations.png" alt="rny-image">Locations</a></li>
+                </ul>
+            </div>
+            <div class="searc-btn-cls">
+                <input class="mb-search-btn" type="button" name="submit" value="SEARCH">
+            </div>
+        </div>
+    </div>
+    <!-- mobile search view section(click on search icon) end-->
+    <!-- getting started section -->
+    <div class="container" id="getting_started">
+        <h1 class="getStrt-header">GETTING STARTED</h1>
+        <!-- dropdown block -->
+        <div class="dropdown-block">
+            <div class='dropdown'>
+                <b>How to Create Content?</b>
+                <img src="images/arrow_up.png" alt="rny-image" id="arrowup">
+                <img src="images/arrow_down.png" alt="rny-image" id="arrowdown">
+            </div>
+            <ul class='drop-selection'>
+                <li><a href='#' onclick="frameVisibility('div1')">How to Create Content?</a></li>
+                <li><a href='#' onclick="frameVisibility('div2')">How to Share Content?</a></li>
+                <li><a href='#' onclick="frameVisibility('div3')">How to Interact with Posts?</a></li>
+                <li><a href='#' onclick="frameVisibility('div4')">How to use your Vault?</a></li>
+                <li><a href='#' onclick="frameVisibility('div5')">How to Create Your Network?</a></li>
+                <li><a href='#' onclick="frameVisibility('div6')">What else can you do?</a></li>
+            </ul>
+        </div>
+        <!-- dropdown block end-->
+        <!-- create content section-->
+        <div id="div1" class="getStrt-content-block" style="display: inline-block;">
+            <!-- adding hotspots -->
+            <div class="col-sm-12 contentPadding">
+                <div class="rny-getstrt-subheader">
+                    Adding Hotspots to your Images
+                </div>
+                <div class="rny-getstrt-content">
+                    <p class="getstrt-text">You can pick an image from gallery or click one using your camera without leaving the app. You can find create options from the Feed screen, the Menu or from your Vault as well.</p>
+                    <p class="getstrt-text">Once an image is picked it loads inside the Hotspot Mode. You can add a Hotspot from the main Menu at the bottom. By default the Hotspot lands on the center of your screen on top of your image. Drag the hotspot and place it wherever you want on the image.</p>
+                    <p class="getstrt-text">By default the hotspot menu is opened below when you add the hotspot or when you touch it again. You can add a <span class="get-boldtext">#label</span>to the hotspot,<span class="get-boldtext"> change its color</span> and <span class="get-boldtext">add details</span> to it.
+                        <br> These attributes can be changed, deleted and edited at any time. Click anywhere outside and get the main menu at the bottom.</p>
+                    <p class="getstrt-text get-boldtext">RENYOO TIP:
+                        <br>
+                        <span class="rny-tipTxt">You can zoom in on the image and add a hotspot and the zoomed position would be retained on the hotspot.</span></p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 col-md-6 img-padding"><img src="images/create/add_hp.jpg" alt="rny-image" width="100%"></div>
+            <div class="col-sm-6 col-lg-3 col-md-6 img-padding"><img src="images/create/move_label.jpg" alt="rny-image" width="100%"></div>
+            <div class="col-sm-6 col-lg-3 col-md-6 img-padding"><img src="images/create/change_color.jpg" alt="rny-image" width="100%"></div>
+            <div class="col-sm-6 col-lg-3 col-md-6 img-padding"><img src="images/create/zoom_hp.jpg" alt="rny-image" width="100%"></div>
+            <!-- adding hotspots end -->
+            <!-- line divider -->
+            <div class="col-sm-12">
+                <hr class="divider">
+            </div>
+            <!-- line divider -->
+            <!-- adding data and attachments -->
+            <div class="col-sm-12 contentPadding">
+                <div class="rny-getstrt-subheader">
+                    Add Data and Attachments to your Hotspots
+                </div>
+                <div class="rny-getstrt-content">
+                    <p class="getstrt-text">You can click on <span class="get-boldtext">add details</span> on the hotspot menu at the bottom and continue adding data and attachments to your hotspot.</p>
+                    <p class="getstrt-text" style="margin-left: 15px;"> - You can add a <span class="get-boldtext">description</span> for your hotspot( upto 150 characters) and can also add an URL to it
+                        <br> - You can record an audio for <span class="get-boldtext">30 seconds</span> for your hotspot
+                        <br> - You can further enhance your hotspot by adding media to it. Click on <span class="get-boldtext">Add Media</span> to get your Media options
+                        <br> - You can add an <span class="get-boldtext">URL</span> to your hotspot
+                        <br> - You can add <span class="get-boldtext">images</span> to your hotspot (upto 4 images and you can click an image or pick from gallery)
+                        <br> - You can add a <span class="get-boldtext">video</span> to your hotspot. (Record a 30 seconds video or pick a video from your gallery)</p>
+                    <p class="getstrt-text get-boldtext">RENYOO TIP:
+                        <br>
+                        <span class="rny-tipTxt">When you pick a video from gallery it loads into a custom clipper and you can clip a 30 secs duration to upload</span></p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 col-md-6 img-padding"><img src="images/create/imgc1.jpg" alt="rny-image" width="99%"></div>
+            <div class="col-sm-6 col-lg-3 col-md-6 img-padding"><img src="images/create/imgc2.jpg" alt="rny-image" width="100%"></div>
+            <div class="col-sm-6 col-lg-3 col-md-6 img-padding"><img src="images/create/imgc3.jpg" alt="rny-image" width="100%"></div>
+            <div class="col-sm-6 col-lg-3 col-md-6 img-padding"><img src="images/create/imgc4.jpg" alt="rny-image" width="100%"></div>
+            <!-- <div class="col-sm-6 col-lg-3 col-md-6 img-padding"><img src="images/create/imgc5.jpg" alt="rny-image" width="100%"></div> -->
+            <!-- adding data and attachments end-->
+            <!-- line divider -->
+            <div class="col-sm-12">
+                <hr class="divider">
+            </div>
+            <!-- line divider -->
+            <!-- snippets and storing in clipbord -->
+            <div class="col-sm-12 contentPadding">
+                <div class="rny-getstrt-subheader">
+                    Take Snippets and Store them in your Clipboard
+                </div>
+                <div class="rny-getstrt-content">
+                    <p class="getstrt-text">When editing your image with hotspots you can also take <span class="get-boldtext">snippets</span> and store them in your <span class="get-boldtext">Clipboard.</span> Use your snippets to load them into hotspot mode and add hotspots on them.</p>
+                    <p class="getstrt-text get-boldtext">RENYOO TIP:
+                        <br>
+                        <span class="rny-tipTxt">You can also take snippets zooming in on the image.</span></p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 col-md-6 img-padding"><img src="images/create/imgsnp1.jpg" alt="rny-image" width="100%"></div>
+            <div class="col-sm-6 col-lg-3 col-md-6 img-padding"><img src="images/create/imgsnp2.jpg" alt="rny-image" width="100%"></div>
+            <div class="col-sm-6 col-lg-3 col-md-6 img-padding"><img src="images/create/imgsnp3.jpg" alt="rny-image" width="100%"></div>
+            <div class="col-sm-6 col-lg-3 col-md-6 img-padding"><img src="images/create/imgsnp4.jpg" alt="rny-image" width="100%"></div>
+            <!-- snippets and storing in clipbord end-->
+        </div>
+        <!-- create content section end-->
+        <!-- sharing content section-->
+        <div id="div2" class="getStrt-content-block">
+            <div class="col-sm-12 contentPadding">
+                <div class="rny-getstrt-subheader">
+                    Sharing Hotspots - <span class="rny-green">Selectively Share your Hotspots</span>
+                </div>
+                <div class="rny-getstrt-content">
+                    <p class="getstrt-text">One of the most amazing features of Renyoo is <span class="get-boldtext">Selective Sharing of Hotspots.</span>
+                        <br> When you proceed to Posting your content Renyoo gives you the option of assigning your hotspots to your individual <span class="get-boldtext">Friends</span> and <span class="get-boldtext">Groups.</span> You can select a hotspot from top and select from your Friends and Groups at the bottom. When done assigning the hotspots just go ahead to the next step.</p>
+                    <p class="getstrt-text">Your assignees wil receive the post on their Friends or Groups Feed based on the assignment but when they dive into it they can only see the hotspots assigned to them. Isn’t this amazing? You can also use <span class="get-boldtext">Multiselect</span> to select multiple hotspots and assign them together. Use <span class="get-boldtext">Lock</span> to save your assignments.</p>
+                    <p class="getstrt-text">Incase you want to create a Public Post skip the selective sharing part, as all Public Posts content are for everyone on Renyoo. Show off your content to the world.</p>
+                    <p class="getstrt-text get-boldtext">RENYOO TIP:
+                        <br>
+                        <span class="rny-tipTxt">- Incase you want to just share the image and no hotspots with someone on your network, select the image icon and assign it to them. In this case they just see the image and no hotspots.<br>
+                        - You can also keep any of your hotspots private and not share it with anyone. In this case only you can view it.<br>
+                        - You can always change assignments and update your post and the Post and Hotspots would be available for the changed assignees.<br>
+                        - You can also add new hotspots on your POST and assign them fresh.</span></p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 col-md-6 img-padding"><img src="images/share/imgshare1.jpg" alt="rny-image" width="100%"></div>
+            <div class="col-sm-6 col-lg-3 col-md-6 img-padding"><img src="images/share/imgshare2.jpg" alt="rny-image" width="100%"></div>
+            <div class="col-sm-6 col-lg-3 col-md-6 img-padding"><img src="images/share/imgshare3.jpg" alt="rny-image" width="100%"></div>
+            <div class="col-sm-6 col-lg-3 col-md-6 img-padding"><img src="images/share/imgshare4.jpg" alt="rny-image" width="100%"></div>
+        </div>
+        <!-- sharing content section end-->
+        <!-- interact post content section -->
+        <div id="div3" class="getStrt-content-block">
+            <div class="col-sm-12 contentPadding">
+                <div class="rny-getstrt-subheader">
+                    How to interact with Posts?
+                </div>
+                <div class="rny-getstrt-content">
+                    <p class="getstrt-text">On Renyoo you can create <span class="get-boldtext">Posts on your Friends and Groups Feed or on Public.</span> You can also interact with Posts that are shared with you on your Timeline or on Groups with you or on the Public Feed. Interaction with Posts are on multiple levels.</p>
+                    <p class="getstrt-text">You can view posts on the different <span class="get-boldtext">Timelines - Public, Following, Friends and Groups.</span> You can scroll through them. Want to delve into it? Open the <span class="get-boldtext">Summary View.</span> The Summary View gives you overall information and stats on the Post. You can also <span class="get-boldtext">comment on the Post</span> from here. You can <span class="get-boldtext">Share the Post(if its a Public Post) via Social, Web or Email.</span> You can also set a <span class="get-boldtext">Reminder</span> for the Post for a time and date to remind you to view it. You can also view the Post Level Media if shared by the Publisher. <span class="get-boldtext">Like the Post</span> if you find it interesting.</p>
+                    <p class="getstrt-text">Want to view and interact with the hotspots, dive deeper into the <span class="get-boldtext">Drilldown View.</span> Tap on the hotspots and view its information on the bottom. Want to converse on the hotspots with the Publisher? SImple. <span class="get-boldtext">Just start a commenting thread on the hotspot.</span></p>
+                    <p class="getstrt-text">See something interesting on the picture and want to know more abou? <span class="get-boldtext">Place a question</span> like a hotspot and ask the Publisher about it.</p>
+                    <p class="getstrt-text get-boldtext">RENYOO TIP:
+                        <br>
+                        <span class="rny-tipTxt">- Want to stay tuned with a Public Post? Hit Follow this Post button and it will get added to your Follwing Feed. Now you will receive notifications for it whenver something changes on it.</span></p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 col-md-6 img-padding"><img src="images/interact/interactimg1.jpg" alt="rny-image" width="100%"></div>
+            <div class="col-sm-6 col-lg-3 col-md-6 img-padding"><img src="images/interact/interactimg2.jpg" alt="rny-image" width="100%"></div>
+            <div class="col-sm-6 col-lg-3 col-md-6 img-padding"><img src="images/interact/interactimg3.jpg" alt="rny-image" width="100%"></div>
+            <div class="col-sm-6 col-lg-3 col-md-6 img-padding"><img src="images/interact/interactimg4.jpg" alt="rny-image" width="100%"></div>
+            <div class="col-sm-6 col-lg-3 col-md-6 img-padding"><img src="images/interact/interactimg5.jpg" alt="rny-image" width="100%"></div>
+            <div class="col-sm-6 col-lg-3 col-md-6 img-padding"><img src="images/interact/interactimg6.jpg" alt="rny-image" width="100%"></div>
+            <div class="col-sm-6 col-lg-3 col-md-6 img-padding"><img src="images/interact/interactimg7.jpg" alt="rny-image" width="100%"></div>
+            <div class="col-sm-6 col-lg-3 col-md-6 img-padding"><img src="images/interact/interactimg8.jpg" alt="rny-image" width="100%"></div>
+            <div class="col-sm-6 col-lg-3 col-md-6 img-padding"><img src="images/interact/interactimg9.jpg" alt="rny-image" width="100%"></div>
+            <div class="col-sm-6 col-lg-3 col-md-6 img-padding"><img src="images/interact/interactimg10.jpg" alt="rny-image" width="100%"></div>
+            <div class="col-sm-6 col-lg-3 col-md-6 img-padding"><img src="images/interact/interactimg11.jpg" alt="rny-image" width="100%"></div>
+            <div class="col-sm-6 col-lg-3 col-md-6 img-padding"><img src="images/interact/interactimg12.jpg" alt="rny-image" width="100%"></div>
+            <div class="col-sm-6 col-lg-3 col-md-6 img-padding"><img src="images/interact/interactimg13.jpg" alt="rny-image" width="100%"></div>
+            <div class="col-sm-6 col-lg-3 col-md-6 img-padding"><img src="images/interact/interactimg14.jpg" alt="rny-image" width="100%"></div>
+            <div class="col-sm-6 col-lg-3 col-md-6 img-padding"><img src="images/interact/interactimg15.jpg" alt="rny-image" width="100%"></div>
+        </div>
+        <!-- interact post content section end-->
+        <!--vault content section -->
+        <div id="div4" class="getStrt-content-block">
+            <div class="col-sm-12 contentPadding">
+                <div class="rny-getstrt-subheader">
+                    How to use your Vault?
+                </div>
+                <div class="rny-getstrt-content">
+                    <p class="getstrt-text">The <span class="get-boldtext">Renyoo Vault</span> is your personal storage of <span class="get-boldtext">PODs(Images with Hotspots).</span> Save your work of adding hotspots and information in your Vault and get back to it again from your Vault. Maybe you need more time for it? Or curate your own personal content. Store them all in your Vault.</p>
+                    <p class="getstrt-text">You can tag your Vault Images with common tags to group them together. <span class="get-boldtext">Search by a Tag Name</span> to filter your PODs on Vault.</p>
+                    <p class="getstrt-text get-boldtext">RENYOO TIP:
+                        <br>
+                        <span class="rny-tipTxt">- All Vault PODs are in unpublished state. Once you POST them there are removed from your Vault.<br>
+                    - When your POST is deleted or expired it goes back to your Renyoo Vault.</span></p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 col-md-6 img-padding"><img src="images/vault/vaultimg1.jpg" alt="rny-image" width="100%"></div>
+            <div class="col-sm-6 col-lg-3 col-md-6 img-padding"><img src="images/vault/vaultimg2.jpg" alt="rny-image" width="100%"></div>
+            <div class="col-sm-6 col-lg-3 col-md-6 img-padding"><img src="images/vault/vaultimg3.jpg" alt="rny-image" width="100%"></div>
+            <div class="col-sm-6 col-lg-3 col-md-6 img-padding"><img src="images/vault/vaultimg4.jpg" alt="rny-image" width="100%"></div>
+            <div class="col-sm-6 col-lg-3 col-md-6 img-padding"><img src="images/vault/vaultimg5.jpg" alt="rny-image" width="100%"></div>
+            <div class="col-sm-6 col-lg-3 col-md-6 img-padding"><img src="images/vault/vaultimg6.jpg" alt="rny-image" width="100%"></div>
+            <div class="col-sm-6 col-lg-3 col-md-6 img-padding"><img src="images/vault/vaultimg7.jpg" alt="rny-image" width="100%"></div>
+        </div>
+        <!--vault content section end-->
+        <!--create network content section -->
+        <div id="div5" class="getStrt-content-block">
+            <div class="col-sm-12 contentPadding">
+                <div class="rny-getstrt-subheader">
+                    How to create your Network?
+                </div>
+                <div class="rny-getstrt-content">
+                    <p class="getstrt-text">On Renyoo you can find and add users and create your network. You can search for users using their <span class="get-boldtext">Renyoo Nickname</span>(which is unique for all users) or their user names. You can send <span class="get-boldtext">Friend Requests</span> to users and when they accept you are connected.</p>
+                    <p class="getstrt-text">You can also create <span class="get-boldtext">Groups</span> on Renyoo. Select a few of your friends on Renyoo and create a Group. Maybe create a family group, hobbies group or anything that you want to. Groups gives you the ability to share content directy on them. Your friends can also add you to their groups.</p>
+                    <p class="getstrt-text">Still not finding anyone on Renyoo from your known circles? Simply <span class="get-boldtext">Invite</span> them over. Once they join you can add them.</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 col-md-6 img-padding"><img src="images/network/networkimg1.jpg" alt="rny-image" width="100%"></div>
+            <div class="col-sm-6 col-lg-3 col-md-6 img-padding"><img src="images/network/networkimg2.jpg" alt="rny-image" width="100%"></div>
+            <div class="col-sm-6 col-lg-3 col-md-6 img-padding"><img src="images/network/networkimg3.jpg" alt="rny-image" width="100%"></div>
+            <div class="col-sm-6 col-lg-3 col-md-6 img-padding"><img src="images/network/networkimg4.jpg" alt="rny-image" width="100%"></div>
+            <div class="col-sm-6 col-lg-3 col-md-6 img-padding"><img src="images/network/networkimg5.jpg" alt="rny-image" width="100%"></div>
+            <div class="col-sm-6 col-lg-3 col-md-6 img-padding"><img src="images/network/networkimg6.jpg" alt="rny-image" width="100%"></div>
+            <div class="col-sm-6 col-lg-3 col-md-6 img-padding"><img src="images/network/networkimg7.jpg" alt="rny-image" width="100%"></div>
+            <div class="col-sm-6 col-lg-3 col-md-6 img-padding"><img src="images/network/networkimg8.jpg" alt="rny-image" width="100%"></div>
+            <div class="col-sm-6 col-lg-3 col-md-6 img-padding"><img src="images/network/networkimg9.jpg" alt="rny-image" width="100%"></div>
+            <div class="col-sm-6 col-lg-3 col-md-6 img-padding"><img src="images/network/networkimg10.jpg" alt="rny-image" width="100%"></div>
+        </div>
+        <!--create network content section end-->
+        <!--what else content section -->
+        <div id="div6" class="getStrt-content-block">
+            <div class="col-sm-12 contentPadding">
+                <div class="rny-getstrt-subheader">
+                    What else can you do?
+                </div>
+            </div>
+            <div class="rny-getstrt-content">
+                <div class="col-sm-12">
+                    <div class="what-else-subheader">
+                        Messaging
+                    </div>
+                </div>
+                <p class="getstrt-text" style="padding: 14px;">On Renyoo, we understand the power of communication. That’s why we have built a full fledged and encrypted chat for you and your Friends. Renyoo Messaging also lets you share attachments.</p>
+                <div class="col-sm-6 col-lg-3 col-md-6 img-padding"><img src="images/what_else/msg_img1.jpg" alt="rny-image" width="100%"></div>
+                <div class="col-sm-6 col-lg-3 col-md-6 img-padding"><img src="images/what_else/msg_img2.jpg" alt="rny-image" width="100%"></div>
+                <div class="col-sm-6 col-lg-3 col-md-6 img-padding"><img src="images/what_else/msg_img3.jpg" alt="rny-image" width="100%"></div>
+                <div class="col-sm-6 col-lg-3 col-md-6 img-padding"><img src="images/what_else/msg_img4.jpg" alt="rny-image" width="100%"></div>
+                <div class="col-sm-6 col-lg-3 col-md-6 img-padding"><img src="images/what_else/msg_img5.jpg" alt="rny-image" width="100%"></div>
+                <div class="col-sm-12">
+                    <hr class="divider">
+                </div>
+                <div class="col-sm-12">
+                    <div class="what-else-subheader">
+                        Reminders
+                    </div>
+                    <p class="getstrt-text">You can set a reminder on Posts or from PODs in your Vault to show it at your set time and date. Your Reminders are synced on your device calendar. Maybe a shopping list that you want to get reminded of when at the store?</p>
+                </div>
+                <div class="col-sm-6 col-lg-3 col-md-6 img-padding"><img src="images/what_else/reminder_img1.jpg" alt="rny-image" width="100%"></div>
+                <div class="col-sm-6 col-lg-3 col-md-6 img-padding"><img src="images/what_else/reminder_img2.jpg" alt="rny-image" width="100%"></div>
+                <div class="col-sm-12">
+                    <hr class="divider">
+                </div>
+                <div class="col-sm-12">
+                    <div class="what-else-subheader">
+                        Share a Public Post
+                    </div>
+                    <p class="getstrt-text">You can share a Public Post on Social and Email.</p>
+                </div>
+                <div class="col-sm-6 col-lg-3 col-md-6 img-padding"><img src="images/what_else/share_img1.jpg" alt="rny-image" width="100%"></div>
+            </div>
+        </div>
+        <!--what else content section end-->
+    </div>
+    <!-- footer block -->
+    <div class="footer-block">
+        <div class="footer-connect-block">
+            <h1 class="footer-h1-cls">CONNECT</h1>
+            <ul>
+                <li><a href="https://www.facebook.com/Renyoo-220849128296067/" target="_blank"><i class="fa fa-facebook fa-icon-align" aria-hidden="true"></i></a></li>
+                <li><a href="https://plus.google.com/u/0/communities/116794355079467123192" target="_blank"><i class="fa fa-google-plus fa-icon-align" aria-hidden="true"></i></a></li>
+                <li><a href="https://twitter.com/renyooapp" target="_blank"><i class="fa fa-twitter fa-icon-align" aria-hidden="true"></i></a></li>
+                <li><a href="mailto:support@renyoo.com"><i class="fa fa-envelope-o fa-icon-align" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UCxHyHpsRxmfdcZKje0jx4Yg"><i class="fa fa-youtube fa-icon-align" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+        <div class="rny-about-block">
+            <ul>
+                <li><a href="https://play.google.com/store/apps/details?id=com.app.renyoo.android">DOWNLOAD</a></li>
+                <li><a href="getting-started.html">GETTING STARTED</a></li>
+                <li><a href="business.html">BUSINESS</a></li>
+                <li><a href="privacy-policy.html">PRIVACY</a></li>
+                <li><a href="terms-conditions.html">TERMS &amp; CONDITIONS</a></li>
+                <li><a href="mailto:support@renyoo.com">SUPPORT</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+            </ul>
+        </div>
+        <div class="rny-copyright-block">
+            <ul>
+                <li><a href="#">&#169; 2017 RenyooIt LLC.</a></li>
+                <li><a href="#">San Ramon,CA</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- footer block end-->
+</body>
+<script type="text/javascript">
+$(document).ready(function() {
+    // search key words in inputbox (dropdown plugin)
+    $('select').niceSelect();
+
+    // menu overlay
+    $("#menu").click(function() {
+        $(".menu-overlay").fadeIn(1000);
+    });
+
+    $(".menu-close").click(function() {
+        $(".menu-overlay").fadeOut(1000);
+    });
+
+    // mobiel and tablet search 
+    $(".search-icon").click(function() {
+        $(".mobile-search-view").fadeIn(1000);
+    });
+
+    $(".search-close").click(function() {
+        $(".mobile-search-view").fadeOut(1000);
+    });
+
+    // content dropdown
+    var click = true;
+    $("#arrowup").hide();
+    $(".dropdown").on('click', function(e) {
+        e.preventDefault();
+        if (click) {
+            $(".drop-selection").stop().slideDown(300);
+            $("#arrowup").show();
+            $("#arrowdown").hide();
+            click = false;
+        } else {
+            $('.drop-selection').stop().slideUp(300);
+            click = true;
+        }
+    });
+
+    $(".drop-selection li").on('click', function(e) {
+        e.preventDefault();
+        var option_value = $(this).find('a').text();
+        $('.dropdown b').text(option_value);
+        $("#arrowup").hide();
+        $("#arrowdown").show();
+        $('.drop-selection').slideUp(300);
+        click = true;
+    });
+});
+var divs = ["div1", "div2", "div3", "div4", "div5", "div6"];
+var visibledivid = null;
+
+function frameVisibility(divid) {
+    if (visibledivid === divid) {
+        // visibleframeid = null;
+    } else {
+        visibledivid = divid;
+    }
+    hideNonVisibleframes();
+}
+
+function hideNonVisibleframes() {
+    var i, divid, frame;
+    for (i = 0; i < divs.length; i++) {
+        divid = divs[i];
+        frame = document.getElementById(divid);
+        if (visibledivid === divid) {
+            frame.style.display = "inline-block";
+        } else {
+            frame.style.display = "none";
+        }
+    }
+}
+</script>
+
+</html>
