@@ -6,8 +6,7 @@
     <meta property="description" content="Renyoo app helps you to annotate pictures. You can also add text, images, URL, audios and videos to your pictures. Add geotags to pictures. Catalog and store all your pictures and access it anywhere, anytime.Subscribe for an excluisve Renyoo Launch Invite!">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="keywords" content="image annotation app, add text,audio,video to your images, geotag pictures, picture sharing app, android, ios" />
-    <link rel="dns-prefetch" href="https://renyoo.co">
+    <meta name="keywords" content="image annotation app, add text,audio,video to your images, geotag pictures, picture sharing app, android, ios, embedded annotations" />
 
     <!--css-->
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
@@ -19,9 +18,8 @@
     <script src="libs/bootstrap.min.js"></script>
     <!--fonts-->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300,600,700' rel='stylesheet' type='text/css'>
-
-    <meta property="og:site_name" content="Renyoo">
-        <!-- <meta property="og:type" content="Website"> -->
+  <!-- <meta property="og:type" content="Website"> -->
+        <meta property="og:site_name" content="Renyoo">
         <meta property="og:url" content="https://renyoo.co">
         <meta property="og:title" content="Renyoo| Image Annotation App. Add audio, video, geotag to pictures">
         <meta property="og:image" content="https://cdn.rnyoo.net/assets/images/og-images/og_image_home.jpg">
@@ -82,10 +80,11 @@
                     <li><a href="https://plus.google.com/u/0/communities/116794355079467123192" target="_blank"><img src="images/new_home_assets/gplus_icon.png"></i></a></li>
                     <li><a href="https://twitter.com/renyooapp" target="_blank"><img src="images/new_home_assets/twitter_icon.png"></a></li>
                     <li><a href="#"><img src="images/new_home_assets/insta_icon.png"></a></li>
-                    <li><span onclick="openNav()" style="cursor: pointer;"><img src="images/menu_icon.png"></span></li>
+                    <!--Enable this when Menu is live
+                        <li><span onclick="openNav()" style="cursor: pointer;"><img src="images/menu_icon.png"></span></li>-->
                 </ul>
             </div>
-            <!--This is Menu-->
+            <!--This is Menu - This is currently commented out so that we can use it in a few days when the toher oages are ready!
             <div id="mySidenav" class="rny-colapse-nav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="images/cross_icon.png"></a>
                 <ul>
@@ -110,9 +109,12 @@ Talk to one of our Renyoo Enterprise Experts now.
             
                 
             </div>
+            -->
+
             <!--This is an overlay div for the menu-->
             <div class="overlay"></div>
                 </div>
+
     </nav>
     <!--End of Header-->
     <div class="rny-home">
@@ -142,6 +144,8 @@ Talk to one of our Renyoo Enterprise Experts now.
             </div>
             
     </div>
+
+    <!-- Main Section-->
     <section id="new_section">
         <div class="rny-generic-container container">
             
@@ -236,7 +240,7 @@ Talk to one of our Renyoo Enterprise Experts now.
                 </div>
             </div>
             <!--section4 mobile end-->
-            <!--section5 end-->
+            <!--section5-->
             <div class="hotspot-description-container">
                 <div class="col-md-6 col-lg-6 col-sm-12 hotspot-image">
                     <img src="images/new_home_assets/feature5_img.png" alt="Encrypted picture sharing" width="80%">
@@ -250,6 +254,33 @@ Share your PODs via a URL on email or social. </p>
                 </div>
             </div>
             <!--section5 end-->
+
+              <!--section6 (this will visible indesktop not in mobile)-->
+            <div class="hotspot-description-container rny-home-desk-view-block-last">
+                <div class="col-md-6 col-lg-6 col-sm-12 hotspot-description-content">
+                  <h2 class="rny-blue feature-heading">Embed your POD on webpages and blogs</h2>
+                <p class="feature-description">Want to write a blog around your PODs? Maybe a travelogue sharing experiences of your recent travel. Or want to use the POD to explain a complex concept.</p>
+                <p class="feature-description">Renyoo allows you to do that! <strong>Embed Responsive PODs</strong> on your blogs and websites just like an image but <strong>alive with annotations.</strong></p>
+                </div>
+                <div class="col-md-6 col-lg-6 col-sm-12 hotspot-image">
+                    <img src="images/new_home_assets/feature6_img.png" alt="Embed PODs" width="60%">
+                    <h4 class="sub-heading4">Embed PODs on webpages and blogs</h4>
+                </div>
+            </div>
+            <!--section6 desktop end-->
+            <!--section6 (this will visible indesktop not in mobile) -->
+            <div class="hotspot-description-container rny-home-mobile-view-block-last">
+                <div class="col-md-6 col-lg-6 col-sm-12 hotspot-image">
+                   <img src="images/new_home_assets/feature6_img.png" alt="Embed PODs" width="60%">
+                    <h4 class="sub-heading4">Embed PODs on webpages and blogs</h4>
+                </div>
+                <div class="col-md-6 col-lg-6 col-sm-12 hotspot-description-content">
+                     <h2 class="rny-blue feature-heading">Embed your POD on webpages and blogs</h2>
+                <p class="feature-description">Want to write a blog around your PODs? Maybe a travelogue sharing experiences of your recent travel. Or want to use the POD to explain a complex concept.</p>
+                <p class="feature-description">Renyoo allows you to do that! <strong>Embed Responsive PODs</strong> on your blogs and websites just like an image but <strong>alive with annotations.</strong></p>
+                </div>
+            </div>
+            <!--section4 mobile end-->
             <div class="start-wrapper">
                 <button class="btn_green"><a href="#">VIEW OUR EXTENSIVE GETTING STARTED GUIDE</a></button>
             </div>
@@ -278,6 +309,7 @@ Share your PODs via a URL on email or social. </p>
                 <li><a href="mailto:support@renyoo.com"><i class="fa fa-envelope-o fa-icon-align" aria-hidden="true"></i></a></li>
             </ul>
         </div>
+        <!--Comment this Footer Menu till Menu is alive
         <div class="rny-about-block">
             <ul>
                  <li><a href="#">Getting Started</a></li>
@@ -288,7 +320,7 @@ Share your PODs via a URL on email or social. </p>
                 <li><a href="#">Terms of Use</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
-        </div>
+        </div> -->
         <div class="rny-copyright-block">
             <ul>
                 <li><a href="#">&#169; 2018 RenyooIt LLC.</a></li>
